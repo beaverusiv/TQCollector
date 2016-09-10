@@ -1,0 +1,48 @@
+v0.2a 2/12/2009
+-Original public release.
+
+v0.3a 3/12/2009
+-Added support for custom directories.
+-Vault/Inventory/Caravan toggles work.
+-Added error checking for files.
+-Changed location of config.xml back to program directory.
+-Added missing filter options for Arcane Formulae.
+
+v0.3.1 7/12/2009
+-Added check for character saves.
+-Removed support for custom maps (not needed).
+
+v0.4 23/12/2009
+-Revamped and unified UI including resizeable window.
+-Fixed bug where Hades relic title showed when IT was off.
+-Fixed bug with 'Any' and 'All' MIs were miscounted.
+-Fixed Sets 'Some' tabs.
+-Added "*", "Stheno's Wisdom" to itemdb.
+-Added Secrect Passage toggle.
+-Added Tooltip for item locations.
+
+v0.4.5 29/12/2009
+-Added support for multiple languages.
+-Added support for showing where to find items.
+-Fixed bug in display of item locations for 'Any' MIs.
+
+v0.4.7 30/04/2010
+-Finished French translation.
+-Finished item locations.
+-Added new path-finding for TQ/IT folders.
+-Reinstated old UI (With choice for bold/checkbox).
+-Changed code which made the UI redraw six times on startup.
+-Optimised loading code.
+-Items now list alphabetically including IT items.
+-Added option to count socketed relics/charms.
+-config.xml now in %APPDATA%\TQ Collector\
+
+v1.0.0 09/09/2016
+-Cleaned up a bit of the render code.
+-Added missing versions of Sstheno's wisdom
+-Fixed typo in Filter page apparently no one noticed
+-Fixed some of the logic to do with loading in the configs/toggles
+-Fixed loading in language list while using AE
+-Added German translation to install
+-Cleaned up the file loading, streamlined the whole experience
+-Incorporated and attributed spectre's itemdb additions
