@@ -116,10 +116,56 @@ namespace TQCollector
             }
         }
 
+        private int[] getSelectedIndexes(Grid grid)
+        {
+            //get selected tabs (2 levels, top tabcontrol and tabcontrol inside tabitem)
+            int[] ret = new int[2];
+
+            foreach (var obj in grid.Children)
+            {
+                if (obj.GetType() == typeof(TabControl))
+                {
+                    TabControl tabControl = (TabControl)obj;
+                    ret[0] = tabControl.SelectedIndex;
+                    TabItem tabItemOld = (TabItem)tabControl.Items[ret[0]];
+                    if (tabItemOld.Content.GetType() == typeof(TabControl))
+                    {
+                        TabControl subControl = (TabControl)tabItemOld.Content;
+                        ret[1] = subControl.SelectedIndex;
+                    }
+                }
+            }
+            return ret;
+        }
+
+        private void setSelectedIndexes(int[] selected, TabControl masterControl)
+        {
+            //set selected tabs (2 levels, top tabcontrol and tabcontrol inside tabitem)
+            masterControl.SelectedIndex = selected[0];
+            TabItem tabItem = null;
+            if (masterControl.Items[selected[0]].GetType() == typeof(TabItem))
+            {
+                tabItem = (TabItem)masterControl.Items[selected[0]];
+                if (tabItem.Content.GetType() == typeof(TabControl))
+                {
+                    TabControl innerTabControl = (TabControl)tabItem.Content;
+                    innerTabControl.SelectedIndex = selected[1];
+                }
+            }
+        }
+
         private void refreshDisplay()
         {
+
+            int[] selected = getSelectedIndexes(myGrid);
+
             myGrid.Children.Clear();
-            myGrid.Children.Add(Filterer.Display());
+            TabControl masterControl = Filterer.Display();
+
+            setSelectedIndexes(selected, masterControl);
+
+            myGrid.Children.Add(masterControl);
+
             Filterer.resizeLists();
             countLabel.Content = Files.Language["count01"] + Filterer.ItemsCount + "/" + Filterer.ItemsTotal + " (" + (((double)Filterer.ItemsCount) / Filterer.ItemsTotal * 100).ToString("N2") + "%)";
         }
