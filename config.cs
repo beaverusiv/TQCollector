@@ -42,6 +42,8 @@ public partial class Config {
     
     private bool useItemCountField;
 
+    private bool useItemOwnedField;
+
     private bool useCheckBoxField;
 
     private bool useSocketedField;
@@ -141,6 +143,19 @@ public partial class Config {
         }
         set {
             this.useItemCountField = value;
+        }
+    }
+
+    /// <remarks/>
+    public bool UseItemOwned
+    {
+        get
+        {
+            return this.useItemOwnedField;
+        }
+        set
+        {
+            this.useItemOwnedField = value;
         }
     }
 

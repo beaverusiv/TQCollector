@@ -82,6 +82,7 @@
   <NameValuePair><Name>tooltip10</Name><Value>Dateien neu laden</Value></NameValuePair>
   <NameValuePair><Name>tooltip11</Name><Value>Filter Optionen</Value></NameValuePair>
   <NameValuePair><Name>tooltip12</Name><Value>Toggle Use Of Anniversary Edition</Value></NameValuePair>
+  <NameValuePair><Name>tooltip13</Name><Value>Toggle Display Of Owned Items</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Titan Quest Collector v{0} Credits:</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying für die Titan Quest Icons, die er erstellt hat.</Value></NameValuePair>
