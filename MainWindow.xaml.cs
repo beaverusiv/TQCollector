@@ -76,8 +76,6 @@ namespace TQCollector
             Button_ToggleInventory.ToolTip = Files.Language["tooltip03"];
             Button_ToggleItemCount.IsChecked = Files.Configuration.UseItemCount;
             Button_ToggleItemCount.ToolTip = Files.Language["tooltip06"];
-            Button_ToggleItemOwned.IsChecked = Files.Configuration.UseItemOwned;
-            Button_ToggleItemOwned.ToolTip = Files.Language["tooltip13"];
             Button_About.ToolTip = Files.Language["tooltip07"];
             Button_CustomDirectory.ToolTip = Files.Language["tooltip08"];
             Button_ExportDataAs.ToolTip = Files.Language["tooltip09"];
@@ -103,24 +101,6 @@ namespace TQCollector
             if (loaded)
             {
                 Files.SaveConfig();
-            }
-        }
-
-        private void Button_ToggleItemOwned_Checked(object sender, RoutedEventArgs e)
-        {
-            if (loaded)
-            {
-                Files.Configuration.UseItemOwned = true;
-                refreshDisplay();
-            }
-        }
-
-        private void Button_ToggleItemOwned_Unchecked(object sender, RoutedEventArgs e)
-        {
-            if (loaded)
-            {
-                Files.Configuration.UseItemOwned = false;
-                refreshDisplay();
             }
         }
 

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="TQCollector.FilterOptions"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Filter Options" Height="320" Width="834" WindowStartupLocation="CenterScreen" AllowsTransparency="False" Visibility="Visible">
+        Title="Filter Options" Height="340" Width="834" WindowStartupLocation="CenterScreen" AllowsTransparency="False" Visibility="Visible">
     <Grid>
         <GroupBox Header="Monster Infrequents" Height="143" HorizontalAlignment="Left" Margin="2,2,0,0" Name="Group_MI" VerticalAlignment="Top" Width="200">
             <Grid>
@@ -68,7 +68,7 @@
                 <RadioButton Content="All" Height="16" HorizontalAlignment="Left" Margin="2,18,0,0" Name="Relics_Radio_All" VerticalAlignment="Top" Width="120" Checked="Relics_Radio_All_Checked" />
             </Grid>
         </GroupBox>
-        <Button Content="Save" Height="22" HorizontalAlignment="Right" Margin="0,257,4,0" Name="button2" VerticalAlignment="Top" Width="92" Click="button2_Click" />
+        <Button Content="Save" Height="22" HorizontalAlignment="Right" Margin="0,275,4,0" Name="button2" VerticalAlignment="Top" Width="92" Click="button2_Click" />
         <GroupBox Header="Arcane" Height="132" HorizontalAlignment="Left" Margin="405,138,0,0" Name="Group_Formulae" VerticalAlignment="Top" Width="200">
             <Grid>
                 <RadioButton Content="Don't Collect" Height="16" HorizontalAlignment="Left" Margin="3,3,0,0" Name="Formulae_Radio_None" VerticalAlignment="Top" Width="120" Checked="Formulae_Radio_None_Checked" />
@@ -79,10 +79,11 @@
                 <CheckBox Content="Divine" Height="16" HorizontalAlignment="Left" Margin="11,87,0,0" Name="Formulae_Check_Divine" VerticalAlignment="Top" Width="120" Checked="Formulae_Check_Divine_Checked" Unchecked="Formulae_Check_Divine_Unchecked" />
             </Grid>
         </GroupBox>
-        <GroupBox Header="Miscellaneous Options" Height="61" HorizontalAlignment="Left" Margin="608,187,0,0" Name="Group_Misc" VerticalAlignment="Top" Width="200">
+        <GroupBox Header="Miscellaneous Options" Height="81" HorizontalAlignment="Left" Margin="608,187,0,0" Name="Group_Misc" VerticalAlignment="Top" Width="200">
             <Grid>
                 <CheckBox Content="Count Socketed Relics/Charms" Height="16" HorizontalAlignment="Left" Margin="2,2,0,0" Name="Misc_Check_Socketed" VerticalAlignment="Top" Width="185" Checked="Misc_Check_Socketed_Checked" Unchecked="Misc_Check_Socketed_Unchecked" />
                 <CheckBox Content="Use Checkbox Instead Of Bold" Height="16" HorizontalAlignment="Left" Margin="2,20,0,0" Name="Misc_Check_Bold" VerticalAlignment="Top" Width="180" Checked="Misc_Check_Bold_Checked" Unchecked="Misc_Check_Bold_Unchecked" />
+                <CheckBox Content="Display Owned Items" Height="16" HorizontalAlignment="Left" Margin="2,40,0,0" Name="Misc_Check_ItemOwned" VerticalAlignment="Top" Width="180" Checked="Misc_Check_ItemOwned_Checked" Unchecked="Misc_Check_ItemOwned_Unchecked" />
             </Grid>
         </GroupBox>
     </Grid>

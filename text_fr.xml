@@ -82,7 +82,6 @@
   <NameValuePair><Name>tooltip10</Name><Value>Recharger les fichiers</Value></NameValuePair>
   <NameValuePair><Name>tooltip11</Name><Value>Options de filtrage</Value></NameValuePair>
   <NameValuePair><Name>tooltip12</Name><Value>Toggle Use Of Anniversary Edition</Value></NameValuePair>
-  <NameValuePair><Name>tooltip13</Name><Value>Toggle Display Of Owned Items</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Credits pour Titan Quest Collector v{0} :</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying pour l'utilisation de l'icone Titan Quest qu'il a creee.</Value></NameValuePair>
@@ -160,4 +159,5 @@
 
   <NameValuePair><Name>misc01</Name><Value>Count Socketed Relics/Charms</Value></NameValuePair>
   <NameValuePair><Name>misc02</Name><Value>Use Checkbox Instead Of Bold</Value></NameValuePair>
+  <NameValuePair><Name>misc03</Name><Value>Display Owned Items</Value></NameValuePair>
 </ArrayOfNameValuePair>

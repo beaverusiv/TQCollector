@@ -34,10 +34,6 @@
                     <Image Source="toggle_count.png" Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </ToggleButton>
                 <Separator/>
-                <ToggleButton Name="Button_ToggleItemOwned" Checked="Button_ToggleItemOwned_Checked" Unchecked="Button_ToggleItemOwned_Unchecked">
-                    <Image Source="toggle_owned.png" Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                </ToggleButton>
-                <Separator/>
                 <ComboBox Height="25" Width="33" HorizontalAlignment="Left" Name="Language_Combo" VerticalAlignment="Center">
                 </ComboBox>
                 <Separator/>
