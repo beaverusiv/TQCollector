@@ -54,6 +54,7 @@ public partial class Config {
     
     public Config() {
         this.useItemOwnedField = true;
+        this.refreshTimerField = "180";
     }
     
     /// <remarks/>
