@@ -81,7 +81,7 @@
   <NameValuePair><Name>tooltip09</Name><Value>Daten exportieren</Value></NameValuePair>
   <NameValuePair><Name>tooltip10</Name><Value>Dateien neu laden</Value></NameValuePair>
   <NameValuePair><Name>tooltip11</Name><Value>Filter Optionen</Value></NameValuePair>
-  <NameValuePair><Name>tooltip12</Name><Value>Toggle Use Of Anniversary Edition</Value></NameValuePair>
+  <NameValuePair><Name>tooltip12</Name><Value>Nutzung der Anniversary Edition aktivieren</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Titan Quest Collector v{0} Credits:</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying für die Titan Quest Icons, die er erstellt hat.</Value></NameValuePair>
@@ -109,31 +109,31 @@
   <NameValuePair><Name>path01</Name><Value>TQVault-Dateien Pfad:</Value></NameValuePair>
   <NameValuePair><Name>path02</Name><Value>Titan Quest Pfad:</Value></NameValuePair>
   <NameValuePair><Name>path03</Name><Value>Immortal Throne Pfad:</Value></NameValuePair>
-  <NameValuePair><Name>path04</Name><Value>Anniversary Edition path:</Value></NameValuePair>
+  <NameValuePair><Name>path04</Name><Value>Anniversary Edition Pfad:</Value></NameValuePair>
 
   <NameValuePair><Name>error01</Name><Value>LoadItemDB() returned false.</Value></NameValuePair>
   <NameValuePair><Name>error02</Name><Value>LoadDatabase() returned false.</Value></NameValuePair>
   <NameValuePair><Name>error03</Name><Value>LoadVaults() returned false.</Value></NameValuePair>
   <NameValuePair><Name>error04</Name><Value>LoadCharacters() returned false.</Value></NameValuePair>
   <NameValuePair><Name>error05</Name><Value>LoadCaravan() returned false.</Value></NameValuePair>
-  <NameValuePair><Name>error06</Name><Value>config.xml was not found.</Value></NameValuePair>
-  <NameValuePair><Name>error07</Name><Value>An error with config.xml, has it been illegally modified?</Value></NameValuePair>
-  <NameValuePair><Name>error08</Name><Value>An unknown error occured writing to config.xml, are permissions set properly?</Value></NameValuePair>
-  <NameValuePair><Name>error09</Name><Value>itemdb.xml was not found.</Value></NameValuePair>
-  <NameValuePair><Name>error10</Name><Value>An error with itemdb.xml, has it been illegally modified?</Value></NameValuePair>
-  <NameValuePair><Name>error11</Name><Value>Unable to locate Immortal Throne ARC file!\nPlease set IT directory.</Value></NameValuePair>
-  <NameValuePair><Name>error12</Name><Value>Die Titan Quest ARC Datei wurde nicht gefunden! Bitte überprüfen Sie die Pfadangabe!</Value></NameValuePair>
-  <NameValuePair><Name>error13</Name><Value>Error parsing ARC data.</Value></NameValuePair>
-  <NameValuePair><Name>error14</Name><Value> is not a proper ARC entry.</Value></NameValuePair>
-  <NameValuePair><Name>error15</Name><Value>Something went wrong opening</Value></NameValuePair>
+  <NameValuePair><Name>error06</Name><Value>config.xml wurde nicht gefunden.</Value></NameValuePair>
+  <NameValuePair><Name>error07</Name><Value>config.xml ist fehlerhaft, wurde sie unsachgemäß bearbeitet?</Value></NameValuePair>
+  <NameValuePair><Name>error08</Name><Value>Ein unbekannter Fehler trat beim Bearbeiten von config.xml auf, sind die Dateiberechtigungen korrekt?</Value></NameValuePair>
+  <NameValuePair><Name>error09</Name><Value>itemdb.xml wurde nicht gefunden.</Value></NameValuePair>
+  <NameValuePair><Name>error10</Name><Value>itemdb.xml ist fehlerhaft, wurde sie unsachgemäß bearbeitet?</Value></NameValuePair>
+  <NameValuePair><Name>error11</Name><Value>Die Immortal Throne ARC Datei wurde nicht gefunden\nBitte überprüfen Sie die Pfadangabe.</Value></NameValuePair>
+  <NameValuePair><Name>error12</Name><Value>Die Titan Quest ARC Datei wurde nicht gefunden!\nBitte überprüfen Sie die Pfadangabe!</Value></NameValuePair>
+  <NameValuePair><Name>error13</Name><Value>Fehler beim Parsen der ARC Daten.</Value></NameValuePair>
+  <NameValuePair><Name>error14</Name><Value> ist kein gültiger ARC Eintrag.</Value></NameValuePair>
+  <NameValuePair><Name>error15</Name><Value>Etwas lief schief beim Öffnen von</Value></NameValuePair>
   <NameValuePair><Name>error16</Name><Value>Ungültiges TQVault-Verzeichnis! Bitte wählen Sie Ihr eigenes TQVault-Verzeichnis aus!</Value></NameValuePair>
-  <NameValuePair><Name>error17</Name><Value>No vault files found in current vault directory.</Value></NameValuePair>
-  <NameValuePair><Name>error18</Name><Value>Error loading .vault files.</Value></NameValuePair>
-  <NameValuePair><Name>error19</Name><Value>No characters found, inventory use has been disabled.</Value></NameValuePair>
-  <NameValuePair><Name>error20</Name><Value>Error trying to read player.chr.</Value></NameValuePair>
-  <NameValuePair><Name>error21</Name><Value>Error parsing player.chr.</Value></NameValuePair>
-  <NameValuePair><Name>error22</Name><Value>Error trying to read stash file.</Value></NameValuePair>
-  <NameValuePair><Name>error23</Name><Value>Unable to locate Anniversary Edition ARC file! Please set AE directory.</Value></NameValuePair>
+  <NameValuePair><Name>error17</Name><Value>Keine Vault Dateien im aktuellen Vaultverzeichnis gefunden.</Value></NameValuePair>
+  <NameValuePair><Name>error18</Name><Value>Fehler beim Laden der .vault Dateien.</Value></NameValuePair>
+  <NameValuePair><Name>error19</Name><Value>Keine Charaktere gefunden, Inventar wurde deaktiviert.</Value></NameValuePair>
+  <NameValuePair><Name>error20</Name><Value>Fehler beim Laden der player.chr.</Value></NameValuePair>
+  <NameValuePair><Name>error21</Name><Value>Fehler beim Parsen der player.chr.</Value></NameValuePair>
+  <NameValuePair><Name>error22</Name><Value>Fehler beim Laden der Karawane.</Value></NameValuePair>
+  <NameValuePair><Name>error23</Name><Value>Die Anniversary Edition ARC Datei wurde nicht gefunden! Bitte überprüfen Sie die Pfadangabe.</Value></NameValuePair>
 
   <NameValuePair><Name>count01</Name><Value>Gesamtanzahl der Items: </Value></NameValuePair>
 
@@ -158,6 +158,9 @@
   <NameValuePair><Name>act05</Name><Value>Geheime Passage</Value></NameValuePair>
 
   <NameValuePair><Name>misc01</Name><Value>Anzahl gesockelter Relikte/Talismane</Value></NameValuePair>
-  <NameValuePair><Name>misc02</Name><Value>Checkbox statt fetter Schrift</Value></NameValuePair>
+  <NameValuePair><Name>misc02</Name><Value>Checkbox statt Fettschrift</Value></NameValuePair>
   <NameValuePair><Name>misc03</Name><Value>Display Owned Items</Value></NameValuePair>
+
+  <NameValuePair><Name>width01</Name><Value>285</Value></NameValuePair>
+  <NameValuePair><Name>width02</Name><Value>215</Value></NameValuePair>
 </ArrayOfNameValuePair>

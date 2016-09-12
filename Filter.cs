@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Collections.Generic;
 using System.Windows.Media;
+using System;
 
 namespace TQCollector
 {
@@ -198,7 +199,7 @@ namespace TQCollector
                 //If empty, don't add a header
                 TextBlock t = new TextBlock();
                 if (!s.name.Equals(""))
-                {                   
+                {
                     t.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
                     t.FontSize = 18;
                     t.FontStyle = FontStyles.Italic;
@@ -213,7 +214,7 @@ namespace TQCollector
                 {
                     if ((Files.Configuration.UseIT || Files.Configuration.UseAE || !s.Item[i].isIT) && (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0)))
                     {
-                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 3), 180, new Thickness(0)));
+                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 3), Int32.Parse(Files.Language["width01"]), new Thickness(0)));
                     }
                 }
 
@@ -275,7 +276,7 @@ namespace TQCollector
                         {
                             if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
                             {
-                                w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                                w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), Int32.Parse(Files.Language["width02"]), new Thickness(0)));
                             }
                         }
                         
@@ -337,7 +338,7 @@ namespace TQCollector
                     {
                         if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
                         {
-                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), Int32.Parse(Files.Language["width02"]), new Thickness(0)));
                         }
                     }
                 }
