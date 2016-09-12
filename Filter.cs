@@ -211,12 +211,9 @@ namespace TQCollector
 
                 for (int i = 0; i < s.Item.Length; i++)
                 {
-                    if (Files.Configuration.UseIT || Files.Configuration.UseAE || !s.Item[i].isIT)
+                    if ((Files.Configuration.UseIT || Files.Configuration.UseAE || !s.Item[i].isIT) && (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0)))
                     {
-                        if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
-                        {
-                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 3), 180, new Thickness(0)));
-                        }
+                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 3), 180, new Thickness(0)));
                     }
                 }
 
