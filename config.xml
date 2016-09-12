@@ -17,6 +17,7 @@
   <UseItemOwned>true</UseItemOwned>
   <UseCheckBox>false</UseCheckBox>
   <UseSocketed>false</UseSocketed>
+  <RefreshTimer>0</RefreshTimer>
   <Filters>
     <MonsterInfrequent>
       <Amount>All</Amount>

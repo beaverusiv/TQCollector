@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Threading;
 
 namespace TQCollector
 {
@@ -14,6 +15,11 @@ namespace TQCollector
     {
         //To stop Files.reloadFiles() and refreshDisplay() being called when initially setting the toggles.
         private bool loaded = false;
+
+        private int refreshTimerSeconds = 0;
+
+        SynchronizationContext uiContext = SynchronizationContext.Current;
+        System.Timers.Timer refreshTimer;
 
         public MainWindow()
         {
@@ -36,6 +42,26 @@ namespace TQCollector
 
             loaded = true;
             refreshDisplay();
+
+
+            refreshTimerSeconds = Int32.Parse(Files.Configuration.RefreshTimer);
+
+            if (refreshTimerSeconds >= 120) {
+                refreshTimer = new System.Timers.Timer(refreshTimerSeconds*1000);
+                refreshTimer.Elapsed += new System.Timers.ElapsedEventHandler(refreshTimerHandler);
+                refreshTimer.Start();
+            }
+        }
+
+        private void refreshTimerHandler(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            uiContext.Send(new SendOrPostCallback(
+                delegate (object state)
+                {
+                    Files.reloadFiles();
+                    refreshDisplay();
+                }
+            ), null);
         }
 
         private void LoadToggles()
@@ -156,7 +182,6 @@ namespace TQCollector
 
         private void refreshDisplay()
         {
-
             int[] selected = getSelectedIndexes(myGrid);
 
             myGrid.Children.Clear();
