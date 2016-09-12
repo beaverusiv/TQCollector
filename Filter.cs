@@ -213,7 +213,10 @@ namespace TQCollector
                 {
                     if (Files.Configuration.UseIT || Files.Configuration.UseAE || !s.Item[i].isIT)
                     {
-                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 5), 180, new Thickness(5)));
+                        if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
+                        {
+                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 5), 180, new Thickness(5)));
+                        }
                     }
                 }
 
@@ -268,7 +271,10 @@ namespace TQCollector
                         }
                         else
                         {
-                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                            if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
+                            {
+                                w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                            }
                         }
                         
                     }
@@ -323,7 +329,10 @@ namespace TQCollector
                     }
                     else
                     {
-                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                        if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
+                        {
+                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                        }
                     }
                 }
 

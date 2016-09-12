@@ -33,18 +33,22 @@ public partial class Config {
     private bool useVaultsField;
     
     private bool useITField;
-
+    
     private bool useSPField;
-
+    
     private bool useAEField;
-
+    
     private string languageField;
     
     private bool useItemCountField;
-
+    
+    private bool useItemOwnedField;
+    
     private bool useCheckBoxField;
-
+    
     private bool useSocketedField;
+    
+    private string refreshTimerField;
     
     private Filters filtersField;
     
@@ -97,7 +101,7 @@ public partial class Config {
             this.useITField = value;
         }
     }
-
+    
     /// <remarks/>
     public bool UseSP {
         get {
@@ -107,29 +111,23 @@ public partial class Config {
             this.useSPField = value;
         }
     }
-
+    
     /// <remarks/>
-    public bool UseAE
-    {
-        get
-        {
+    public bool UseAE {
+        get {
             return this.useAEField;
         }
-        set
-        {
+        set {
             this.useAEField = value;
         }
     }
-
+    
     /// <remarks/>
-    public string Language
-    {
-        get
-        {
+    public string Language {
+        get {
             return this.languageField;
         }
-        set
-        {
+        set {
             this.languageField = value;
         }
     }
@@ -143,30 +141,45 @@ public partial class Config {
             this.useItemCountField = value;
         }
     }
-
+    
     /// <remarks/>
-    public bool UseCheckBox
-    {
-        get
-        {
+    public bool UseItemOwned {
+        get {
+            return this.useItemOwnedField;
+        }
+        set {
+            this.useItemOwnedField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public bool UseCheckBox {
+        get {
             return this.useCheckBoxField;
         }
-        set
-        {
+        set {
             this.useCheckBoxField = value;
         }
     }
-
+    
     /// <remarks/>
-    public bool UseSocketed
-    {
-        get
-        {
+    public bool UseSocketed {
+        get {
             return this.useSocketedField;
         }
-        set
-        {
+        set {
             this.useSocketedField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+    public string RefreshTimer {
+        get {
+            return this.refreshTimerField;
+        }
+        set {
+            this.refreshTimerField = value;
         }
     }
     
@@ -195,9 +208,9 @@ public partial class Directories {
     private string tqField;
     
     private string itField;
-
+    
     private string aeField;
-
+    
     /// <remarks/>
     public string Vaults {
         get {
@@ -227,16 +240,13 @@ public partial class Directories {
             this.itField = value;
         }
     }
-
+    
     /// <remarks/>
-    public string AE
-    {
-        get
-        {
+    public string AE {
+        get {
             return this.aeField;
         }
-        set
-        {
+        set {
             this.aeField = value;
         }
     }
