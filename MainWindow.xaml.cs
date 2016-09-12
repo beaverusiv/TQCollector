@@ -42,14 +42,14 @@ namespace TQCollector
 
             loaded = true;
             refreshDisplay();
-
-
-            refreshTimerSeconds = Int32.Parse(Files.Configuration.RefreshTimer);
-
-            if (refreshTimerSeconds >= 120) {
-                refreshTimer = new System.Timers.Timer(refreshTimerSeconds*1000);
-                refreshTimer.Elapsed += new System.Timers.ElapsedEventHandler(refreshTimerHandler);
-                refreshTimer.Start();
+            
+            if(Files.Configuration.RefreshTimer!=null) {
+                refreshTimerSeconds = Int32.Parse(Files.Configuration.RefreshTimer);
+                if (refreshTimerSeconds >= 120) {
+                    refreshTimer = new System.Timers.Timer(refreshTimerSeconds*1000);
+                    refreshTimer.Elapsed += new System.Timers.ElapsedEventHandler(refreshTimerHandler);
+                    refreshTimer.Start();
+                }
             }
         }
 
