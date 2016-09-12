@@ -215,7 +215,7 @@ namespace TQCollector
                     {
                         if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
                         {
-                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 5), 180, new Thickness(5)));
+                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 3), 180, new Thickness(0)));
                         }
                     }
                 }
