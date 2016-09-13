@@ -196,9 +196,9 @@ namespace TQCollector
 
                 percentage = (double)Files.Count(s) / s.Item.Length * 100;
                 //If empty, don't add a header
+                TextBlock t = new TextBlock();
                 if (!s.name.Equals(""))
-                {
-                    TextBlock t = new TextBlock();
+                {                   
                     t.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
                     t.FontSize = 18;
                     t.FontStyle = FontStyles.Italic;
@@ -211,12 +211,17 @@ namespace TQCollector
 
                 for (int i = 0; i < s.Item.Length; i++)
                 {
-                    if (Files.Configuration.UseIT || Files.Configuration.UseAE || !s.Item[i].isIT)
+                    if ((Files.Configuration.UseIT || Files.Configuration.UseAE || !s.Item[i].isIT) && (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0)))
                     {
-                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 5), 180, new Thickness(5)));
+                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 3), 180, new Thickness(0)));
                     }
                 }
 
+                if(w.Children.Count==0)
+                {
+                    sp2.Children.Remove(w);
+                    sp2.Children.Remove(t);
+                }
                 sp.Children.Add(sp2);
             }
 
@@ -244,9 +249,9 @@ namespace TQCollector
 
                 percentage = (double)Files.Count(s) / s.Item.Length * 100;
                 //If empty, don't add a header
+                TextBlock t = new TextBlock();
                 if (!s.name.Equals(""))
                 {
-                    TextBlock t = new TextBlock();
                     t.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
                     t.FontSize = 15;
                     t.Margin = new Thickness(0, 10, 0, 0);
@@ -268,12 +273,19 @@ namespace TQCollector
                         }
                         else
                         {
-                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                            if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
+                            {
+                                w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                            }
                         }
                         
                     }
                 }
-
+                if (w.Children.Count == 0)
+                {
+                    sp2.Children.Remove(w);
+                    sp2.Children.Remove(t);
+                }
                 sp.Children.Add(sp2);
             }
 
@@ -301,9 +313,9 @@ namespace TQCollector
 
                 percentage = (double)Files.Count(s) / s.Item.Length * 100;
                 //If empty, don't add a header
+                TextBlock t = new TextBlock();
                 if (!s.name.Equals(""))
                 {
-                    TextBlock t = new TextBlock();
                     t.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
                     t.FontSize = 15;
                     t.Margin = new Thickness(0, 10, 0, 0);
@@ -323,10 +335,17 @@ namespace TQCollector
                     }
                     else
                     {
-                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                        if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
+                        {
+                            w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 0), 200, new Thickness(0)));
+                        }
                     }
                 }
-
+                if (w.Children.Count == 0)
+                {
+                    sp2.Children.Remove(w);
+                    sp2.Children.Remove(t);
+                }
                 sp.Children.Add(sp2);
             }
 

@@ -159,4 +159,5 @@
 
   <NameValuePair><Name>misc01</Name><Value>Anzahl gesockelter Relikte/Talismane</Value></NameValuePair>
   <NameValuePair><Name>misc02</Name><Value>Checkbox statt fetter Schrift</Value></NameValuePair>
+  <NameValuePair><Name>misc03</Name><Value>Display Owned Items</Value></NameValuePair>
 </ArrayOfNameValuePair>

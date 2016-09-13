@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Threading;
 
 namespace TQCollector
 {
@@ -14,6 +15,11 @@ namespace TQCollector
     {
         //To stop Files.reloadFiles() and refreshDisplay() being called when initially setting the toggles.
         private bool loaded = false;
+
+        private int refreshTimerSeconds = 0;
+
+        SynchronizationContext uiContext = SynchronizationContext.Current;
+        System.Timers.Timer refreshTimer;
 
         public MainWindow()
         {
@@ -36,6 +42,26 @@ namespace TQCollector
 
             loaded = true;
             refreshDisplay();
+            
+            if(Files.Configuration.RefreshTimer!=null) {
+                refreshTimerSeconds = Int32.Parse(Files.Configuration.RefreshTimer);
+                if (refreshTimerSeconds >= 120) {
+                    refreshTimer = new System.Timers.Timer(refreshTimerSeconds*1000);
+                    refreshTimer.Elapsed += new System.Timers.ElapsedEventHandler(refreshTimerHandler);
+                    refreshTimer.Start();
+                }
+            }
+        }
+
+        private void refreshTimerHandler(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            uiContext.Send(new SendOrPostCallback(
+                delegate (object state)
+                {
+                    Files.reloadFiles();
+                    refreshDisplay();
+                }
+            ), null);
         }
 
         private void LoadToggles()
@@ -96,10 +122,55 @@ namespace TQCollector
             }
         }
 
+        private int[] getSelectedIndexes(Grid grid)
+        {
+            //get selected tabs (2 levels, top tabcontrol and tabcontrol inside tabitem)
+            int[] ret = new int[2];
+
+            foreach (var obj in grid.Children)
+            {
+                if (obj.GetType() == typeof(TabControl))
+                {
+                    TabControl tabControl = (TabControl)obj;
+                    ret[0] = tabControl.SelectedIndex;
+                    TabItem tabItemOld = (TabItem)tabControl.Items[ret[0]];
+                    if (tabItemOld.Content.GetType() == typeof(TabControl))
+                    {
+                        TabControl subControl = (TabControl)tabItemOld.Content;
+                        ret[1] = subControl.SelectedIndex;
+                    }
+                }
+            }
+            return ret;
+        }
+
+        private void setSelectedIndexes(int[] selected, TabControl masterControl)
+        {
+            //set selected tabs (2 levels, top tabcontrol and tabcontrol inside tabitem)
+            masterControl.SelectedIndex = selected[0];
+            TabItem tabItem = null;
+            if (masterControl.Items[selected[0]].GetType() == typeof(TabItem))
+            {
+                tabItem = (TabItem)masterControl.Items[selected[0]];
+                if (tabItem.Content.GetType() == typeof(TabControl))
+                {
+                    TabControl innerTabControl = (TabControl)tabItem.Content;
+                    innerTabControl.SelectedIndex = selected[1];
+                }
+            }
+        }
+
         private void refreshDisplay()
         {
+            int[] selected = getSelectedIndexes(myGrid);
+
             myGrid.Children.Clear();
-            myGrid.Children.Add(Filterer.Display());
+            TabControl masterControl = Filterer.Display();
+
+            setSelectedIndexes(selected, masterControl);
+
+            myGrid.Children.Add(masterControl);
+
             Filterer.resizeLists();
             countLabel.Content = Files.Language["count01"] + Filterer.ItemsCount + "/" + Filterer.ItemsTotal + " (" + (((double)Filterer.ItemsCount) / Filterer.ItemsTotal * 100).ToString("N2") + "%)";
         }
