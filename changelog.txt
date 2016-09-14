@@ -37,7 +37,7 @@ v0.4.7 30/04/2010
 -Added option to count socketed relics/charms.
 -config.xml now in %APPDATA%\TQ Collector\
 
-v1.0.0 09/09/2016
+v1.0.0 14/09/2016
 -Cleaned up a bit of the render code.
 -Added missing versions of Sstheno's wisdom
 -Fixed typo in Filter page apparently no one noticed
@@ -46,3 +46,6 @@ v1.0.0 09/09/2016
 -Added German translation to install
 -Cleaned up the file loading, streamlined the whole experience
 -Incorporated and attributed spectre's itemdb additions
+-Added new filter: Show Owned Items (thanks epinter!)
+-Added background file refresh, default 3mins, set in config.xml (thanks epinter!)
+-Packaged in updated FR and DE translations

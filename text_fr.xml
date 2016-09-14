@@ -5,7 +5,7 @@
   <NameValuePair><Name>level03</Name><Value>Divins</Value></NameValuePair>
   <NameValuePair><Name>level04</Name><Value>Normaux</Value></NameValuePair>
   <NameValuePair><Name>level05</Name><Value>Epiques</Value></NameValuePair>
-  <NameValuePair><Name>level06</Name><Value>Legendaires</Value></NameValuePair>
+  <NameValuePair><Name>level06</Name><Value>Légendaires</Value></NameValuePair>
   <NameValuePair><Name>level07</Name><Value>Essences</Value></NameValuePair>
   <NameValuePair><Name>level08</Name><Value>Incarnations</Value></NameValuePair>
   <NameValuePair><Name>level09</Name><Value>Personnifications</Value></NameValuePair>
@@ -18,31 +18,31 @@
   <NameValuePair><Name>category06</Name><Value>Uniques</Value></NameValuePair>
   <NameValuePair><Name>category07</Name><Value>Lettres</Value></NameValuePair>
   <NameValuePair><Name>category08</Name><Value>Formules mystiques</Value></NameValuePair>
-  <NameValuePair><Name>category09</Name><Value>Miscellaneous Options</Value></NameValuePair>
+  <NameValuePair><Name>category09</Name><Value>Options diverses</Value></NameValuePair>
 
   <NameValuePair><Name>miheader01</Name><Value>Arachneens</Value></NameValuePair>
   <NameValuePair><Name>miheader02</Name><Value>Bandari</Value></NameValuePair>
   <NameValuePair><Name>miheader03</Name><Value>Hommes-sangliers</Value></NameValuePair>
   <NameValuePair><Name>miheader04</Name><Value>Centaures</Value></NameValuePair>
-  <NameValuePair><Name>miheader05</Name><Value>Polypheme</Value></NameValuePair>
-  <NameValuePair><Name>miheader06</Name><Value>Megeres du desert</Value></NameValuePair>
+  <NameValuePair><Name>miheader05</Name><Value>Polyphème</Value></NameValuePair>
+  <NameValuePair><Name>miheader06</Name><Value>Mégères du desert</Value></NameValuePair>
   <NameValuePair><Name>miheader07</Name><Value>Djinns</Value></NameValuePair>
   <NameValuePair><Name>miheader08</Name><Value>Dragoniens</Value></NameValuePair>
   <NameValuePair><Name>miheader09</Name><Value>Commandos des dunes</Value></NameValuePair>
-  <NameValuePair><Name>miheader10</Name><Value>Morts dores</Value></NameValuePair>
+  <NameValuePair><Name>miheader10</Name><Value>Morts dorés</Value></NameValuePair>
   <NameValuePair><Name>miheader11</Name><Value>Gorgones</Value></NameValuePair>
   <NameValuePair><Name>miheader12</Name><Value>Icthians</Value></NameValuePair>
   <NameValuePair><Name>miheader13</Name><Value>Hommes-chacals</Value></NameValuePair>
   <NameValuePair><Name>miheader14</Name><Value>Liches des abysses</Value></NameValuePair>
   <NameValuePair><Name>miheader15</Name><Value>Seigneur Minotaure</Value></NameValuePair>
-  <NameValuePair><Name>miheader16</Name><Value>Cadavres embaumes</Value></NameValuePair>
-  <NameValuePair><Name>miheader17</Name><Value>Neandertals</Value></NameValuePair>
+  <NameValuePair><Name>miheader16</Name><Value>Cadavres embaumés</Value></NameValuePair>
+  <NameValuePair><Name>miheader17</Name><Value>Néandertals</Value></NameValuePair>
   <NameValuePair><Name>miheader18</Name><Value>Hommes-rats</Value></NameValuePair>
   <NameValuePair><Name>miheader19</Name><Value>Reptiles</Value></NameValuePair>
   <NameValuePair><Name>miheader20</Name><Value>Satyres</Value></NameValuePair>
-  <NameValuePair><Name>miheader21</Name><Value>Megalesios</Value></NameValuePair>
+  <NameValuePair><Name>miheader21</Name><Value>Mégalesios</Value></NameValuePair>
   <NameValuePair><Name>miheader22</Name><Value>Hommes-tigres</Value></NameValuePair>
-  <NameValuePair><Name>miheader23</Name><Value>Arachneens tropicaux</Value></NameValuePair>
+  <NameValuePair><Name>miheader23</Name><Value>Arachnéens tropicaux</Value></NameValuePair>
   <NameValuePair><Name>miheader24</Name><Value>Spectres</Value></NameValuePair>
   <NameValuePair><Name>miheader25</Name><Value>Yerrens</Value></NameValuePair>
   <NameValuePair><Name>miheader26</Name><Value>Anourans</Value></NameValuePair>
@@ -62,13 +62,13 @@
   <NameValuePair><Name>uheader04</Name><Value>Arcs</Value></NameValuePair>
   <NameValuePair><Name>uheader05</Name><Value>Brassieres</Value></NameValuePair>
   <NameValuePair><Name>uheader06</Name><Value>Masses</Value></NameValuePair>
-  <NameValuePair><Name>uheader07</Name><Value>Jambieres</Value></NameValuePair>
+  <NameValuePair><Name>uheader07</Name><Value>Jambières</Value></NameValuePair>
   <NameValuePair><Name>uheader08</Name><Value>Casques</Value></NameValuePair>
   <NameValuePair><Name>uheader09</Name><Value>Anneaux</Value></NameValuePair>
   <NameValuePair><Name>uheader10</Name><Value>Boucliers</Value></NameValuePair>
   <NameValuePair><Name>uheader11</Name><Value>Lances</Value></NameValuePair>
-  <NameValuePair><Name>uheader12</Name><Value>Batons</Value></NameValuePair>
-  <NameValuePair><Name>uheader13</Name><Value>Epees</Value></NameValuePair>
+  <NameValuePair><Name>uheader12</Name><Value>Bâtons</Value></NameValuePair>
+  <NameValuePair><Name>uheader13</Name><Value>Epées</Value></NameValuePair>
 
   <NameValuePair><Name>tooltip01</Name><Value>Prendre en compte la caravane</Value></NameValuePair>
   <NameValuePair><Name>tooltip02</Name><Value>Prendre en compte les Vaults</Value></NameValuePair>
@@ -76,40 +76,40 @@
   <NameValuePair><Name>tooltip04</Name><Value>Prendre en compte IT</Value></NameValuePair>
   <NameValuePair><Name>tooltip05</Name><Value>Prendre en compte les objets du Passage secret</Value></NameValuePair>
   <NameValuePair><Name>tooltip06</Name><Value>Totaliser les objets</Value></NameValuePair>
-  <NameValuePair><Name>tooltip07</Name><Value>Credits</Value></NameValuePair>
-  <NameValuePair><Name>tooltip08</Name><Value>Chargement de repertoires personnalises</Value></NameValuePair>
-  <NameValuePair><Name>tooltip09</Name><Value>Exporter les donnees</Value></NameValuePair>
+  <NameValuePair><Name>tooltip07</Name><Value>Crédits</Value></NameValuePair>
+  <NameValuePair><Name>tooltip08</Name><Value>Chargement de répertoires personnalisés</Value></NameValuePair>
+  <NameValuePair><Name>tooltip09</Name><Value>Exporter les données</Value></NameValuePair>
   <NameValuePair><Name>tooltip10</Name><Value>Recharger les fichiers</Value></NameValuePair>
   <NameValuePair><Name>tooltip11</Name><Value>Options de filtrage</Value></NameValuePair>
-  <NameValuePair><Name>tooltip12</Name><Value>Toggle Use Of Anniversary Edition</Value></NameValuePair>
+  <NameValuePair><Name>tooltip12</Name><Value>Basculer l'utilisation de l'Anniversary Edition</Value></NameValuePair>
 
-  <NameValuePair><Name>credits01</Name><Value>Credits pour Titan Quest Collector v{0} :</Value></NameValuePair>
-  <NameValuePair><Name>credits02</Name><Value>JJ Ying pour l'utilisation de l'icone Titan Quest qu'il a creee.</Value></NameValuePair>
-  <NameValuePair><Name>credits03</Name><Value>Sekkyumu pour les icones de la barre d'outils.</Value></NameValuePair>
-  <NameValuePair><Name>credits04</Name><Value>Vous-memes pour l'utilisation de TQC !</Value></NameValuePair>
+  <NameValuePair><Name>credits01</Name><Value>Crédits pour Titan Quest Collector v{0} :</Value></NameValuePair>
+  <NameValuePair><Name>credits02</Name><Value>JJ Ying pour l'utilisation de l'icône Titan Quest qu'il a créée.</Value></NameValuePair>
+  <NameValuePair><Name>credits03</Name><Value>Sekkyumu pour les icônes de la barre d'outils.</Value></NameValuePair>
+  <NameValuePair><Name>credits04</Name><Value>Vous-mêmes pour l'utilisation de TQC !</Value></NameValuePair>
   <NameValuePair><Name>credits05</Name><Value>bman654 and co. pour l'utilisation du code de TQVault afin d'ouvrir divers fichiers.</Value></NameValuePair>
   <NameValuePair><Name>credits06</Name><Value>Arperum pour son aide sur des bugs.</Value></NameValuePair>
   <NameValuePair><Name>credits07</Name><Value>Createur de TQC : BeaverusIV, pour titanquest.net.</Value></NameValuePair>
-  <NameValuePair><Name>credits08</Name><Value>spectre for helping with item locations.</Value></NameValuePair>
+  <NameValuePair><Name>credits08</Name><Value>spectre pour l'aide sur la localisation des objets.</Value></NameValuePair>
 
   <NameValuePair><Name>amount01</Name><Value>Ne pas recenser</Value></NameValuePair>
   <NameValuePair><Name>amount02</Name><Value>Tout recenser</Value></NameValuePair>
-  <NameValuePair><Name>amount03</Name><Value>Niveau indifferent</Value></NameValuePair>
-  <NameValuePair><Name>amount04</Name><Value>Niveaux specifiques :</Value></NameValuePair>
+  <NameValuePair><Name>amount03</Name><Value>Niveau indifférent</Value></NameValuePair>
+  <NameValuePair><Name>amount04</Name><Value>Niveaux spécifiques :</Value></NameValuePair>
   <NameValuePair><Name>amount05</Name><Value>Tous les bonus</Value></NameValuePair>
   <NameValuePair><Name>amount06</Name><Value>Compter comme uniques</Value></NameValuePair>
-  <NameValuePair><Name>amount07</Name><Value>All</Value></NameValuePair>
+  <NameValuePair><Name>amount07</Name><Value>Tout</Value></NameValuePair>
 
   <NameValuePair><Name>button01</Name><Value>Sauvegarder</Value></NameValuePair>
   <NameValuePair><Name>button02</Name><Value>Annuler</Value></NameValuePair>
   <NameValuePair><Name>button03</Name><Value>Par defaut</Value></NameValuePair>
-  <NameValuePair><Name>button04</Name><Value>Repertoire personnalise</Value></NameValuePair>
-  <NameValuePair><Name>button05</Name><Value>Desactiver</Value></NameValuePair>
+  <NameValuePair><Name>button04</Name><Value>Répertoire personnalisé</Value></NameValuePair>
+  <NameValuePair><Name>button05</Name><Value>Désactiver</Value></NameValuePair>
 
-  <NameValuePair><Name>path01</Name><Value>Repertoire des Vaults :</Value></NameValuePair>
-  <NameValuePair><Name>path02</Name><Value>Repertoire de TQ :</Value></NameValuePair>
-  <NameValuePair><Name>path03</Name><Value>Repertoire d'IT :</Value></NameValuePair>
-  <NameValuePair><Name>path04</Name><Value>Anniversary Edition path:</Value></NameValuePair>
+  <NameValuePair><Name>path01</Name><Value>Répertoire des Vaults :</Value></NameValuePair>
+  <NameValuePair><Name>path02</Name><Value>Répertoire de TQ :</Value></NameValuePair>
+  <NameValuePair><Name>path03</Name><Value>Répertoire d'IT :</Value></NameValuePair>
+  <NameValuePair><Name>path04</Name><Value>Répertoire de l'Anniversary Edition:</Value></NameValuePair>
 
   <NameValuePair><Name>error01</Name><Value>LoadItemDB () erreur.</Value></NameValuePair>
   <NameValuePair><Name>error02</Name><Value>LoadDatabase () erreur.</Value></NameValuePair>
@@ -117,50 +117,50 @@
   <NameValuePair><Name>error04</Name><Value>LoadCharacters () erreur.</Value></NameValuePair>
   <NameValuePair><Name>error05</Name><Value>LoadCaravan () erreur.</Value></NameValuePair>
   <NameValuePair><Name>error06</Name><Value>Impossible de trouver config.xml.</Value></NameValuePair>
-  <NameValuePair><Name>error07</Name><Value>Erreur avec config.xml, a-t-il ete modifie illegalement ?</Value></NameValuePair>
-  <NameValuePair><Name>error08</Name><Value>Une erreur inconnue s'est produite en ecrivant vers config.xml, les autorisations sont-elles configurees correctement ?</Value></NameValuePair>
-  <NameValuePair><Name>error09</Name><Value>itemdb.xml n'a pas ete trouve.</Value></NameValuePair>
-  <NameValuePair><Name>error10</Name><Value>Erreur avec itemdb.xml, a-t-il ete modifie illegalement ?</Value></NameValuePair>
-  <NameValuePair><Name>error11</Name><Value>Impossible de localiser le fichier ARC d'Immortal Throne ! Veuillez configurer le repertoire d'IT.</Value></NameValuePair>
-  <NameValuePair><Name>error12</Name><Value>Impossible de localiser le fichier ARC de Titan Quest ! Veuillez configurer le repertoire de TQ.</Value></NameValuePair>
-  <NameValuePair><Name>error13</Name><Value>Erreur en analysant les donn�es ARC.</Value></NameValuePair>
-  <NameValuePair><Name>error14</Name><Value>n'est pas une entree ARC correcte.</Value></NameValuePair>
-  <NameValuePair><Name>error15</Name><Value>Une erreur s'est produite a l'ouverture.</Value></NameValuePair>
-  <NameValuePair><Name>error16</Name><Value>Dossier invalide. Selectionnez le dossier ou desactivez les Vaults.</Value></NameValuePair>
-  <NameValuePair><Name>error17</Name><Value>Aucun fichier.vault trouve dans le repertoire Vault enregistre.</Value></NameValuePair>
+  <NameValuePair><Name>error07</Name><Value>Erreur avec config.xml, a-t-il été modifié illégalement ?</Value></NameValuePair>
+  <NameValuePair><Name>error08</Name><Value>Une erreur inconnue s'est produite en écrivant vers config.xml, les autorisations sont-elles configurées correctement ?</Value></NameValuePair>
+  <NameValuePair><Name>error09</Name><Value>itemdb.xml n'a pas été trouvé.</Value></NameValuePair>
+  <NameValuePair><Name>error10</Name><Value>Erreur avec itemdb.xml, a-t-il été modifié illégalement ?</Value></NameValuePair>
+  <NameValuePair><Name>error11</Name><Value>Impossible de localiser le fichier ARC d'Immortal Throne ! Veuillez configurer le répertoire d'IT.</Value></NameValuePair>
+  <NameValuePair><Name>error12</Name><Value>Impossible de localiser le fichier ARC de Titan Quest ! Veuillez configurer le répertoire de TQ.</Value></NameValuePair>
+  <NameValuePair><Name>error13</Name><Value>Erreur en analysant les données ARC.</Value></NameValuePair>
+  <NameValuePair><Name>error14</Name><Value>n'est pas une entrée ARC correcte.</Value></NameValuePair>
+  <NameValuePair><Name>error15</Name><Value>Une erreur s'est produite à l'ouverture.</Value></NameValuePair>
+  <NameValuePair><Name>error16</Name><Value>Dossier invalide. Sélectionnez le dossier ou désactivez les Vaults.</Value></NameValuePair>
+  <NameValuePair><Name>error17</Name><Value>Aucun fichier.vault trouvé dans le repertoire Vault enregistré.</Value></NameValuePair>
   <NameValuePair><Name>error18</Name><Value>Erreur en chargeant les fichiers .vault.</Value></NameValuePair>
-  <NameValuePair><Name>error19</Name><Value>Aucun personnage trouve, l'utilisation des inventaires a ete desactivee.</Value></NameValuePair>
+  <NameValuePair><Name>error19</Name><Value>Aucun personnage trouvé, l'utilisation des inventaires a été désactivée.</Value></NameValuePair>
   <NameValuePair><Name>error20</Name><Value>Erreur en essayant de lire player.chr.</Value></NameValuePair>
   <NameValuePair><Name>error21</Name><Value>Erreur en analysant player.chr.</Value></NameValuePair>
   <NameValuePair><Name>error22</Name><Value>Erreur en essayant de lire le fichier de la caravane.</Value></NameValuePair>
-  <NameValuePair><Name>error23</Name><Value>Unable to locate Anniversary Edition ARC file! Please set AE directory.</Value></NameValuePair>
+  <NameValuePair><Name>error23</Name><Value>Impossible de localiser le fichier ARC de l'Anniversary Edition ! Veuillez configurer le répertoire de l'AE.</Value></NameValuePair>
 
   <NameValuePair><Name>count01</Name><Value>Somme totale d'objets :</Value></NameValuePair>
 
   <NameValuePair><Name>window01</Name><Value>Options de filtrage</Value></NameValuePair>
-  <NameValuePair><Name>window02</Name><Value>Repertoires</Value></NameValuePair>
-  <NameValuePair><Name>window03</Name><Value>About</Value></NameValuePair>
+  <NameValuePair><Name>window02</Name><Value>Répertoires</Value></NameValuePair>
+  <NameValuePair><Name>window03</Name><Value>A propos</Value></NameValuePair>
 
   <NameValuePair><Name>mouseover01</Name><Value>Vous en avez {0} :</Value></NameValuePair>
   <NameValuePair><Name>mouseover02</Name><Value>Vous pouvez le trouver ici :</Value></NameValuePair>
   <NameValuePair><Name>mouseover03</Name><Value>Vous n'en avez pas.</Value></NameValuePair>
-  <NameValuePair><Name>mouseover04</Name><Value>{0}, sack {1}</Value></NameValuePair>
-  <NameValuePair><Name>mouseover05</Name><Value>{0}, socketed in sack {1}</Value></NameValuePair>
-  <NameValuePair><Name>mouseover06</Name><Value>{0}, equipped</Value></NameValuePair>
-  <NameValuePair><Name>mouseover07</Name><Value>{0}, socketed on equipped item</Value></NameValuePair>
-  <NameValuePair><Name>mouseover08</Name><Value>{0}, stash</Value></NameValuePair>
-  <NameValuePair><Name>mouseover08</Name><Value>{0}, socketed on stashed item</Value></NameValuePair>
+  <NameValuePair><Name>mouseover04</Name><Value>{0}, sac {1}</Value></NameValuePair>
+  <NameValuePair><Name>mouseover05</Name><Value>{0}, enchâssé dans le sac {1}</Value></NameValuePair>
+  <NameValuePair><Name>mouseover06</Name><Value>{0}, Equipé</Value></NameValuePair>
+  <NameValuePair><Name>mouseover07</Name><Value>{0}, enchâssé dans un objet équipé</Value></NameValuePair>
+  <NameValuePair><Name>mouseover08</Name><Value>{0}, coffre</Value></NameValuePair>
+  <NameValuePair><Name>mouseover08</Name><Value>{0}, enchâssé dans un objet du coffre</Value></NameValuePair>
 
-  <NameValuePair><Name>act01</Name><Value>Greece</Value></NameValuePair>
-  <NameValuePair><Name>act02</Name><Value>Egypt</Value></NameValuePair>
+  <NameValuePair><Name>act01</Name><Value>Grèce</Value></NameValuePair>
+  <NameValuePair><Name>act02</Name><Value>Egypte</Value></NameValuePair>
   <NameValuePair><Name>act03</Name><Value>Orient</Value></NameValuePair>
-  <NameValuePair><Name>act04</Name><Value>Hades</Value></NameValuePair>
-  <NameValuePair><Name>act05</Name><Value>Secret Passage</Value></NameValuePair>
+  <NameValuePair><Name>act04</Name><Value>Les Enfers</Value></NameValuePair>
+  <NameValuePair><Name>act05</Name><Value>Passage Secret</Value></NameValuePair>
 
-  <NameValuePair><Name>misc01</Name><Value>Count Socketed Relics/Charms</Value></NameValuePair>
-  <NameValuePair><Name>misc02</Name><Value>Use Checkbox Instead Of Bold</Value></NameValuePair>
-  <NameValuePair><Name>misc03</Name><Value>Display Owned Items</Value></NameValuePair>
+  <NameValuePair><Name>misc01</Name><Value>Compter reliques/charmes enchâssés</Value></NameValuePair>
+  <NameValuePair><Name>misc02</Name><Value>Utiliser case à cocher au lieu du gras</Value></NameValuePair>
+  <NameValuePair><Name>misc03</Name><Value>Afficher les objets détenus</Value></NameValuePair>
 
-  <NameValuePair><Name>width01</Name><Value>180</Value></NameValuePair>
+  <NameValuePair><Name>width01</Name><Value>290</Value></NameValuePair>
   <NameValuePair><Name>width02</Name><Value>200</Value></NameValuePair>
 </ArrayOfNameValuePair>
