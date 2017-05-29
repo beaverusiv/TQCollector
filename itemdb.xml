@@ -1715,7 +1715,6 @@
         <Item dbr="item\equipmentring\u_n_brimstone.dbr" id="tagUArmor023" isIT="false" find="@level04$: @act01$"/>
         <Item dbr="item\equipmentring\u_n_captain'ssignet.dbr" id="tagUArmor024" isIT="false" find="@level04$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentring\u_n_cartouchering.dbr" id="tagUArmor025" isIT="false" find="@level04$: @act02$"/>
-        <Item dbr="item\equipmentring\u_e_crestofmurong.dbr" id="tagUArmor005" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
         <Item dbr="item\equipmentring\u_e_crystalring.dbr" id="tagUArmor006" isIT="false" find="@level05$: @act02$"/>
         <Item dbr="item\equipmentring\u_n_jadeband.dbr" id="tagUArmor026" isIT="false" find="@level04$: @act03$"/>
         <Item dbr="item\equipmentring\u_n_livingband.dbr" id="tagUArmor027" isIT="false" find="@level04$: @act02$, @act03$, @act04$"/>
@@ -2054,6 +2053,7 @@
         <Item dbr="item\equipmentring\u_l_blackpearlring.dbr" id="tagUArmor018" isIT="false" find="@level06$: @act01$"/>
         <Item dbr="item\equipmentring\u_e_celestialband.dbr" id="tagUArmor003" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
         <Item dbr="item\equipmentring\u_e_chiron'sloop.dbr" id="tagUArmor004" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
+        <Item dbr="item\equipmentring\u_e_crestofmurong.dbr" id="tagUArmor005" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
         <Item dbr="item\equipmentring\u_l_eyeofhorus.dbr" id="tagUArmor019" isIT="false" find="@level06$: @act01$, @act02$, @act03$"/>
         <Item dbr="item\equipmentring\u_l_markofares.dbr" id="tagUArmor020" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentring\u_e_ringofgaia.dbr" id="tagUArmor009" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
