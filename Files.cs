@@ -618,9 +618,9 @@ namespace TQCollector
             StreamReader str = null;
             try
             {
-                if (File.Exists(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData), "TQ Collector Release\\config.xml")))
+                if (File.Exists("config.xml"))
                 {
-                    str = new StreamReader(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData), "TQ Collector Release\\config.xml"));
+                    str = new StreamReader("config.xml");
                     XMLConfigSerializer = new XmlSerializer(typeof(Config));
                     XMLConfig = (Config)XMLConfigSerializer.Deserialize(str);
                     //null means it hasn't been set to 'documents' yet.
@@ -659,7 +659,7 @@ namespace TQCollector
             {
                 if (XMLConfig != null)
                 {
-                    stream = File.Open(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData), "TQ Collector Release\\config.xml"), FileMode.Truncate);
+                    stream = File.Open("config.xml", FileMode.Truncate);
                     XMLConfigSerializer.Serialize(stream, XMLConfig);
                     return true;
                 }
@@ -824,6 +824,9 @@ namespace TQCollector
                             if (!ParseTextDB(dbFile, "text\\xcommonequipment.txt")) return false;
                             if (!ParseTextDB(dbFile, "text\\xuniqueequipment.txt")) return false;
                             if (!ParseTextDB(dbFile, "text\\xui.txt")) return false;
+                            if (!ParseTextDB(dbFile, "text\\x2commonequipment.txt")) return false; //pack those three in a condition for (if x2 = true)
+                            if (!ParseTextDB(dbFile, "text\\x2uniqueequipment.txt")) return false;
+                            if (!ParseTextDB(dbFile, "text\\x2ui.txt")) return false;
                             return true;
                         }
                         MessageBox.Show(Files.Language["error23"]);
