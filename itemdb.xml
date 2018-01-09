@@ -1645,6 +1645,31 @@
         <Item dbr="item\equipmentgreaves\us_e_warrior'spanoply.dbr" id="tagUArmor163" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmenthelm\us_e_warrior'spanoply.dbr" id="tagUArmor229" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
       </Set>
+	  <Set name="tagSetNameLE4">
+	    <Item dbr="xpack\item\equipmentarmor\helm\u_n_002.dbr" id="xtagUArmor110" isIT="true" find="@level04$: @act04$"/>
+        <Item dbr="xpack\item\equipmentarmor\torso\u_n_002.dbr" id="xtagUArmor032" isIT="true" find="@level04$: @act04$"/>
+	  </Set>
+	  <Set name="tagSetNameLE2">
+	    <Item dbr="xpack\item\le_new\secreto_helm.dbr" id="tagSetSecretoHelm" isIT="true" find=""/>
+		<Item dbr="xpack\item\le_new\secreto_torso.dbr" id="tagSetSecretoTorso" isIT="true" find=""/>
+		<Item dbr="xpack\item\le_new\secreto_greaves.dbr" id="tagSetSecretoLegs" isIT="true" find=""/>
+		<Item dbr="xpack\item\le_new\secreto_shield.dbr" id="tagSetSecretoShield" isIT="true" find=""/>
+		<Item dbr="xpack\item\le_new\secreto_club.dbr" id="tagSetSecretoClub" isIT="true" find=""/>
+	  </Set>
+	  <Set name="tagSetNameLE5">
+	    <Item dbr="item\equipmentarmor\um_e_pythia'svestment.dbr" id="tagUArmor343" isIT="false" find="@level05$: @act01$"/>
+		<Item dbr="item\equipmentarmband\um_e_pythia'sclasp.dbr" id="tagUArmor048" isIT="false" find="@level05$: @act01$"/>
+	  </Set>
+	  <Set name="tagSetNameLE9">
+	    <Item dbr="item\equipmentarmband\um_n_jadeclasp.dbr" id="tagUArmor058" isIT="false" find="@level04$: @act03$"/>
+		<Item dbr="item\equipmentring\u_n_jadeband.dbr" id="tagUArmor026" isIT="false" find="@level04$: @act03$"/>
+		<Item dbr="item\equipmentamulet\u_n_jadetotem.dbr" id="tagUArmor098" isIT="false" find="@level04$: @act03$"/>
+	  </Set>
+	  <Set name="tagSetNameLE10">
+	    <Item dbr="item\equipmentarmband\um_e_crystalbracelet.dbr" id="tagUArmor040" isIT="false" find="@level05$: @act02$"/>
+		<Item dbr="item\equipmentamulet\u_e_crystaltotem.dbr" id="tagUArmor075" isIT="false" find="@level05$: @act02$"/>
+		<Item dbr="item\equipmentring\u_e_crystalring.dbr" id="tagUArmor006" isIT="false" find="@level05$: @act02$"/>
+	  </Set>
       <Set name="xtagSetName003">
         <Item dbr="xpack\item\equipmentarmor\armband\us_e_001.dbr" id="xtagUArmor071" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\helm\us_e_001.dbr" id="xtagUArmor123" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
@@ -1828,6 +1853,34 @@
         <Item dbr="item\equipmentgreaves\usm_e_vestmentsofthebattlemage.dbr" id="tagUArmor183" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmenthelm\usm_e_vestmentsofthebattlemage.dbr" id="tagUArmor251" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
       </Set>
+	  <Set name="tagSetNameLE3">
+	    <Item dbr="item\equipmentring\u_e_thoth'smark.dbr" id="tagUArmor014" isIT="false" find="@level05$: @act02$, @level06$: @act02$"/>
+		<Item dbr="item\equipmentarmor\u_l_thoth'sshadow.dbr" id="tagUArmor305" isIT="false" find="@level06$: @act02$"/>
+	  </Set>
+	  <Set name="tagSetNameLE1">
+	    <Item dbr="item\equipmenthelm\u_l_hector'sflashinghelm.dbr" id="tagUArmorFix1" isIT="false" find="@level06$"/>
+		<Item dbr="item\equipmentshield\u_l_hectorsshimmeringshield.dbr" id="tagUWeapon033" isIT="false" find="@level06$: @amount07$"/>
+		<Item dbr="item\equipmentweapon\spear\u_e_hector'sspear.dbr" id="tagUWeapon201" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
+	  </Set>
+	  <Set name="tagSetNameLE6">
+	    <Item dbr="item\equipmentarmor\u_l_armorofachilles.dbr" id="tagUArmor293" isIT="false" find="@level06$: @amount07$"/>
+		<Item dbr="item\equipmentshield\u_l_achilles'shield.dbr" id="tagUWeapon025" isIT="false" find="@level06$: @amount07$"/>
+		<Item dbr="item\equipmentweapon\spear\u_l_achilles'spear.dbr" id="tagUWeapon214" isIT="false" find="@level06$: @amount07$"/>
+	  </Set>
+	  <Set name="tagSetNameLE7">
+	    <Item dbr="item\equipmentamulet\u_l_blackpearlpendant.dbr" id="tagUArmor090" isIT="false" find="@level06$: @act01$"/>
+		<Item dbr="item\equipmentring\u_l_blackpearlring.dbr" id="tagUArmor018" isIT="false" find="@level06$: @act01$"/>
+		<Item dbr="item\equipmentarmband\um_l_blackpearlbracelet.dbr" id="tagUArmor050" isIT="false" find="@level06$: @act01$"/>
+	  </Set>
+	  <Set name="tagSetNameLE8">
+	    <Item dbr="xpack\item\equipmentarmor\armband\u_l_002.dbr" id="xtagUArmor058" isIT="true" find="@level06$: @act04$"/>
+		<Item dbr="xpack\item\equipmentarmor\greaves\u_l_002.dbr" id="xtagUArmor086" isIT="true" find="@level06$: @act04$"/>
+	  </Set>
+	  <Set name="tagSetNameLE11">
+	    <Item dbr="item\equipmentweapon\club\u_l_handofhephaestus.dbr" id="tagUWeapon171" isIT="false" find="@level06$: @amount07$"/>
+		<Item dbr="item\equipmentshield\u_l_hephaestus'moltenshield.dbr" id="tagUWeapon034" isIT="false" find="@level06$: @amount07$"/>
+		<Item dbr="item\equipmentring\u_l_sealofhephaestus.dbr" id="tagUArmor021" isIT="false" find="@level06$: @amount07$"/>
+	  </Set>
       <Set name="xtagSetName019">
         <Item dbr="xpack\item\equipmentweapons\shield\z_france01.dbr" id="xtagUWeapon010" isIT="true" find="via Unlock Code"/>
         <Item dbr="xpack\item\equipmentweapons\axe\z_france01.dbr" id="xtagUWeapon024" isIT="true" find="via Unlock Code"/>
@@ -1918,11 +1971,9 @@
     <Epic>
       <Set name="uheader01">
         <Item dbr="item\equipmentamulet\u_e_amaranthine.dbr" id="tagUArmor072" isIT="false" find="@level05$: @act02$, @act03$, @level06$: @act02$, @act03$"/>
-        <Item dbr="item\equipmentamulet\u_e_crystaltotem.dbr" id="tagUArmor075" isIT="false" find="@level05$: @act02$"/>
         <Item dbr="item\equipmentamulet\u_n_electrumcharm.dbr" id="tagUArmor096" isIT="false" find="@level04$: @act02$"/>
         <Item dbr="item\equipmentamulet\u_n_frostmoon.dbr" id="tagUArmor097" isIT="false" find="@level04$: @act01$"/>
         <Item dbr="item\equipmentamulet\u_e_frostshieldtalisman.dbr" id="tagUArmor077" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
-        <Item dbr="item\equipmentamulet\u_n_jadetotem.dbr" id="tagUArmor098" isIT="false" find="@level04$: @act03$"/>
         <Item dbr="item\equipmentamulet\u_n_ladyy-ab'sscarab.dbr" id="tagUArmor099" isIT="false" find="@level04$: @act02$"/>
         <Item dbr="item\equipmentamulet\u_e_lodestone.dbr" id="tagUArmor078" isIT="false" find="@level05$: @act01$, @level06$: @act01$"/>
         <Item dbr="item\equipmentamulet\u_n_lotusblossom.dbr" id="tagUArmor100" isIT="false" find="@level04$: @act03$"/>
@@ -1993,7 +2044,6 @@
         <Item dbr="item\equipmentarmor\u_n_outlaw'ssash.dbr" id="tagUArmor329" isIT="false" find="@level04$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentarmor\um_n_physician'srobe.dbr" id="tagUArmor330" isIT="false" find="@level04$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentarmor\um_n_pioussash.dbr" id="tagUArmor361" isIT="false" find="@level04$: @act01$, @act02$"/>
-        <Item dbr="item\equipmentarmor\um_e_pythia'svestment.dbr" id="tagUArmor343" isIT="false" find="@level05$: @act01$"/>
         <Item dbr="item\equipmentarmor\u_e_reizarf'naicuirass.dbr" id="tagUArmor278" isIT="false" find="@level05$: @act01$, @level06$: @act01$"/>
         <Item dbr="item\equipmentarmor\u_n_renlei'spride.dbr" id="tagUArmor331" isIT="false" find="@level04$: @act03$"/>
         <Item dbr="item\equipmentarmor\um_e_robesofcalchas.dbr" id="tagUArmor358" isIT="false" find="@level05$: @act01$, @act02$, @level06$: @act01$, @act02$"/>
@@ -2021,7 +2071,6 @@
         <Item dbr="xpack\item\equipmentarmor\torso\um_n_003.dbr" id="xtagUArmor036" isIT="true" find="@level04$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\torso\um_n_002.dbr" id="xtagUArmor035" isIT="true" find="@level04$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\torso\um_n_001.dbr" id="xtagUArmor034" isIT="true" find="@level04$: @act04$"/>
-        <Item dbr="xpack\item\equipmentarmor\torso\u_n_002.dbr" id="xtagUArmor032" isIT="true" find="@level04$: @act04$"/>
 		<Item dbr="xpack2\item\equipmentarmor\torso\u_n_01.dbr" id="x2tagUArmor043" isIT="true" find="@level04$: @act06$; @level05$: @act01$"/>
 		<Item dbr="xpack2\item\equipmentarmor\torso\u_n_03.dbr" id="x2tagUArmor045" isIT="true" find="@level04$: @act06$; @level05$: @act01$"/>
 		<Item dbr="xpack2\item\equipmentarmor\torso\u_n_04.dbr" id="x2tagUArmor046" isIT="true" find="@level04$: @act06$; @level05$: @act01$"/>
@@ -2105,17 +2154,14 @@
         <Item dbr="item\equipmentarmband\um_e_braceletofillumination.dbr" id="tagUArmor037" isIT="false" find="@level05$: @act01$, @level06$: @act01$"/>
         <Item dbr="item\equipmentarmband\um_e_braceletofpain.dbr" id="tagUArmor038" isIT="false" find="@level05$: @act02$, @level06$: @act02$"/>
         <Item dbr="item\equipmentarmband\u_n_bracersofatlas.dbr" id="tagUArmor106" isIT="false" find="@level04$: @act01$, @act02$"/>
-        <Item dbr="item\equipmentarmband\um_e_crystalbracelet.dbr" id="tagUArmor040" isIT="false" find="@level05$: @act02$"/>
         <Item dbr="item\equipmentarmband\um_e_elementalist'swraps.dbr" id="tagUArmor043" isIT="false" find="@level05$: @act01$, @act02$; @level06$: @act01$, @act02$"/>
         <Item dbr="item\equipmentarmband\um_n_glowingbangle.dbr" id="tagUArmor056" isIT="false" find="@level04$: @act01$"/>
         <Item dbr="item\equipmentarmband\um_n_harmony.dbr" id="tagUArmor057" isIT="false" find="@level04$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentarmband\um_e_hierophant'swinding.dbr" id="tagUArmor044" isIT="false" find="@level05$: @act01$, @level06$: @act01$"/>
-        <Item dbr="item\equipmentarmband\um_n_jadeclasp.dbr" id="tagUArmor058" isIT="false" find="@level04$: @act03$"/>
         <Item dbr="item\equipmentarmband\um_e_lethargy.dbr" id="tagUArmor045" isIT="false" find="@level05$: @act03$, @act04$; @level06$: @act03$, @act04$"/>
         <Item dbr="item\equipmentarmband\um_n_mindlash.dbr" id="tagUArmor059" isIT="false" find="@level04$: @act01$"/>
         <Item dbr="item\equipmentarmband\um_e_nathus'bane.dbr" id="tagUArmor046" isIT="false" find="@level05$: @act02$, @act03$, @act04$; @level06$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentarmband\um_n_papyruswinding.dbr" id="tagUArmor060" isIT="false" find="@level04$: @act02$"/>
-        <Item dbr="item\equipmentarmband\um_e_pythia'sclasp.dbr" id="tagUArmor048" isIT="false" find="@level05$: @act01$"/>
         <Item dbr="item\equipmentarmband\um_n_scholar'sbangle.dbr" id="tagUArmor061" isIT="false" find="@level04$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentarmband\u_n_thornybracers.dbr" id="tagUArmor107" isIT="false" find="@level04$: @act01$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\um_n_001.dbr" id="xtagUArmor060" isIT="true" find="@level04$: @act04$"/>
@@ -2209,7 +2255,6 @@
         <Item dbr="xpack\item\equipmentarmor\helm\u_n_001.dbr" id="xtagUArmor109" isIT="true" find="@level04$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\helm\um_n_003.dbr" id="xtagUArmor115" isIT="true" find="@level04$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\helm\um_n_002.dbr" id="xtagUArmor114" isIT="true" find="@level04$: @act04$"/>
-        <Item dbr="xpack\item\equipmentarmor\helm\u_n_002.dbr" id="xtagUArmor110" isIT="true" find="@level04$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\helm\um_n_001.dbr" id="xtagUArmor113" isIT="true" find="@level04$: @act04$"/>
 		<Item dbr="xpack2\item\equipmentarmor\helm\u_n_01.dbr" id="x2tagUArmor059" isIT="true" find="@level04$: @act06$, @level05$: @act01$"/>
 		<Item dbr="xpack2\item\equipmentarmor\helm\u_n_02.dbr" id="x2tagUArmor060" isIT="true" find="@level04$: @act06$, @level05$: @act01$"/>
@@ -2229,8 +2274,6 @@
         <Item dbr="item\equipmentring\u_n_brimstone.dbr" id="tagUArmor023" isIT="false" find="@level04$: @act01$"/>
         <Item dbr="item\equipmentring\u_n_captain'ssignet.dbr" id="tagUArmor024" isIT="false" find="@level04$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentring\u_n_cartouchering.dbr" id="tagUArmor025" isIT="false" find="@level04$: @act02$"/>
-        <Item dbr="item\equipmentring\u_e_crystalring.dbr" id="tagUArmor006" isIT="false" find="@level05$: @act02$"/>
-        <Item dbr="item\equipmentring\u_n_jadeband.dbr" id="tagUArmor026" isIT="false" find="@level04$: @act03$"/>
         <Item dbr="item\equipmentring\u_n_livingband.dbr" id="tagUArmor027" isIT="false" find="@level04$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentring\u_n_oathring.dbr" id="tagUArmor028" isIT="false" find="@level04$: @act01$, @act02$, @act03$"/>
         <Item dbr="item\equipmentring\u_e_phantombane.dbr" id="tagUArmor007" isIT="false" find="@level05$: @act01$, @level06$: @act01$"/>
@@ -2427,7 +2470,6 @@
         <Item dbr="item\equipmentamulet\u_e_aeon.dbr" id="tagUArmor071" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentamulet\u_e_amuletofhygeia.dbr" id="tagUArmor073" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentamulet\u_l_aphroditesfavor.dbr" id="tagUArmor089" isIT="false" find="@level06$: @amount07$"/>
-        <Item dbr="item\equipmentamulet\u_l_blackpearlpendant.dbr" id="tagUArmor090" isIT="false" find="@level06$: @act01$"/>
         <Item dbr="item\equipmentamulet\u_e_blessingofthegods.dbr" id="tagUArmor074" isIT="false" find="@level05$: @act01$, @level06$: @act01$"/>
         <Item dbr="item\equipmentamulet\u_l_essenceofstyx.dbr" id="tagUArmor091" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentamulet\u_e_eyeofflame.dbr" id="tagUArmor076" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
@@ -2448,7 +2490,6 @@
 		<Item dbr="xpack2\item\equipmentarmor\amulet\u_l_002.dbr" id="x2tagUArmor112" isIT="true" find="@level06$: @act06$"/>
       </Set>
       <Set name="uheader02">
-        <Item dbr="item\equipmentarmor\u_l_armorofachilles.dbr" id="tagUArmor293" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentarmor\u_l_armorofanubis.dbr" id="tagUArmor304" isIT="false" find="@level06$: @act02$"/>
         <Item dbr="item\equipmentarmor\u_l_armorofpeleus.dbr" id="tagUArmor294" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentarmor\u_e_armorofthecrimsonguard.dbr" id="tagUArmor292" isIT="false" find="@level05$: @act02$, @level06$: @act02$"/>
@@ -2484,7 +2525,6 @@
         <Item dbr="item\equipmentarmor\u_l_shroudofeirene.dbr" id="tagUArmor303" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentarmor\u_e_sunlushan'sarmor.dbr" id="tagUArmor285" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
         <Item dbr="item\equipmentarmor\u_e_thekhan'shuntingharness.dbr" id="tagUArmor288" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
-        <Item dbr="item\equipmentarmor\u_l_thoth'sshadow.dbr" id="tagUArmor305" isIT="false" find="@level06$: @act02$"/>
         <Item dbr="item\equipmentarmor\u_l_verdantplate.dbr" id="tagUArmor306" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentarmor\um_l_vestmentoftheoverlord.dbr" id="tagUArmor355" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentarmor\u_e_vestmentofthomthemad.dbr" id="tagUArmor291" isIT="false" find="@level05$: @act02$, @level06$: @act02$"/>
@@ -2552,7 +2592,6 @@
 		<Item dbr="xpack2\item\equipmentweapons\bow\u_l_03.dbr" id="x2tagUWeapon043" isIT="true" find="@level06$: @act06$"/>
       </Set>
       <Set name="uheader05">
-        <Item dbr="item\equipmentarmband\um_l_blackpearlbracelet.dbr" id="tagUArmor050" isIT="false" find="@level06$: @act01$"/>
         <Item dbr="item\equipmentarmband\um_l_braceletofaman'da.dbr" id="tagUArmor051" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentarmband\um_e_coilofresilience.dbr" id="tagUArmor039" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentarmband\um_e_diogenes'wrap.dbr" id="tagUArmor041" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
@@ -2564,7 +2603,6 @@
         <Item dbr="item\equipmentarmband\um_l_truesilverbracelet.dbr" id="tagUArmor054" isIT="false" find="@level06$: @act01$, @act02$, @act03$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\u_l_001.dbr" id="xtagUArmor058" isIT="true" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\um_l_001.dbr" id="xtagUArmor066" isIT="true" find="@level06$: @act04$"/>
-        <Item dbr="xpack\item\equipmentarmor\armband\u_l_002.dbr" id="xtagUArmor059" isIT="true" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\um_e_001.dbr" id="xtagUArmor063" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\um_e_002.dbr" id="xtagUArmor064" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\um_e_003.dbr" id="xtagUArmor065" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
@@ -2580,7 +2618,6 @@
         <Item dbr="item\equipmentweapon\club\u_l_areithous'mace.dbr" id="tagUWeapon169" isIT="false" find="@level06$: @act01$, @act02$"/>
         <Item dbr="item\equipmentweapon\club\u_e_demeter'ssorrow.dbr" id="tagUWeapon156" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\club\u_l_glacialmaul.dbr" id="tagUWeapon170" isIT="false" find="@level06$: @amount07$"/>
-        <Item dbr="item\equipmentweapon\club\u_l_handofhephaestus.dbr" id="tagUWeapon171" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\club\u_l_hornoftiamat.dbr" id="tagUWeapon172" isIT="false" find="@level06$: @act02$, @act03$"/>
         <Item dbr="item\equipmentweapon\club\u_l_krakensfist.dbr" id="tagUWeapon173" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\club\u_e_lykaionmalleus.dbr" id="tagUWeapon159" isIT="false" find="@level06$: @act01$"/>
@@ -2608,7 +2645,6 @@
         <Item dbr="xpack\item\equipmentarmor\greaves\u_e_001.dbr" id="xtagUArmor083" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\greaves\um_e_002.dbr" id="xtagUArmor091" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\greaves\um_l_002.dbr" id="xtagUArmor094" isIT="true" find="@level06$: @act04$"/>
-        <Item dbr="xpack\item\equipmentarmor\greaves\u_l_002.dbr" id="xtagUArmor086" isIT="true" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\greaves\u_e_002.dbr" id="xtagUArmor084" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\greaves\um_e_003.dbr" id="xtagUArmor092" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\greaves\u_l_001.dbr" id="xtagUArmor085" isIT="true" find="@level06$: @act04$"/>
@@ -2625,7 +2661,6 @@
       <Set name="uheader08">
         <Item dbr="item\equipmenthelm\u_l_agamemnon'sdeathmask.dbr" id="tagUArmor198" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmenthelm\u_l_ares'warhelm.dbr" id="tagUArmor199" isIT="false" find="@level06$: @amount07$"/>
-        <Item dbr="item\equipmenthelm\u_l_hector'sflashinghelm.dbr" id="tagUArmor255" isIT="false" find="@level06$"/>
         <Item dbr="item\equipmenthelm\u_e_athlon.dbr" id="tagUArmor211" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmenthelm\u_e_chiron'sgaze.dbr" id="tagUArmor188" isIT="false" find="@level05$: @act01$, @level06$: @act01$"/>
         <Item dbr="item\equipmenthelm\u_l_helmofdarkness.dbr" id="tagUArmor200" isIT="false" find="@level06$: @amount07$"/>
@@ -2652,15 +2687,12 @@
         <Item dbr="item\equipmentring\u_l_apollo'swill.dbr" id="tagUArmor015" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentring\u_l_archimedes'cogwheel.dbr" id="tagUArmor016" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentring\u_l_bandofsouls.dbr" id="tagUArmor017" isIT="false" find="@level06$: @amount07$"/>
-        <Item dbr="item\equipmentring\u_l_blackpearlring.dbr" id="tagUArmor018" isIT="false" find="@level06$: @act01$"/>
         <Item dbr="item\equipmentring\u_e_celestialband.dbr" id="tagUArmor003" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
         <Item dbr="item\equipmentring\u_e_chiron'sloop.dbr" id="tagUArmor004" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentring\u_e_crestofmurong.dbr" id="tagUArmor005" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
         <Item dbr="item\equipmentring\u_l_eyeofhorus.dbr" id="tagUArmor019" isIT="false" find="@level06$: @act01$, @act02$, @act03$"/>
         <Item dbr="item\equipmentring\u_l_markofares.dbr" id="tagUArmor020" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentring\u_e_ringofgaia.dbr" id="tagUArmor009" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
-        <Item dbr="item\equipmentring\u_l_sealofhephaestus.dbr" id="tagUArmor021" isIT="false" find="@level06$: @amount07$"/>
-        <Item dbr="item\equipmentring\u_e_thoth'smark.dbr" id="tagUArmor014" isIT="false" find="@level05$: @act02$, @level06$: @act02$"/>
         <Item dbr="xpack\item\equipmentarmor\ring\u_e_001.dbr" id="xtagUArmor004" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\ring\u_e_003.dbr" id="xtagUArmor006" isIT="true" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\ring\u_l_001.dbr" id="xtagUArmor007" isIT="true" find="@level06$: @act04$"/>
@@ -2673,7 +2705,6 @@
 		<Item dbr="xpack2\item\equipmentarmor\ring\u_l_003.dbr" id="x2tagUArmor103" isIT="true" find="@level06$: @act06$"/>
       </Set>
       <Set name="uheader10">
-        <Item dbr="item\equipmentshield\u_l_achilles'shield.dbr" id="tagUWeapon025" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_l_ajax'bronzetower.dbr" id="tagUWeapon026" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_l_ancile.dbr" id="tagUWeapon027" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_l_athenasmirroredshield.dbr" id="tagUWeapon028" isIT="false" find="@level06$: @amount07$"/>
@@ -2684,8 +2715,6 @@
         <Item dbr="item\equipmentshield\u_e_eidolonshell.dbr" id="tagUWeapon006" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_l_goldenshieldofpelaran.dbr" id="tagUWeapon031" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_l_hadesaspis.dbr" id="tagUWeapon032" isIT="false" find="@level06$: @amount07$"/>
-        <Item dbr="item\equipmentshield\u_l_hectorsshimmeringshield.dbr" id="tagUWeapon033" isIT="false" find="@level06$: @amount07$"/>
-        <Item dbr="item\equipmentshield\u_l_hephaestus'moltenshield.dbr" id="tagUWeapon034" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_l_hera'sshield.dbr" id="tagUWeapon035" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_e_leatherskinshield.dbr" id="tagUWeapon013" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_l_priam'sgate.dbr" id="tagUWeapon036" isIT="false" find="@level06$: @amount07$"/>
@@ -2706,13 +2735,11 @@
 		<Item dbr="xpack2\item\equipmentweapons\shield\u_l_03.dbr" id="x2tagUWeapon035" isIT="true" find="@level06$: @act06$"/>
       </Set>
       <Set name="uheader11">
-        <Item dbr="item\equipmentweapon\spear\u_l_achilles'spear.dbr" id="tagUWeapon214" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\spear\u_e_amazonianspear.dbr" id="tagUWeapon196" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\spear\u_l_ares'wrath.dbr" id="tagUWeapon215" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\spear\u_l_bloodofouranos.dbr" id="tagUWeapon216" isIT="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\spear\u_e_feilian'sgalespear.dbr" id="tagUWeapon200" isIT="false" find="@level05$: @act03$, @level06$: @act03$"/>
         <Item dbr="item\equipmentweapon\spear\u_l_furyofthethreeamazons.dbr" id="tagUWeapon217" isIT="false" find="@level06$: @amount07$"/>
-        <Item dbr="item\equipmentweapon\spear\u_e_hector'sspear.dbr" id="tagUWeapon201" isIT="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\spear\u_l_kwanyin'sfinalmercy.dbr" id="tagUWeapon218" isIT="false" find="@level06$: @act03$"/>
         <Item dbr="item\equipmentweapon\spear\u_l_onuris'spear.dbr" id="tagUWeapon219" isIT="false" find="@level06$: @act02$"/>
         <Item dbr="item\equipmentweapon\spear\u_l_peleus'ashenspear .dbr" id="tagUWeapon220" isIT="false" find="@level06$: @amount07$"/>
