@@ -49,3 +49,8 @@ v1.0.0 14/09/2016
 -Added new filter: Show Owned Items (thanks epinter!)
 -Added background file refresh, default 3mins, set in config.xml (thanks epinter!)
 -Packaged in updated FR and DE translations
+
+v1.1.0 XX/01/2018
+-Added Ragnarök items
+-Combined old items to new sets
+-Made TQC portable, config.xml resides in the same directory as the .exe now
