@@ -69,6 +69,7 @@ namespace TQCollector
             Button_ToggleSP.IsChecked = Files.Configuration.UseSP;
             Button_ToggleSP.IsEnabled = Files.Configuration.UseIT || Files.Configuration.UseAE;
             Button_ToggleSP.ToolTip = Files.Language["tooltip05"];
+            Button_ToggleR.IsChecked = 
             Button_ToggleCaravan.IsChecked = Files.Configuration.UseCaravan;
             Button_ToggleCaravan.ToolTip = Files.Language["tooltip01"];
             Button_ToggleCaravan.IsEnabled = Files.Configuration.UseIT || Files.Configuration.UseAE;
@@ -252,6 +253,26 @@ namespace TQCollector
             if (loaded)
             {
                 Files.Configuration.UseSP = false;
+                Files.reloadFiles();
+                refreshDisplay();
+            }
+        }
+
+        private void Button_ToggleR_Checked(object sender, RoutedEventArgs e)
+        {
+            if (loaded)
+            {
+                Files.Configuration.UseR = true;
+                Files.reloadFiles();
+                refreshDisplay();
+            }
+        }
+
+        private void Button_ToggleR_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (loaded)
+            {
+                Files.Configuration.UseR = false;
                 Files.reloadFiles();
                 refreshDisplay();
             }
