@@ -340,7 +340,7 @@
         <Item dbr="xpack2\item\equipmentweapon\axe\mi_n_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\club\mi_n_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\spear\mi_n_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_n_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapon\staff\mi_n_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\sword\mi_n_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader50">
@@ -691,7 +691,7 @@
         <Item dbr="xpack2\item\equipmentweapon\axe\mi_e_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\club\mi_e_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\spear\mi_e_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_e_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapon\staff\mi_e_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\sword\mi_e_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader50">
@@ -1042,7 +1042,7 @@
         <Item dbr="xpack2\item\equipmentweapon\axe\mi_l_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\club\mi_l_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\spear\mi_l_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_l_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapon\staff\mi_l_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapon\sword\mi_l_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader50">
