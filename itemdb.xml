@@ -3,7 +3,7 @@
   <MonsterInfrequent>
     <Normal>
       <Set name="miheader01">
-        <Item dbr="item\equipmentshield\mi_n_arachnos.dbr" id="tagMIWeapon001" isIT="false" isR="false" isR="false" find="All Arachnos, @act01$"/>
+        <Item dbr="item\equipmentshield\mi_n_arachnos.dbr" id="tagMIWeapon001" isIT="false" isR="false" find="All Arachnos, @act01$"/>
         <Item dbr="item\equipmentarmor\mi_n_arachnos.dbr" id="tagMIArmor050" isIT="false" isR="false" find="All Arachnos, @act01$"/>
         <Item dbr="item\equipmentweapon\sword\mi_n_arachnos.dbr" id="tagMIWeapon016" isIT="false" isR="false" find="All Arachnos, @act01$"/>
         <Item dbr="item\equipmenthelm\mi_n_arachnos.dbr" id="tagMIArmor033" isIT="false" isR="false" find="All Arachnos, @act01$"/>
@@ -159,7 +159,7 @@
         <Item dbr="item\equipmentarmband\mi_n_yerren.dbr" id="tagMIArmor021" isIT="false" isR="false" find="Chieftain; Heroes: Mountain Strider, Swiftstream, Wolfbiter, @act03$"/>
       </Set>
       <Set name="miheader27">
-        <Item dbr="xpack\item\equipmentarmor\armband\mi_n_anouranmage.dbr" id="xtagMIArmor001" isIT="true" isR="false" isR="false" find="Witch Doctor; Hero: Schlilsh, @act04$"/>
+        <Item dbr="xpack\item\equipmentarmor\armband\mi_n_anouranmage.dbr" id="xtagMIArmor001" isIT="true" isR="false" find="Witch Doctor; Hero: Schlilsh, @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\greaves\mi_n_anouranmage.dbr" id="xtagMIArmor010" isIT="true" isR="false" find="Witch Doctor; Hero: Schlilsh, @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\torso\mi_n_anouranmage.dbr" id="xtagMIArmor035" isIT="true" isR="false" find="Witch Doctor; Heroes: Schlilsh, Wood-Ear, @act04$"/>
         <Item dbr="xpack\item\equipmentweapons\bow\mi_n_anouran.dbr" id="xtagMIWeapon005" isIT="true" isR="false" find="All Hunters, @act04$"/>
