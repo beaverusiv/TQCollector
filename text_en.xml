@@ -99,6 +99,7 @@
   <NameValuePair><Name>tooltip10</Name><Value>Reload Files</Value></NameValuePair>
   <NameValuePair><Name>tooltip11</Name><Value>Filter Options</Value></NameValuePair>
   <NameValuePair><Name>tooltip12</Name><Value>Toggle Use Of Anniversary Edition</Value></NameValuePair>
+  <NameValuePair><Name>tooltip13</Name><Value>Toggle Use Of Ragnarök</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Titan Quest Collector v{0} credits:</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying for use of the Titan Quest Icon he created.</Value></NameValuePair>
