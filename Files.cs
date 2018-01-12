@@ -128,7 +128,7 @@ namespace TQCollector
         public static Set[] Add(Set[] set1, Set[] set2)
         {
             //This function only works on uniques
-            Set[] retSet = new Set[13];
+            Set[] retSet = new Set[14];
 
             List<Item> amulet = new List<Item>();
             List<Item> bracer = new List<Item>();
@@ -143,6 +143,7 @@ namespace TQCollector
             List<Item> spear = new List<Item>();
             List<Item> staff = new List<Item>();
             List<Item> sword = new List<Item>();
+            List<Item> ohranged = new List<Item>();
 
             //Find out what Set it should be inserted into
             foreach (Set ss in set1)
@@ -202,6 +203,10 @@ namespace TQCollector
                         else if (x.dbr.Contains("weapons\\sword"))
                         {
                             sword.Add(x);
+                        }
+                        else if (x.dbr.Contains("weapons\\1hranged"))
+                        {
+                            ohranged.Add(x);
                         }
                     }
                     else
@@ -320,6 +325,10 @@ namespace TQCollector
                         {
                             sword.Add(x);
                         }
+                        else if (x.dbr.Contains("weapons\\1hranged"))
+                        {
+                            ohranged.Add(x);
+                        }
                     }
                     else
                     {
@@ -392,6 +401,7 @@ namespace TQCollector
             spear.Sort(delegate(Item p1, Item p2) { return p1.name.CompareTo(p2.name); });
             staff.Sort(delegate(Item p1, Item p2) { return p1.name.CompareTo(p2.name); });
             sword.Sort(delegate(Item p1, Item p2) { return p1.name.CompareTo(p2.name); });
+            ohranged.Sort(delegate(Item p1, Item p2) { return p1.name.CompareTo(p2.name); });
 
             retSet[0] = new Set();
             retSet[0].name = "uheader01";
@@ -495,6 +505,14 @@ namespace TQCollector
             for (int i = 0; i < sword.Count; i++)
             {
                 retSet[12].Item[i] = sword[i];
+            }
+
+            retSet[13] = new Set();
+            retSet[13].name = "uheader14";
+            retSet[13].Item = new Item[ohranged.Count];
+            for (int i = 0; i < ohranged.Count; i++)
+            {
+                retSet[13].Item[i] = ohranged[i];
             }
 
             return retSet;
