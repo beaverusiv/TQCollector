@@ -69,7 +69,9 @@ namespace TQCollector
             Button_ToggleSP.IsChecked = Files.Configuration.UseSP;
             Button_ToggleSP.IsEnabled = Files.Configuration.UseIT || Files.Configuration.UseAE;
             Button_ToggleSP.ToolTip = Files.Language["tooltip05"];
-            Button_ToggleR.IsChecked = 
+            Button_ToggleR.IsChecked = Files.Configuration.UseR;
+            Button_ToggleR.IsEnabled = Files.Configuration.UseAE;
+            Button_ToggleR.ToolTip = Files.Language["tooltip13"];
             Button_ToggleCaravan.IsChecked = Files.Configuration.UseCaravan;
             Button_ToggleCaravan.ToolTip = Files.Language["tooltip01"];
             Button_ToggleCaravan.IsEnabled = Files.Configuration.UseIT || Files.Configuration.UseAE;
