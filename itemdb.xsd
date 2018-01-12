@@ -116,6 +116,7 @@
       <xs:attribute name="dbr" use="required"/>
       <xs:attribute name="id" use="required" type="xs:string"/>
       <xs:attribute name="isIT" use="required" type="xs:boolean"/>
+      <xs:attribute name="isR" use="required" type="xs:boolean"/>
       <xs:attribute name="find" use="required" type="xs:string"/>
     </xs:complexType>
   </xs:element>
