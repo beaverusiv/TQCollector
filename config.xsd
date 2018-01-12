@@ -10,6 +10,7 @@
         <xs:element name="UseIT" type="xs:boolean"/>
         <xs:element name="UseSP" type="xs:boolean"/>
         <xs:element name="UseAE" type="xs:boolean"/>
+        <xs:element name="UseR" type="xs:boolean"/>
         <xs:element name="Language" type="xs:string"/>
         <xs:element name="UseItemCount" type="xs:boolean"/>
         <xs:element name="UseItemOwned" type="xs:boolean" default="true"/>

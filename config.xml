@@ -12,6 +12,7 @@
   <UseIT>false</UseIT>
   <UseSP>false</UseSP>
   <UseAE>false</UseAE>
+  <UseR>false</UseR>
   <Language>en</Language>
   <UseItemCount>true</UseItemCount>
   <UseItemOwned>true</UseItemOwned>
