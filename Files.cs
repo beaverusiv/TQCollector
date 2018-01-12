@@ -824,9 +824,12 @@ namespace TQCollector
                             if (!ParseTextDB(dbFile, "text\\xcommonequipment.txt")) return false;
                             if (!ParseTextDB(dbFile, "text\\xuniqueequipment.txt")) return false;
                             if (!ParseTextDB(dbFile, "text\\xui.txt")) return false;
-                            if (!ParseTextDB(dbFile, "text\\x2commonequipment.txt")) return false; //pack those three in a condition for (if x2 = true)
-                            if (!ParseTextDB(dbFile, "text\\x2uniqueequipment.txt")) return false;
-                            if (!ParseTextDB(dbFile, "text\\x2ui.txt")) return false;
+                            if (File.Exists(Files.Configuration.Directories.AE + "\\Resources\\XPack2\\SceneryAsgard.arc")) //condition to determine whether Ragnarök is installed
+                            {
+                                if (!ParseTextDB(dbFile, "text\\x2commonequipment.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x2uniqueequipment.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x2ui.txt")) return false;
+                            }
                             return true;
                         }
                         MessageBox.Show(Files.Language["error23"]);
@@ -1156,6 +1159,28 @@ namespace TQCollector
             foreach (Set s in sets)
             {
                 if (!s.Item[0].dbr.Contains("z_")) ls.Add(s);
+            }
+
+            Set[] ret = new Set[ls.Count];
+
+            for (int i = 0; i < ls.Count; i++)
+            {
+                ret[i] = ls[i];
+            }
+
+            return ret;
+        }
+
+        public static Set[] removeR(Set[] sets) //removes Ragnarök items from display
+        {
+            List<Set> ls = new List<Set>();
+
+            foreach (Set s in sets) //create a new set of items not from Ragnarök
+            {
+                if (!s.Item[0].isR)
+                {
+                    ls.Add(s);
+                }
             }
 
             Set[] ret = new Set[ls.Count];
