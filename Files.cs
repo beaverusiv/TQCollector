@@ -1192,10 +1192,24 @@ namespace TQCollector
         public static Set[] removeR(Set[] sets) //removes Ragnarök items from display
         {
             List<Set> ls = new List<Set>();
-
+            
             foreach (Set s in sets) //create a new set of items not from Ragnarök
             {
-                if (!s.Item[0].isR)
+                List<Item> nor = new List<Item>();
+                for (int i = 0; i < s.Item.Length; i++)
+                {
+                    if (!s.Item[i].isR)
+                    {
+                        nor.Add(s.Item[i]); //create new item list w/o Ragnarök items
+                    }
+                }
+                Item[] nor_item = new Item[nor.Count];
+                for (int i = 0; i < nor.Count; i++) //recreate new Item array from list w/o R items
+                {
+                    nor_item[i] = nor[i];
+                }
+                s.Item = nor_item;
+                if (s.Item != null) //only add set if it has non R items
                 {
                     ls.Add(s);
                 }
