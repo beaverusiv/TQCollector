@@ -50,7 +50,9 @@ v1.0.0 14/09/2016
 -Added background file refresh, default 3mins, set in config.xml (thanks epinter!)
 -Packaged in updated FR and DE translations
 
-v1.1.0 XX/01/2018
+v1.1.0 15/01/2018
 -Added Ragnarök items
 -Combined old items to new sets
 -Made TQC portable, config.xml resides in the same directory as the .exe now
+-New button to enable/disable Ragnarök items
+-German and English text complete, French text still needs updating
