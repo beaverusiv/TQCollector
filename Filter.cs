@@ -383,23 +383,50 @@ namespace TQCollector
             if (Files.Configuration.Filters.MonsterInfrequent.Amount == Amount.Some)
             {
                 TabControl MonsterInfrequentTabControl = new TabControl();
-                if (Files.Configuration.Filters.MonsterInfrequent.Normal)
+                if (!Files.Configuration.UseR)
                 {
-                    sub += Files.Count(Files.ItemDatabase.MonsterInfrequent.Normal);
-                    tot += Files.Total(Files.ItemDatabase.MonsterInfrequent.Normal);
-                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level04"], Files.ItemDatabase.MonsterInfrequent.Normal));
+                    Set[] minormal = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal);
+                    Set[] miepic = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic);
+                    Set[] milegendary = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    if (Files.Configuration.Filters.MonsterInfrequent.Normal)
+                    {
+                        sub += Files.Count(minormal);
+                        tot += Files.Total(minormal);
+                        MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level04"], minormal));
+                    }
+                    if (Files.Configuration.Filters.MonsterInfrequent.Epic)
+                    {
+                        sub += Files.Count(miepic);
+                        tot += Files.Total(miepic);
+                        MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level05"], miepic));
+                    }
+                    if (Files.Configuration.Filters.MonsterInfrequent.Legendary)
+                    {
+                        sub += Files.Count(milegendary);
+                        tot += Files.Total(milegendary);
+                        MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], milegendary));
+                    }
                 }
-                if (Files.Configuration.Filters.MonsterInfrequent.Epic)
+                else
                 {
-                    sub += Files.Count(Files.ItemDatabase.MonsterInfrequent.Epic);
-                    tot += Files.Total(Files.ItemDatabase.MonsterInfrequent.Epic);
-                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.MonsterInfrequent.Epic));
-                }
-                if (Files.Configuration.Filters.MonsterInfrequent.Legendary)
-                {
-                    sub += Files.Count(Files.ItemDatabase.MonsterInfrequent.Legendary);
-                    tot += Files.Total(Files.ItemDatabase.MonsterInfrequent.Legendary);
-                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    if (Files.Configuration.Filters.MonsterInfrequent.Normal)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.MonsterInfrequent.Normal);
+                        tot += Files.Total(Files.ItemDatabase.MonsterInfrequent.Normal);
+                        MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level04"], Files.ItemDatabase.MonsterInfrequent.Normal));
+                    }
+                    if (Files.Configuration.Filters.MonsterInfrequent.Epic)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.MonsterInfrequent.Epic);
+                        tot += Files.Total(Files.ItemDatabase.MonsterInfrequent.Epic);
+                        MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.MonsterInfrequent.Epic));
+                    }
+                    if (Files.Configuration.Filters.MonsterInfrequent.Legendary)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                        tot += Files.Total(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                        MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    }
                 }
 
                 tb.Header = generateText(Files.Language["category01"], sub, tot);
@@ -407,23 +434,48 @@ namespace TQCollector
             }
             else if (Files.Configuration.Filters.MonsterInfrequent.Amount == Amount.All)
             {
-                sub = Files.Count(Files.ItemDatabase.MonsterInfrequent.Normal) + Files.Count(Files.ItemDatabase.MonsterInfrequent.Epic) + Files.Count(Files.ItemDatabase.MonsterInfrequent.Legendary);
-                tot = Files.Total(Files.ItemDatabase.MonsterInfrequent.Normal) + Files.Total(Files.ItemDatabase.MonsterInfrequent.Epic) + Files.Total(Files.ItemDatabase.MonsterInfrequent.Legendary);
-                tb.Header = generateText(Files.Language["category01"], sub, tot);
                 TabControl MonsterInfrequentTabControl = new TabControl();
-                MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level04"], Files.ItemDatabase.MonsterInfrequent.Normal));
-                MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.MonsterInfrequent.Epic));
-                MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.MonsterInfrequent.Legendary));
+                if (!Files.Configuration.UseR)
+                {
+                    Set[] minormal = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal);
+                    Set[] miepic = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic);
+                    Set[] milegendary = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    sub = Files.Count(minormal) + Files.Count(miepic) + Files.Count(milegendary);
+                    tot = Files.Total(minormal) + Files.Total(miepic) + Files.Total(milegendary);
+                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level04"], minormal));
+                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level05"], miepic));
+                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], milegendary));
+                }
+                else
+                {
+                    sub = Files.Count(Files.ItemDatabase.MonsterInfrequent.Normal) + Files.Count(Files.ItemDatabase.MonsterInfrequent.Epic) + Files.Count(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    tot = Files.Total(Files.ItemDatabase.MonsterInfrequent.Normal) + Files.Total(Files.ItemDatabase.MonsterInfrequent.Epic) + Files.Total(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level04"], Files.ItemDatabase.MonsterInfrequent.Normal));
+                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.MonsterInfrequent.Epic));
+                    MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.MonsterInfrequent.Legendary));
+                }
+                tb.Header = generateText(Files.Language["category01"], sub, tot);
                 tb.Content = MonsterInfrequentTabControl;
             }
             else if (Files.Configuration.Filters.MonsterInfrequent.Amount == Amount.Any)
             {
                 //Don't care what difficulty, as long as they have it.
-                Set[] combined = Files.Combine(Files.ItemDatabase.MonsterInfrequent.Normal, Files.ItemDatabase.MonsterInfrequent.Legendary);
-                combined = Files.Combine(combined, Files.ItemDatabase.MonsterInfrequent.Epic);
-                sub = Files.Count(combined);
-                tot = Files.Total(combined);
-                tb = CreateListTab(Files.Language["category01"], combined);
+                if (!Files.Configuration.UseR)
+                {
+                    Set[] combined = Files.Combine(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal), Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    combined = Files.Combine(combined, Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic));
+                    sub = Files.Count(combined);
+                    tot = Files.Total(combined);
+                    tb = CreateListTab(Files.Language["category01"], combined);
+                }
+                else
+                {
+                    Set[] combined = Files.Combine(Files.ItemDatabase.MonsterInfrequent.Normal, Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    combined = Files.Combine(combined, Files.ItemDatabase.MonsterInfrequent.Epic);
+                    sub = Files.Count(combined);
+                    tot = Files.Total(combined);
+                    tb = CreateListTab(Files.Language["category01"], combined);
+                }
             }
 
             ItemsCount += sub;
@@ -439,12 +491,42 @@ namespace TQCollector
 
             if (Files.Configuration.Filters.Sets.Count)
             {
-                //Make Set[] according to what we need (Secret Passage or not)
-                temp = Files.Configuration.UseSP ? Files.Add(uniques, sets) : Files.Add(Files.removeSP(sets), Files.removeSP(uniques));
+                //Make Set[] according to what we need (Secret Passage (&Ragnarök) or not)
+                if (Files.Configuration.UseSP && Files.Configuration.UseR)
+                {
+                    temp = Files.Add(uniques, sets);
+                }
+                else if (!Files.Configuration.UseSP && Files.Configuration.UseR)
+                {
+                    temp = Files.Add(Files.removeSP(sets), Files.removeSP(uniques));
+                }
+                else if (!Files.Configuration.UseR && Files.Configuration.UseSP)
+                {
+                    temp = Files.Add(Files.removeR(sets), Files.removeR(uniques));
+                }
+                else
+                {
+                    temp = Files.Add(Files.removeR(Files.removeSP(sets)), Files.removeR(Files.removeSP(uniques)));
+                }
             }
             else
             {
-                temp = Files.Configuration.UseSP ? uniques : Files.removeSP(uniques);
+                if (Files.Configuration.UseSP && Files.Configuration.UseR)
+                {
+                    temp = uniques;
+                }
+                else if (!Files.Configuration.UseSP && Files.Configuration.UseR)
+                {
+                    temp = Files.removeSP(uniques);
+                }
+                else if (Files.Configuration.UseSP && !Files.Configuration.UseR)
+                {
+                    temp = Files.removeR(uniques);
+                }
+                else
+                {
+                    temp = Files.removeR(Files.removeSP(uniques));
+                }
             }
 
             sub += Files.Count(temp);
@@ -498,35 +580,76 @@ namespace TQCollector
             if (Files.Configuration.Filters.Artifacts.Amount == Amount.Some)
             {
                 TabControl ArtifactTabControl = new TabControl();
-                if (Files.Configuration.Filters.Artifacts.Normal)
+                if (!Files.Configuration.UseR)
                 {
-                    sub += Files.Count(Files.ItemDatabase.Artifacts.Normal);
-                    tot += Files.Total(Files.ItemDatabase.Artifacts.Normal);
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Artifacts.Normal));
+                    Set[] artnormal = Files.removeR(Files.ItemDatabase.Artifacts.Normal);
+                    Set[] artepic = Files.removeR(Files.ItemDatabase.Artifacts.Epic);
+                    Set[] artlegendary = Files.removeR(Files.ItemDatabase.Artifacts.Legendary);
+                    if (Files.Configuration.Filters.Artifacts.Normal)
+                    {
+                        sub += Files.Count(artnormal);
+                        tot += Files.Total(artnormal);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], artnormal));
+                    }
+                    if (Files.Configuration.Filters.Artifacts.Epic)
+                    {
+                        sub += Files.Count(artepic);
+                        tot += Files.Total(artepic);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], artepic));
+                    }
+                    if (Files.Configuration.Filters.Artifacts.Legendary)
+                    {
+                        sub += Files.Count(artlegendary);
+                        tot += Files.Total(artlegendary);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], artlegendary));
+                    }
                 }
-                if (Files.Configuration.Filters.Artifacts.Epic)
+                else
                 {
-                    sub += Files.Count(Files.ItemDatabase.Artifacts.Epic);
-                    tot += Files.Total(Files.ItemDatabase.Artifacts.Epic);
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Artifacts.Epic));
-                }
-                if (Files.Configuration.Filters.Artifacts.Legendary)
-                {
-                    sub += Files.Count(Files.ItemDatabase.Artifacts.Legendary);
-                    tot += Files.Total(Files.ItemDatabase.Artifacts.Legendary);
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Artifacts.Legendary));
+                    if (Files.Configuration.Filters.Artifacts.Normal)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Artifacts.Normal);
+                        tot += Files.Total(Files.ItemDatabase.Artifacts.Normal);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Artifacts.Normal));
+                    }
+                    if (Files.Configuration.Filters.Artifacts.Epic)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Artifacts.Epic);
+                        tot += Files.Total(Files.ItemDatabase.Artifacts.Epic);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Artifacts.Epic));
+                    }
+                    if (Files.Configuration.Filters.Artifacts.Legendary)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Artifacts.Legendary);
+                        tot += Files.Total(Files.ItemDatabase.Artifacts.Legendary);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Artifacts.Legendary));
+                    }
                 }
                 tb.Header = generateText(Files.Language["category04"], sub, tot);
                 tb.Content = ArtifactTabControl;
             }
             else if (Files.Configuration.Filters.Artifacts.Amount == Amount.All)
             {
-                sub = Files.Count(Files.ItemDatabase.Artifacts.Normal) + Files.Count(Files.ItemDatabase.Artifacts.Epic) + Files.Count(Files.ItemDatabase.Artifacts.Legendary);
-                tot = Files.Total(Files.ItemDatabase.Artifacts.Normal) + Files.Total(Files.ItemDatabase.Artifacts.Epic) + Files.Total(Files.ItemDatabase.Artifacts.Legendary);
                 TabControl ArtifactTabControl = new TabControl();
-                ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Artifacts.Normal));
-                ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Artifacts.Epic));
-                ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Artifacts.Legendary));
+                if (!Files.Configuration.UseR)
+                {
+                    Set[] artnormal = Files.removeR(Files.ItemDatabase.Artifacts.Normal);
+                    Set[] artepic = Files.removeR(Files.ItemDatabase.Artifacts.Epic);
+                    Set[] artlegendary = Files.removeR(Files.ItemDatabase.Artifacts.Legendary);
+                    sub = Files.Count(artnormal) + Files.Count(artepic) + Files.Count(artlegendary);
+                    tot = Files.Total(artnormal) + Files.Total(artepic) + Files.Total(artlegendary);
+                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], artnormal));
+                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], artepic));
+                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], artlegendary));
+                }
+                else
+                {
+                    sub = Files.Count(Files.ItemDatabase.Artifacts.Normal) + Files.Count(Files.ItemDatabase.Artifacts.Epic) + Files.Count(Files.ItemDatabase.Artifacts.Legendary);
+                    tot = Files.Total(Files.ItemDatabase.Artifacts.Normal) + Files.Total(Files.ItemDatabase.Artifacts.Epic) + Files.Total(Files.ItemDatabase.Artifacts.Legendary);
+                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Artifacts.Normal));
+                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Artifacts.Epic));
+                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Artifacts.Legendary));
+                }
                 tb.Header = generateText(Files.Language["category04"], sub, tot);
                 tb.Content = ArtifactTabControl;
             }
@@ -545,35 +668,76 @@ namespace TQCollector
 
             if (Files.Configuration.Filters.Charms.Amount == Amount.All)
             {
-                sub = Files.Count(Files.ItemDatabase.Charms.Normal) + Files.Count(Files.ItemDatabase.Charms.Epic) + Files.Count(Files.ItemDatabase.Charms.Legendary);
-                tot = Files.Total(Files.ItemDatabase.Charms.Normal) + Files.Total(Files.ItemDatabase.Charms.Epic) + Files.Total(Files.ItemDatabase.Charms.Legendary);
-                tb.Header = generateText(Files.Language["category03"], sub, tot);
                 TabControl CharmsTabControl = new TabControl();
-                CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], Files.ItemDatabase.Charms.Normal));
-                CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], Files.ItemDatabase.Charms.Epic));
-                CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], Files.ItemDatabase.Charms.Legendary));
+                if (!Files.Configuration.UseR)
+                {
+                    Set[] chnormal = Files.removeR(Files.ItemDatabase.Charms.Normal);
+                    Set[] chepic = Files.removeR(Files.ItemDatabase.Charms.Epic);
+                    Set[] chlegendary = Files.removeR(Files.ItemDatabase.Charms.Legendary);
+                    sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
+                    tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
+                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                }
+                else
+                {
+                    sub = Files.Count(Files.ItemDatabase.Charms.Normal) + Files.Count(Files.ItemDatabase.Charms.Epic) + Files.Count(Files.ItemDatabase.Charms.Legendary);
+                    tot = Files.Total(Files.ItemDatabase.Charms.Normal) + Files.Total(Files.ItemDatabase.Charms.Epic) + Files.Total(Files.ItemDatabase.Charms.Legendary);
+                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], Files.ItemDatabase.Charms.Normal));
+                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], Files.ItemDatabase.Charms.Epic));
+                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], Files.ItemDatabase.Charms.Legendary));
+                }
+                tb.Header = generateText(Files.Language["category03"], sub, tot);
                 tb.Content = CharmsTabControl;
             }
             if (Files.Configuration.Filters.Charms.Amount == Amount.Some)
             {
                 TabControl CharmsTabControl = new TabControl();
-                if (Files.Configuration.Filters.Charms.Normal)
+                if (!Files.Configuration.UseR)
                 {
-                    sub += Files.Count(Files.ItemDatabase.Charms.Normal);
-                    tot += Files.Total(Files.ItemDatabase.Charms.Normal);
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], Files.ItemDatabase.Charms.Normal));
+                    Set[] chnormal = Files.removeR(Files.ItemDatabase.Charms.Normal);
+                    Set[] chepic = Files.removeR(Files.ItemDatabase.Charms.Epic);
+                    Set[] chlegendary = Files.removeR(Files.ItemDatabase.Charms.Legendary);
+                    if (Files.Configuration.Filters.Charms.Normal)
+                    {
+                        sub += Files.Count(chnormal);
+                        tot += Files.Total(chnormal);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                    }
+                    if (Files.Configuration.Filters.Charms.Epic)
+                    {
+                        sub += Files.Count(chepic);
+                        tot += Files.Total(chepic);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                    }
+                    if (Files.Configuration.Filters.Charms.Legendary)
+                    {
+                        sub += Files.Count(chlegendary);
+                        tot += Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    }
                 }
-                if (Files.Configuration.Filters.Charms.Epic)
+                else
                 {
-                    sub += Files.Count(Files.ItemDatabase.Charms.Epic);
-                    tot += Files.Total(Files.ItemDatabase.Charms.Epic);
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], Files.ItemDatabase.Charms.Epic));
-                }
-                if (Files.Configuration.Filters.Charms.Legendary)
-                {
-                    sub += Files.Count(Files.ItemDatabase.Charms.Legendary);
-                    tot += Files.Total(Files.ItemDatabase.Charms.Legendary);
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], Files.ItemDatabase.Charms.Legendary));
+                    if (Files.Configuration.Filters.Charms.Normal)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Charms.Normal);
+                        tot += Files.Total(Files.ItemDatabase.Charms.Normal);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], Files.ItemDatabase.Charms.Normal));
+                    }
+                    if (Files.Configuration.Filters.Charms.Epic)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Charms.Epic);
+                        tot += Files.Total(Files.ItemDatabase.Charms.Epic);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], Files.ItemDatabase.Charms.Epic));
+                    }
+                    if (Files.Configuration.Filters.Charms.Legendary)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Charms.Legendary);
+                        tot += Files.Total(Files.ItemDatabase.Charms.Legendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], Files.ItemDatabase.Charms.Legendary));
+                    }
                 }
                 tb.Header = generateText(Files.Language["category03"], sub, tot);
                 tb.Content = CharmsTabControl;
@@ -605,35 +769,76 @@ namespace TQCollector
 
             if (Files.Configuration.Filters.Formulae.Amount == Amount.All)
             {
-                sub = Files.Count(Files.ItemDatabase.Formulae.Normal) + Files.Count(Files.ItemDatabase.Formulae.Epic) + Files.Count(Files.ItemDatabase.Formulae.Legendary);
-                tot = Files.Total(Files.ItemDatabase.Formulae.Normal) + Files.Total(Files.ItemDatabase.Formulae.Epic) + Files.Total(Files.ItemDatabase.Formulae.Legendary);
                 TabControl FormulaeTabControl = new TabControl();
-                FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Formulae.Normal));
-                FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Formulae.Epic));
-                FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Formulae.Legendary));
+                if (!Files.Configuration.UseR)
+                {
+                    Set[] fornormal = Files.removeR(Files.ItemDatabase.Formulae.Normal);
+                    Set[] forepic = Files.removeR(Files.ItemDatabase.Formulae.Epic);
+                    Set[] forlegendary = Files.removeR(Files.ItemDatabase.Formulae.Legendary);
+                    sub = Files.Count(fornormal) + Files.Count(forepic) + Files.Count(forlegendary);
+                    tot = Files.Total(fornormal) + Files.Total(forepic) + Files.Total(forlegendary);
+                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], fornormal));
+                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], forepic));
+                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], forlegendary));
+                }
+                else
+                {
+                    sub = Files.Count(Files.ItemDatabase.Formulae.Normal) + Files.Count(Files.ItemDatabase.Formulae.Epic) + Files.Count(Files.ItemDatabase.Formulae.Legendary);
+                    tot = Files.Total(Files.ItemDatabase.Formulae.Normal) + Files.Total(Files.ItemDatabase.Formulae.Epic) + Files.Total(Files.ItemDatabase.Formulae.Legendary);
+                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Formulae.Normal));
+                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Formulae.Epic));
+                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Formulae.Legendary));
+                }
                 tb.Header = generateText(Files.Language["category08"], sub, tot);
                 tb.Content = FormulaeTabControl;
             }
             else if (Files.Configuration.Filters.Formulae.Amount == Amount.Some)
             {
                 TabControl FormulaeTabControl = new TabControl();
-                if (Files.Configuration.Filters.Formulae.Normal)
+                if (!Files.Configuration.UseR)
                 {
-                    sub += Files.Count(Files.ItemDatabase.Formulae.Normal);
-                    tot += Files.Total(Files.ItemDatabase.Formulae.Normal);
-                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Formulae.Normal));
+                    Set[] fornormal = Files.removeR(Files.ItemDatabase.Formulae.Normal);
+                    Set[] forepic = Files.removeR(Files.ItemDatabase.Formulae.Epic);
+                    Set[] forlegendary = Files.removeR(Files.ItemDatabase.Formulae.Legendary);
+                    if (Files.Configuration.Filters.Formulae.Normal)
+                    {
+                        sub += Files.Count(fornormal);
+                        tot += Files.Total(fornormal);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], fornormal));
+                    }
+                    if (Files.Configuration.Filters.Formulae.Epic)
+                    {
+                        sub += Files.Count(forepic);
+                        tot += Files.Total(forepic);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], forepic));
+                    }
+                    if (Files.Configuration.Filters.Formulae.Legendary)
+                    {
+                        sub += Files.Count(forlegendary);
+                        tot += Files.Total(forlegendary);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], forlegendary));
+                    }
                 }
-                if (Files.Configuration.Filters.Formulae.Epic)
+                else
                 {
-                    sub += Files.Count(Files.ItemDatabase.Formulae.Epic);
-                    tot += Files.Total(Files.ItemDatabase.Formulae.Epic);
-                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Formulae.Epic));
-                }
-                if (Files.Configuration.Filters.Formulae.Legendary)
-                {
-                    sub += Files.Count(Files.ItemDatabase.Formulae.Legendary);
-                    tot += Files.Total(Files.ItemDatabase.Formulae.Legendary);
-                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Formulae.Legendary));
+                    if (Files.Configuration.Filters.Formulae.Normal)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Formulae.Normal);
+                        tot += Files.Total(Files.ItemDatabase.Formulae.Normal);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Formulae.Normal));
+                    }
+                    if (Files.Configuration.Filters.Formulae.Epic)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Formulae.Epic);
+                        tot += Files.Total(Files.ItemDatabase.Formulae.Epic);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Formulae.Epic));
+                    }
+                    if (Files.Configuration.Filters.Formulae.Legendary)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Formulae.Legendary);
+                        tot += Files.Total(Files.ItemDatabase.Formulae.Legendary);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Formulae.Legendary));
+                    }
                 }
                 tb.Header = generateText(Files.Language["category08"], sub, tot);
                 tb.Content = FormulaeTabControl;
@@ -653,20 +858,43 @@ namespace TQCollector
 
             if (Files.Configuration.Filters.Relics.Amount == Amount.All)
             {
-                sub = Files.Count(Files.ItemDatabase.Relics.Normal) + Files.Count(Files.ItemDatabase.Relics.Epic) + Files.Count(Files.ItemDatabase.Relics.Legendary);
-                tot = Files.Total(Files.ItemDatabase.Relics.Normal) + Files.Total(Files.ItemDatabase.Relics.Epic) + Files.Total(Files.ItemDatabase.Relics.Legendary);
                 TabControl RelicsTabControl = new TabControl();
-                if (Files.Configuration.UseIT || Files.Configuration.UseAE)
+                if (!Files.Configuration.UseR)
                 {
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.ItemDatabase.Relics.Normal));
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.ItemDatabase.Relics.Epic));
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.ItemDatabase.Relics.Legendary));
+                    Set[] relnormal = Files.removeR(Files.ItemDatabase.Relics.Normal);
+                    Set[] relepic = Files.removeR(Files.ItemDatabase.Relics.Epic);
+                    Set[] rellegendary = Files.removeR(Files.ItemDatabase.Relics.Legendary);
+                    sub = Files.Count(relnormal) + Files.Count(relepic) + Files.Count(rellegendary);
+                    tot = Files.Total(relnormal) + Files.Total(relepic) + Files.Total(rellegendary);
+                    if (Files.Configuration.UseIT || Files.Configuration.UseAE)
+                    {
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], relnormal));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], relepic));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], rellegendary));
+                    }
+                    else
+                    {
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.removeHades(relnormal)));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.removeHades(relepic)));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.removeHades(rellegendary)));
+                    }
                 }
                 else
                 {
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.removeHades(Files.ItemDatabase.Relics.Normal)));
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.removeHades(Files.ItemDatabase.Relics.Epic)));
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.removeHades(Files.ItemDatabase.Relics.Legendary)));
+                    sub = Files.Count(Files.ItemDatabase.Relics.Normal) + Files.Count(Files.ItemDatabase.Relics.Epic) + Files.Count(Files.ItemDatabase.Relics.Legendary);
+                    tot = Files.Total(Files.ItemDatabase.Relics.Normal) + Files.Total(Files.ItemDatabase.Relics.Epic) + Files.Total(Files.ItemDatabase.Relics.Legendary);
+                    if (Files.Configuration.UseIT || Files.Configuration.UseAE)
+                    {
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.ItemDatabase.Relics.Normal));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.ItemDatabase.Relics.Epic));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.ItemDatabase.Relics.Legendary));
+                    }
+                    else
+                    {
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.removeHades(Files.ItemDatabase.Relics.Normal)));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.removeHades(Files.ItemDatabase.Relics.Epic)));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.removeHades(Files.ItemDatabase.Relics.Legendary)));
+                    }
                 }
                 tb.Header = generateText(Files.Language["category02"], sub, tot);
                 tb.Content = RelicsTabControl;
@@ -674,23 +902,50 @@ namespace TQCollector
             else if (Files.Configuration.Filters.Relics.Amount == Amount.Some)
             {
                 TabControl RelicsTabControl = new TabControl();
-                if (Files.Configuration.Filters.Relics.Normal)
+                if (!Files.Configuration.UseR)
                 {
-                    sub += Files.Count(Files.ItemDatabase.Relics.Normal);
-                    tot += Files.Total(Files.ItemDatabase.Relics.Normal);
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.ItemDatabase.Relics.Normal));
+                    Set[] relnormal = Files.removeR(Files.ItemDatabase.Relics.Normal);
+                    Set[] relepic = Files.removeR(Files.ItemDatabase.Relics.Epic);
+                    Set[] rellegendary = Files.removeR(Files.ItemDatabase.Relics.Legendary);
+                    if (Files.Configuration.Filters.Relics.Normal)
+                    {
+                        sub += Files.Count(relnormal);
+                        tot += Files.Total(relnormal);
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], relnormal));
+                    }
+                    if (Files.Configuration.Filters.Relics.Epic)
+                    {
+                        sub += Files.Count(relepic);
+                        tot += Files.Total(relepic);
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], relepic));
+                    }
+                    if (Files.Configuration.Filters.Relics.Legendary)
+                    {
+                        sub += Files.Count(rellegendary);
+                        tot += Files.Total(rellegendary);
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], rellegendary));
+                    }
                 }
-                if (Files.Configuration.Filters.Relics.Epic)
+                else
                 {
-                    sub += Files.Count(Files.ItemDatabase.Relics.Epic);
-                    tot += Files.Total(Files.ItemDatabase.Relics.Epic);
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.ItemDatabase.Relics.Epic));
-                }
-                if (Files.Configuration.Filters.Relics.Legendary)
-                {
-                    sub += Files.Count(Files.ItemDatabase.Relics.Legendary);
-                    tot += Files.Total(Files.ItemDatabase.Relics.Legendary);
-                    RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.ItemDatabase.Relics.Legendary));
+                    if (Files.Configuration.Filters.Relics.Normal)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Relics.Normal);
+                        tot += Files.Total(Files.ItemDatabase.Relics.Normal);
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.ItemDatabase.Relics.Normal));
+                    }
+                    if (Files.Configuration.Filters.Relics.Epic)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Relics.Epic);
+                        tot += Files.Total(Files.ItemDatabase.Relics.Epic);
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.ItemDatabase.Relics.Epic));
+                    }
+                    if (Files.Configuration.Filters.Relics.Legendary)
+                    {
+                        sub += Files.Count(Files.ItemDatabase.Relics.Legendary);
+                        tot += Files.Total(Files.ItemDatabase.Relics.Legendary);
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.ItemDatabase.Relics.Legendary));
+                    }
                 }
                 tb.Header = generateText(Files.Language["category02"], sub, tot);
                 tb.Content = RelicsTabControl;
@@ -711,14 +966,14 @@ namespace TQCollector
             if (Files.Configuration.Filters.Sets.Amount == Amount.All)
             {
                 TabControl SetsTabControl = new TabControl();
-                if (Files.Configuration.UseSP)
+                if (Files.Configuration.UseSP && Files.Configuration.UseR)
                 {
                     sub = Files.Count(Files.ItemDatabase.Sets.Epic) + Files.Count(Files.ItemDatabase.Sets.Legendary);
                     tot = Files.Total(Files.ItemDatabase.Sets.Epic) + Files.Total(Files.ItemDatabase.Sets.Legendary);
                     SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.Sets.Epic));
                     SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.Sets.Legendary));
                 }
-                else
+                else if (!Files.Configuration.UseSP && Files.Configuration.UseR)
                 {
                     Set[] es = Files.removeSP(Files.ItemDatabase.Sets.Epic);
                     Set[] ls = Files.removeSP(Files.ItemDatabase.Sets.Legendary);
@@ -726,6 +981,26 @@ namespace TQCollector
                     tot = Files.Total(es) + Files.Total(ls);
                     SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], es));
                     SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], ls));
+                }
+                else if (Files.Configuration.UseSP && !Files.Configuration.UseR)
+                {
+                    Set[] er = Files.removeR(Files.ItemDatabase.Sets.Epic);
+                    Set[] lr = Files.removeR(Files.ItemDatabase.Sets.Legendary);
+                    sub = Files.Count(er) + Files.Count(lr);
+                    tot = Files.Total(er) + Files.Total(lr);
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], lr));
+                }
+                else
+                {
+                    Set[] es = Files.removeSP(Files.ItemDatabase.Sets.Epic);
+                    Set[] ls = Files.removeSP(Files.ItemDatabase.Sets.Legendary);
+                    Set[] er = Files.removeR(es);
+                    Set[] lr = Files.removeR(ls);
+                    sub = Files.Count(er) + Files.Count(lr);
+                    tot = Files.Total(er) + Files.Total(lr);
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], lr));
                 }
                 
                 tb.Header = generateText(Files.Language["category05"], sub, tot);
@@ -736,34 +1011,62 @@ namespace TQCollector
                 TabControl SetsTabControl = new TabControl();
                 if (Files.Configuration.Filters.Sets.Epic)
                 {
-                    if (Files.Configuration.UseSP)
+                    if (Files.Configuration.UseSP && Files.Configuration.UseR)
                     {
                         sub += Files.Count(Files.ItemDatabase.Sets.Epic);
                         tot += Files.Total(Files.ItemDatabase.Sets.Epic);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.Sets.Epic));
                     }
-                    else
+                    else if (!Files.Configuration.UseSP && Files.Configuration.UseR)
                     {
                         Set[] es = Files.removeSP(Files.ItemDatabase.Sets.Epic);
                         sub += Files.Count(es);
                         tot += Files.Total(es);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], es));
                     }
+                    else if (Files.Configuration.UseSP && !Files.Configuration.UseR)
+                    {
+                        Set[] er = Files.removeR(Files.ItemDatabase.Sets.Epic);
+                        sub += Files.Count(er);
+                        tot += Files.Total(er);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
+                    }
+                    else
+                    {
+                        Set[] ers = Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Epic));
+                        sub += Files.Count(ers);
+                        tot += Files.Total(ers);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], ers));
+                    }
                 }
                 if (Files.Configuration.Filters.Sets.Legendary)
                 {
-                    if (Files.Configuration.UseSP)
+                    if (Files.Configuration.UseSP && Files.Configuration.UseR)
                     {
                         sub += Files.Count(Files.ItemDatabase.Sets.Legendary);
                         tot += Files.Total(Files.ItemDatabase.Sets.Legendary);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.Sets.Legendary));
                     }
-                    else
+                    else if (!Files.Configuration.UseSP && Files.Configuration.UseR)
                     {
                         Set[] ls = Files.removeSP(Files.ItemDatabase.Sets.Legendary);
                         sub += Files.Count(ls);
                         tot += Files.Total(ls);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], ls));
+                    }
+                    else if (Files.Configuration.UseSP && !Files.Configuration.UseR)
+                    {
+                        Set[] lr = Files.removeR(Files.ItemDatabase.Sets.Legendary);
+                        sub += Files.Count(lr);
+                        tot += Files.Total(lr);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], lr));
+                    }
+                    else
+                    {
+                        Set[] lrs = Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Legendary));
+                        sub += Files.Count(lrs);
+                        tot += Files.Total(lrs);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], lrs));
                     }
                 }
                 tb.Header = generateText(Files.Language["category05"], sub, tot);
