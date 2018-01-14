@@ -40,7 +40,7 @@
       </Set>
       <Set name="miheader09">
         <Item dbr="item\equipmentweapon\bow\mi_n_duneraider.dbr" id="tagMIWeapon008" isIT="false" isR="false" find="All Pillagers, Iznu, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_n_duneraider.dbr" id="x2tagMIWeapon025" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_n_duneraider.dbr" id="x2tagMIWeapon025" isIT="true" isR="true" find=""/>
         <Item dbr="item\equipmentarmband\mi_n_duneraider.dbr" id="tagMIArmor004" isIT="false" isR="false" find="All Assassins, all Marauders; Heroes: Badru, Najja, Faceless One, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_n_duneraider.dbr" id="tagMIArmor055" isIT="false" isR="false" find="All Assassins; Heroes: Badru, Najja, Faceless One, @act02$"/>
         <Item dbr="item\equipmentgreaves\mi_n_duneraider.dbr" id="tagMIArmor023" isIT="false" isR="false" find="All Assassins, all Marauders; Heroes: Badru, Najja, Faceless One, @act02$"/>
@@ -51,7 +51,7 @@
         <Item dbr="item\equipmentgreaves\mi_n_goldenskeleton.dbr" id="tagMIArmor024" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
         <Item dbr="item\equipmentarmband\mi_n_goldenskeleton.dbr" id="tagMIArmor005" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_n_goldenskeleton.dbr" id="tagMIArmor056" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_n_skeleton.dbr" id="x2tagMIWeapon023" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_n_skeleton.dbr" id="x2tagMIWeapon023" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader11">
         <Item dbr="item\equipmenthelm\mi_n_gorgon.dbr" id="tagMIArmor037" isIT="false" isR="false" find="All Gorgons except Guards, Euryale, Medusa, Stheno, @act01$"/>
@@ -75,7 +75,7 @@
         <Item dbr="item\equipmentarmor\mi_n_jackalmanmage.dbr" id="tagMIArmor061" isIT="false" isR="false" find="All Shamans, @act02$"/>
         <Item dbr="item\equipmentarmband\mi_n_jackalmanmelee.dbr" id="tagMIArmor009" isIT="false" isR="false" find="All Berserkers; Hero: Slobberjaw, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_n_jackalmanmelee.dbr" id="tagMIArmor062" isIT="false" isR="false" find="All Berserkers; Hero: Slobberjaw, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_n_jackalman.dbr" id="x2tagMIWeapon026" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_n_jackalman.dbr" id="x2tagMIWeapon026" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader14">
         <Item dbr="item\equipmenthelm\mi_n_liche.dbr" id="tagMIArmor082" isIT="false" isR="false" find="All Abyssal Liches, @act03$"/>
@@ -140,7 +140,7 @@
         <Item dbr="item\equipmentarmor\mi_n_tigermanmelee.dbr" id="tagMIArmor075" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
         <Item dbr="item\equipmentgreaves\mi_n_tigermanmelee.dbr" id="tagMIArmor030" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
         <Item dbr="item\equipmentarmband\mi_n_tigermanmelee.dbr" id="tagMIArmor018" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_n_tigerman.dbr" id="x2tagMIWeapon027" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_n_tigerman.dbr" id="x2tagMIWeapon027" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader24">
         <Item dbr="item\equipmentshield\mi_n_tropicalarachnos.dbr" id="tagMIWeapon003" isIT="false" isR="false" find="Drone, Soldier, Veteran Soldier, Elite Soldier, @act03$"/>
@@ -248,7 +248,7 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_n_alfr.dbr" id="x2tagMIArmor019" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_alfr.dbr" id="x2tagMIArmor017" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_alfr.dbr" id="x2tagMIArmor020" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_n_alfr.dbr" id="x2tagMIWeapon022" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_n_alfr.dbr" id="x2tagMIWeapon022" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader38">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_banditgreek.dbr" id="x2tagMIArmor033" isIT="true" isR="true" find=""/>
@@ -263,8 +263,8 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_n_draugr.dbr" id="x2tagMIArmor045" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_draugr.dbr" id="x2tagMIArmor043" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_draugr.dbr" id="x2tagMIArmor046" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_n_draugr.dbr" id="x2tagMIWeapon021" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_n_draugr.dbr" id="x2tagMIWeapon020" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_n_draugr.dbr" id="x2tagMIWeapon021" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_n_draugr.dbr" id="x2tagMIWeapon020" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader41">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_dvergrmelee.dbr" id="x2tagMIArmor014" isIT="true" isR="true" find=""/>
@@ -272,30 +272,30 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_dvergrmelee.dbr" id="x2tagMIArmor013" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_dvergrmage.dbr" id="x2tagMIArmor013b" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_dvergrmelee.dbr" id="x2tagMIArmor016" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_n_dvergr.dbr" id="x2tagMIWeapon029" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\axe\mi_n_dvergr.dbr" id="x2tagMIWeapon016" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\club\mi_n_dvergr.dbr" id="x2tagMIWeapon014" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_n_dvergr.dbr" id="x2tagMIWeapon017" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_n_dvergr.dbr" id="x2tagMIWeapon015" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_n_dvergr.dbr" id="x2tagMIWeapon029" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\axe\mi_n_dvergr.dbr" id="x2tagMIWeapon016" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\club\mi_n_dvergr.dbr" id="x2tagMIWeapon014" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_n_dvergr.dbr" id="x2tagMIWeapon017" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_n_dvergr.dbr" id="x2tagMIWeapon015" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader42">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_einherjar.dbr" id="x2tagMIArmor052" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_einherjar.dbr" id="x2tagMIArmor051" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_n_einherjar.dbr" id="x2tagMIArmor053" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_einherjar.dbr" id="x2tagMIArmor054" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_n_einherjar.dbr" id="x2tagMIWeapon030" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_n_einherjar.dbr" id="x2tagMIWeapon010" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_n_einherjar.dbr" id="x2tagMIWeapon008" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_n_einherjar.dbr" id="x2tagMIWeapon009" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_n_einherjar.dbr" id="x2tagMIWeapon030" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_n_einherjar.dbr" id="x2tagMIWeapon010" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_n_einherjar.dbr" id="x2tagMIWeapon008" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_n_einherjar.dbr" id="x2tagMIWeapon009" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader43">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_eldjotun.dbr" id="x2tagMIArmor022" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_eldjotun.dbr" id="x2tagMIArmor021" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_n_eldjotun.dbr" id="x2tagMIArmor023" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_eldjotun.dbr" id="x2tagMIArmor024" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_n_eldjotun.dbr" id="x2tagMIWeapon013" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_n_eldjotun.dbr" id="x2tagMIWeapon011" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_n_eldjotun.dbr" id="x2tagMIWeapon012" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_n_eldjotun.dbr" id="x2tagMIWeapon013" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_n_eldjotun.dbr" id="x2tagMIWeapon011" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_n_eldjotun.dbr" id="x2tagMIWeapon012" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader44">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_fjordmelee.dbr" id="x2tagMIArmor006" isIT="true" isR="true" find=""/>
@@ -306,10 +306,10 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_fjordmage.dbr" id="x2tagMIArmor009" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_n_fjordmage.dbr" id="x2tagMIArmor011" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_fjordmage.dbr" id="x2tagMIArmor012" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_n_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_n_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_n_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_n_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_n_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_n_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_n_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_n_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader45">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_kelpie.dbr" id="x2tagMIArmor030" isIT="true" isR="true" find=""/>
@@ -317,19 +317,19 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_n_kelpie.dbr" id="x2tagMIArmor031" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader46">
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_n_mercenary.dbr" id="x2tagMIWeapon018" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_n_mercenary.dbr" id="x2tagMIWeapon018" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader47">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_merfolk.dbr" id="x2tagMIArmor036" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_merfolk.dbr" id="x2tagMIArmor035" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_n_merfolk.dbr" id="x2tagMIWeapon001" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_n_merfolk.dbr" id="x2tagMIWeapon001" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader48">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_nerthusshaman.dbr" id="x2tagMIArmor026" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_nerthusshaman.dbr" id="x2tagMIArmor025" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_n_nerthusshaman.dbr" id="x2tagMIArmor027" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_nerthusshaman.dbr" id="x2tagMIArmor028" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_n_nerthusshaman.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_n_nerthusshaman.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader49">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_troll.dbr" id="x2tagMIArmor002" isIT="true" isR="true" find=""/>
@@ -337,11 +337,11 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_n_trollmage.dbr" id="x2tagMIArmor001b" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_n_troll.dbr" id="x2tagMIArmor003" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_troll.dbr" id="x2tagMIArmor004" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\axe\mi_n_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\club\mi_n_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_n_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_n_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_n_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\axe\mi_n_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\club\mi_n_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_n_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_n_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_n_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader50">
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_n_valkyrie.dbr" id="x2tagMIArmor050" isIT="true" isR="true" find=""/>
@@ -391,7 +391,7 @@
       </Set>
       <Set name="miheader09">
         <Item dbr="item\equipmentweapon\bow\mi_e_duneraider.dbr" id="tagMIWeapon008" isIT="false" isR="false" find="All Pillagers, Iznu, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_e_duneraider.dbr" id="x2tagMIWeapon025" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_e_duneraider.dbr" id="x2tagMIWeapon025" isIT="true" isR="true" find=""/>
         <Item dbr="item\equipmentarmband\mi_e_duneraider.dbr" id="tagMIArmor004" isIT="false" isR="false" find="All Assassins, all Marauders; Heroes: Badru, Najja, Faceless One, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_e_duneraider.dbr" id="tagMIArmor055" isIT="false" isR="false" find="All Assassins; Heroes: Badru, Najja, Faceless One, @act02$"/>
         <Item dbr="item\equipmentgreaves\mi_e_duneraider.dbr" id="tagMIArmor023" isIT="false" isR="false" find="All Assassins, all Marauders; Heroes: Badru, Najja, Faceless One, @act02$"/>
@@ -402,7 +402,7 @@
         <Item dbr="item\equipmentgreaves\mi_e_goldenskeleton.dbr" id="tagMIArmor024" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
         <Item dbr="item\equipmentarmband\mi_e_goldenskeleton.dbr" id="tagMIArmor005" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_e_goldenskeleton.dbr" id="tagMIArmor056" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_e_skeleton.dbr" id="x2tagMIWeapon023" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_e_skeleton.dbr" id="x2tagMIWeapon023" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader11">
         <Item dbr="item\equipmenthelm\mi_e_gorgon.dbr" id="tagMIArmor037" isIT="false" isR="false" find="All Gorgons except Guards, Euryale, Medusa, Stheno, @act01$"/>
@@ -426,7 +426,7 @@
         <Item dbr="item\equipmentarmor\mi_e_jackalmanmage.dbr" id="tagMIArmor061" isIT="false" isR="false" find="All Shamans, @act02$"/>
         <Item dbr="item\equipmentarmband\mi_e_jackalmanmelee.dbr" id="tagMIArmor009" isIT="false" isR="false" find="All Berserkers; Hero: Slobberjaw, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_e_jackalmanmelee.dbr" id="tagMIArmor062" isIT="false" isR="false" find="All Berserkers; Hero: Slobberjaw, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_e_jackalman.dbr" id="x2tagMIWeapon026" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_e_jackalman.dbr" id="x2tagMIWeapon026" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader14">
         <Item dbr="item\equipmenthelm\mi_e_liche.dbr" id="tagMIArmor082" isIT="false" isR="false" find="All Abyssal Liches, @act03$"/>
@@ -491,7 +491,7 @@
         <Item dbr="item\equipmentarmor\mi_e_tigermanmelee.dbr" id="tagMIArmor075" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
         <Item dbr="item\equipmentgreaves\mi_e_tigermanmelee.dbr" id="tagMIArmor030" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
         <Item dbr="item\equipmentarmband\mi_e_tigermanmelee.dbr" id="tagMIArmor018" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_e_tigerman.dbr" id="x2tagMIWeapon027" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_e_tigerman.dbr" id="x2tagMIWeapon027" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader24">
         <Item dbr="item\equipmentshield\mi_e_tropicalarachnos.dbr" id="tagMIWeapon003" isIT="false" isR="false" find="Drone, Soldier, Veteran Soldier, Elite Soldier, @act03$"/>
@@ -599,7 +599,7 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_alfr.dbr" id="x2tagMIArmor019" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_alfr.dbr" id="x2tagMIArmor017" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_alfr.dbr" id="x2tagMIArmor020" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_e_alfr.dbr" id="x2tagMIWeapon022" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_e_alfr.dbr" id="x2tagMIWeapon022" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader38">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_banditgreek.dbr" id="x2tagMIArmor033" isIT="true" isR="true" find=""/>
@@ -614,8 +614,8 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_draugr.dbr" id="x2tagMIArmor045" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_draugr.dbr" id="x2tagMIArmor043" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_draugr.dbr" id="x2tagMIArmor046" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_e_draugr.dbr" id="x2tagMIWeapon021" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_e_draugr.dbr" id="x2tagMIWeapon020" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_e_draugr.dbr" id="x2tagMIWeapon021" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_e_draugr.dbr" id="x2tagMIWeapon020" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader41">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_dvergrmelee.dbr" id="x2tagMIArmor014" isIT="true" isR="true" find=""/>
@@ -623,30 +623,30 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_dvergrmelee.dbr" id="x2tagMIArmor013" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_dvergrmage.dbr" id="x2tagMIArmor013b" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_dvergrmelee.dbr" id="x2tagMIArmor016" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_e_dvergr.dbr" id="x2tagMIWeapon029" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\axe\mi_e_dvergr.dbr" id="x2tagMIWeapon016" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\club\mi_e_dvergr.dbr" id="x2tagMIWeapon014" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_e_dvergr.dbr" id="x2tagMIWeapon017" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_e_dvergr.dbr" id="x2tagMIWeapon015" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_e_dvergr.dbr" id="x2tagMIWeapon029" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\axe\mi_e_dvergr.dbr" id="x2tagMIWeapon016" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\club\mi_e_dvergr.dbr" id="x2tagMIWeapon014" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_e_dvergr.dbr" id="x2tagMIWeapon017" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_e_dvergr.dbr" id="x2tagMIWeapon015" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader42">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_einherjar.dbr" id="x2tagMIArmor052" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_einherjar.dbr" id="x2tagMIArmor051" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_einherjar.dbr" id="x2tagMIArmor053" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_einherjar.dbr" id="x2tagMIArmor054" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_e_einherjar.dbr" id="x2tagMIWeapon030" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_e_einherjar.dbr" id="x2tagMIWeapon010" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_e_einherjar.dbr" id="x2tagMIWeapon008" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_e_einherjar.dbr" id="x2tagMIWeapon009" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_e_einherjar.dbr" id="x2tagMIWeapon030" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_e_einherjar.dbr" id="x2tagMIWeapon010" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_e_einherjar.dbr" id="x2tagMIWeapon008" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_e_einherjar.dbr" id="x2tagMIWeapon009" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader43">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_eldjotun.dbr" id="x2tagMIArmor022" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_eldjotun.dbr" id="x2tagMIArmor021" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_eldjotun.dbr" id="x2tagMIArmor023" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_eldjotun.dbr" id="x2tagMIArmor024" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_e_eldjotun.dbr" id="x2tagMIWeapon013" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_e_eldjotun.dbr" id="x2tagMIWeapon011" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_e_eldjotun.dbr" id="x2tagMIWeapon012" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_e_eldjotun.dbr" id="x2tagMIWeapon013" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_e_eldjotun.dbr" id="x2tagMIWeapon011" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_e_eldjotun.dbr" id="x2tagMIWeapon012" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader44">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_fjordmelee.dbr" id="x2tagMIArmor006" isIT="true" isR="true" find=""/>
@@ -657,10 +657,10 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_fjordmage.dbr" id="x2tagMIArmor009" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_fjordmage.dbr" id="x2tagMIArmor011" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_fjordmage.dbr" id="x2tagMIArmor012" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_e_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_e_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_e_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_e_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_e_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_e_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_e_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_e_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader45">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_kelpie.dbr" id="x2tagMIArmor030" isIT="true" isR="true" find=""/>
@@ -668,19 +668,19 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_kelpie.dbr" id="x2tagMIArmor031" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader46">
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_e_mercenary.dbr" id="x2tagMIWeapon018" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_e_mercenary.dbr" id="x2tagMIWeapon018" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader47">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_merfolk.dbr" id="x2tagMIArmor036" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_merfolk.dbr" id="x2tagMIArmor035" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_e_merfolk.dbr" id="x2tagMIWeapon001" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_e_merfolk.dbr" id="x2tagMIWeapon001" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader48">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_nerthusshaman.dbr" id="x2tagMIArmor026" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_nerthusshaman.dbr" id="x2tagMIArmor025" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_nerthusshaman.dbr" id="x2tagMIArmor027" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_nerthusshaman.dbr" id="x2tagMIArmor028" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_e_nerthusshaman.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_e_nerthusshaman.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader49">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_troll.dbr" id="x2tagMIArmor002" isIT="true" isR="true" find=""/>
@@ -688,11 +688,11 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_e_trollmage.dbr" id="x2tagMIArmor001b" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_troll.dbr" id="x2tagMIArmor003" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_troll.dbr" id="x2tagMIArmor004" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\axe\mi_e_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\club\mi_e_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_e_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_e_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_e_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\axe\mi_e_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\club\mi_e_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_e_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_e_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_e_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader50">
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_valkyrie.dbr" id="x2tagMIArmor050" isIT="true" isR="true" find=""/>
@@ -742,7 +742,7 @@
       </Set>
       <Set name="miheader09">
         <Item dbr="item\equipmentweapon\bow\mi_l_duneraider.dbr" id="tagMIWeapon008" isIT="false" isR="false" find="All Pillagers, Iznu, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_l_duneraider.dbr" id="x2tagMIWeapon025" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_l_duneraider.dbr" id="x2tagMIWeapon025" isIT="true" isR="true" find=""/>
         <Item dbr="item\equipmentarmband\mi_l_duneraider.dbr" id="tagMIArmor004" isIT="false" isR="false" find="All Assassins, all Marauders; Heroes: Badru, Najja, Faceless One, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_l_duneraider.dbr" id="tagMIArmor055" isIT="false" isR="false" find="All Assassins; Heroes: Badru, Najja, Faceless One, @act02$"/>
         <Item dbr="item\equipmentgreaves\mi_l_duneraider.dbr" id="tagMIArmor023" isIT="false" isR="false" find="All Assassins, all Marauders; Heroes: Badru, Najja, Faceless One, @act02$"/>
@@ -753,7 +753,7 @@
         <Item dbr="item\equipmentgreaves\mi_l_goldenskeleton.dbr" id="tagMIArmor024" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
         <Item dbr="item\equipmentarmband\mi_l_goldenskeleton.dbr" id="tagMIArmor005" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_l_goldenskeleton.dbr" id="tagMIArmor056" isIT="false" isR="false" find="All Gilded Dead, Valley of Kings, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_l_skeleton.dbr" id="x2tagMIWeapon023" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_l_skeleton.dbr" id="x2tagMIWeapon023" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader11">
         <Item dbr="item\equipmenthelm\mi_l_gorgon.dbr" id="tagMIArmor037" isIT="false" isR="false" find="All Gorgons except Guards, Euryale, Medusa, Stheno, @act01$"/>
@@ -777,7 +777,7 @@
         <Item dbr="item\equipmentarmor\mi_l_jackalmanmage.dbr" id="tagMIArmor061" isIT="false" isR="false" find="All Shamans, @act02$"/>
         <Item dbr="item\equipmentarmband\mi_l_jackalmanmelee.dbr" id="tagMIArmor009" isIT="false" isR="false" find="All Berserkers; Hero: Slobberjaw, @act02$"/>
         <Item dbr="item\equipmentarmor\mi_l_jackalmanmelee.dbr" id="tagMIArmor062" isIT="false" isR="false" find="All Berserkers; Hero: Slobberjaw, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_l_jackalman.dbr" id="x2tagMIWeapon026" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_l_jackalman.dbr" id="x2tagMIWeapon026" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader14">
         <Item dbr="item\equipmenthelm\mi_l_liche.dbr" id="tagMIArmor082" isIT="false" isR="false" find="All Abyssal Liches, @act03$"/>
@@ -842,7 +842,7 @@
         <Item dbr="item\equipmentarmor\mi_l_tigermanmelee.dbr" id="tagMIArmor075" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
         <Item dbr="item\equipmentgreaves\mi_l_tigermanmelee.dbr" id="tagMIArmor030" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
         <Item dbr="item\equipmentarmband\mi_l_tigermanmelee.dbr" id="tagMIArmor018" isIT="false" isR="false" find="Prowler, Elite Prowler, Archer, Elite Archer, @act03$"/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_l_tigerman.dbr" id="x2tagMIWeapon027" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_l_tigerman.dbr" id="x2tagMIWeapon027" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader24">
         <Item dbr="item\equipmentshield\mi_l_tropicalarachnos.dbr" id="tagMIWeapon003" isIT="false" isR="false" find="Drone, Soldier, Veteran Soldier, Elite Soldier, @act03$"/>
@@ -950,7 +950,7 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_alfr.dbr" id="x2tagMIArmor019" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_alfr.dbr" id="x2tagMIArmor017" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_alfr.dbr" id="x2tagMIArmor020" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_l_alfr.dbr" id="x2tagMIWeapon022" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_l_alfr.dbr" id="x2tagMIWeapon022" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader38">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_banditgreek.dbr" id="x2tagMIArmor033" isIT="true" isR="true" find=""/>
@@ -965,8 +965,8 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_draugr.dbr" id="x2tagMIArmor045" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_draugr.dbr" id="x2tagMIArmor043" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_draugr.dbr" id="x2tagMIArmor046" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_l_draugr.dbr" id="x2tagMIWeapon021" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_l_draugr.dbr" id="x2tagMIWeapon020" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_l_draugr.dbr" id="x2tagMIWeapon021" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_l_draugr.dbr" id="x2tagMIWeapon020" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader41">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_dvergrmelee.dbr" id="x2tagMIArmor014" isIT="true" isR="true" find=""/>
@@ -974,30 +974,30 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_dvergrmelee.dbr" id="x2tagMIArmor013" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_dvergrmage.dbr" id="x2tagMIArmor013b" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_dvergrmelee.dbr" id="x2tagMIArmor016" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_l_dvergr.dbr" id="x2tagMIWeapon029" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\axe\mi_l_dvergr.dbr" id="x2tagMIWeapon016" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\club\mi_l_dvergr.dbr" id="x2tagMIWeapon014" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_l_dvergr.dbr" id="x2tagMIWeapon017" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_l_dvergr.dbr" id="x2tagMIWeapon015" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_l_dvergr.dbr" id="x2tagMIWeapon029" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\axe\mi_l_dvergr.dbr" id="x2tagMIWeapon016" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\club\mi_l_dvergr.dbr" id="x2tagMIWeapon014" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_l_dvergr.dbr" id="x2tagMIWeapon017" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_l_dvergr.dbr" id="x2tagMIWeapon015" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader42">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_einherjar.dbr" id="x2tagMIArmor052" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_einherjar.dbr" id="x2tagMIArmor051" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_einherjar.dbr" id="x2tagMIArmor053" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_einherjar.dbr" id="x2tagMIArmor054" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\1hranged\mi_l_einherjar.dbr" id="x2tagMIWeapon030" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_l_einherjar.dbr" id="x2tagMIWeapon010" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_l_einherjar.dbr" id="x2tagMIWeapon008" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_l_einherjar.dbr" id="x2tagMIWeapon009" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\mi_l_einherjar.dbr" id="x2tagMIWeapon030" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_l_einherjar.dbr" id="x2tagMIWeapon010" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_l_einherjar.dbr" id="x2tagMIWeapon008" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_l_einherjar.dbr" id="x2tagMIWeapon009" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader43">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_eldjotun.dbr" id="x2tagMIArmor022" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_eldjotun.dbr" id="x2tagMIArmor021" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_eldjotun.dbr" id="x2tagMIArmor023" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_eldjotun.dbr" id="x2tagMIArmor024" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_l_eldjotun.dbr" id="x2tagMIWeapon013" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_l_eldjotun.dbr" id="x2tagMIWeapon011" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_l_eldjotun.dbr" id="x2tagMIWeapon012" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_l_eldjotun.dbr" id="x2tagMIWeapon013" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_l_eldjotun.dbr" id="x2tagMIWeapon011" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_l_eldjotun.dbr" id="x2tagMIWeapon012" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader44">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_fjordmelee.dbr" id="x2tagMIArmor006" isIT="true" isR="true" find=""/>
@@ -1008,10 +1008,10 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_fjordmage.dbr" id="x2tagMIArmor009" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_fjordmage.dbr" id="x2tagMIArmor011" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_fjordmage.dbr" id="x2tagMIArmor012" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\mi_l_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\mi_l_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_l_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_l_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\mi_l_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\mi_l_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_l_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_l_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader45">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_kelpie.dbr" id="x2tagMIArmor030" isIT="true" isR="true" find=""/>
@@ -1019,19 +1019,19 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_kelpie.dbr" id="x2tagMIArmor031" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader46">
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_l_mercenary.dbr" id="x2tagMIWeapon018" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_l_mercenary.dbr" id="x2tagMIWeapon018" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader47">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_merfolk.dbr" id="x2tagMIArmor036" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_merfolk.dbr" id="x2tagMIArmor035" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_l_merfolk.dbr" id="x2tagMIWeapon001" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_l_merfolk.dbr" id="x2tagMIWeapon001" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader48">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_nerthusshaman.dbr" id="x2tagMIArmor026" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_nerthusshaman.dbr" id="x2tagMIArmor025" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_nerthusshaman.dbr" id="x2tagMIArmor027" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_nerthusshaman.dbr" id="x2tagMIArmor028" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_l_nerthusshaman.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_l_nerthusshaman.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader49">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_troll.dbr" id="x2tagMIArmor002" isIT="true" isR="true" find=""/>
@@ -1039,11 +1039,11 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_trollmage.dbr" id="x2tagMIArmor001b" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_troll.dbr" id="x2tagMIArmor003" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_troll.dbr" id="x2tagMIArmor004" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\axe\mi_l_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\club\mi_l_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\spear\mi_l_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\mi_l_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapon\sword\mi_l_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\axe\mi_l_troll.dbr" id="x2tagMIWeapon005" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\club\mi_l_troll.dbr" id="x2tagMIWeapon003" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\mi_l_troll.dbr" id="x2tagMIWeapon002" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_l_troll.dbr" id="x2tagMIWeapon031" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\sword\mi_l_troll.dbr" id="x2tagMIWeapon004" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader50">
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_valkyrie.dbr" id="x2tagMIArmor050" isIT="true" isR="true" find=""/>
@@ -1758,9 +1758,9 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\usm_e_shade.dbr" id="x2tagUArmor021" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\armband\usm_e_shade.dbr" id="x2tagUArmor023" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\usm_e_shade.dbr" id="x2tagUArmor024" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
-        <Item dbr="xpack2\item\equipmentweapon\shield\usm_e_shade.dbr" id="x2tagUArmor025" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
-        <Item dbr="xpack2\item\equipmentweapon\bow\usm_e_shade.dbr" id="x2tagUArmor026" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
-        <Item dbr="xpack2\item\equipmentweapon\staff\usm_e_shade.dbr" id="x2tagUArmor027" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack2\item\equipmentweapons\shield\usm_e_shade.dbr" id="x2tagUArmor025" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack2\item\equipmentweapons\bow\usm_e_shade.dbr" id="x2tagUArmor026" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\usm_e_shade.dbr" id="x2tagUArmor027" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
       </Set>
     </Epic>
     <Legendary>
