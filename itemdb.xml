@@ -1058,13 +1058,14 @@
   <Relics>
     <Normal>
       <Set name="tagMGreece">
+        <Item dbr="item\relics\01_act1_aegisofathena.dbr" id="tagRelicName004" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_archimedesmirror.dbr" id="tagRelicName011" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_artemisbowstring.dbr" id="tagRelicName003" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_dionysuswineskin.dbr" id="tagRelicName008" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_goldenfleece.dbr" id="tagRelicName007" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_hecatescrescent.dbr" id="tagRelicName006" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_heraclesmight.dbr" id="tagRelicName010" isIT="false" isR="false" find="@level04$: @act01$"/>
-        <Item dbr="item\relics\01_act1_hermessandal.dbr" id="tagRelicName009" isIT="false" isR="false" find="@level04$: @act01$ (Fanpatch only!)"/>
+        <Item dbr="item\relics\01_act1_hermessandal.dbr" id="tagRelicName009" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_prometheusflame.dbr" id="tagRelicName005" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_valorofachilles.dbr" id="tagRelicName002" isIT="false" isR="false" find="@level04$: @act01$"/>
         <Item dbr="item\relics\01_act1_zeusthunderbolt.dbr" id="tagRelicName001" isIT="false" isR="false" find="@level04$: @act01$"/>
@@ -1110,13 +1111,14 @@
     </Normal>
     <Epic>
       <Set name="tagMGreece">
+        <Item dbr="item\relics\02_act1_aegisofathena.dbr" id="tagRelicName015" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_archimedesmirror.dbr" id="tagRelicName022" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_artemisbowstring.dbr" id="tagRelicName014" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_dionysuswineskin.dbr" id="tagRelicName019" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_goldenfleece.dbr" id="tagRelicName018" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_hecatescrescent.dbr" id="tagRelicName017" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_heraclesmight.dbr" id="tagRelicName021" isIT="false" isR="false" find="@level05$: @act01$"/>
-        <Item dbr="item\relics\02_act1_hermessandal.dbr" id="tagRelicName020" isIT="false" isR="false" find="@level05$: @act01$ (Fanpatch only!)"/>
+        <Item dbr="item\relics\02_act1_hermessandal.dbr" id="tagRelicName020" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_prometheusflame.dbr" id="tagRelicName016" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_valorofachilles.dbr" id="tagRelicName013" isIT="false" isR="false" find="@level05$: @act01$"/>
         <Item dbr="item\relics\02_act1_zeusthunderbolt.dbr" id="tagRelicName012" isIT="false" isR="false" find="@level05$: @act01$"/>
@@ -1162,13 +1164,14 @@
     </Epic>
     <Legendary>
       <Set name="tagMGreece">
+        <Item dbr="item\relics\03_act1_aegisofathena.dbr" id="tagRelicName026" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_archimedesmirror.dbr" id="tagRelicName033" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_artemisbowstring.dbr" id="tagRelicName025" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_dionysuswineskin.dbr" id="tagRelicName030" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_goldenfleece.dbr" id="tagRelicName029" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_hecatescrescent.dbr" id="tagRelicName028" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_heraclesmight.dbr" id="tagRelicName032" isIT="false" isR="false" find="@level06$: @act01$"/>
-        <Item dbr="item\relics\03_act1_hermessandal.dbr" id="tagRelicName031" isIT="false" isR="false" find="@level06$: @act01$ (Fanpatch only!)"/>
+        <Item dbr="item\relics\03_act1_hermessandal.dbr" id="tagRelicName031" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_prometheusflame.dbr" id="tagRelicName027" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_valorofachilles.dbr" id="tagRelicName024" isIT="false" isR="false" find="@level06$: @act01$"/>
         <Item dbr="item\relics\03_act1_zeusthunderbolt.dbr" id="tagRelicName023" isIT="false" isR="false" find="@level06$: @act01$"/>
