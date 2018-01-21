@@ -56,3 +56,6 @@ v1.1.0 15/01/2018
 -Made TQC portable, config.xml resides in the same directory as the .exe now
 -New button to enable/disable Ragnarök items
 -German and English text complete, French text still needs updating
+
+v1.1.1 21/01/2018
+-Added missing Aegis of Athena relic
