@@ -1653,11 +1653,11 @@
         <Item dbr="xpack\item\equipmentarmor\torso\u_n_002.dbr" id="xtagUArmor032" isIT="true" isR="false" find="@level04$: @act04$"/>
       </Set>
       <Set name="tagSetNameLE2">
-        <Item dbr="xpack\item\le_new\secreto_helm.dbr" id="tagSetSecretoHelm" isIT="true" isR="false" find=""/>
-        <Item dbr="xpack\item\le_new\secreto_torso.dbr" id="tagSetSecretoTorso" isIT="true" isR="false" find=""/>
-        <Item dbr="xpack\item\le_new\secreto_greaves.dbr" id="tagSetSecretoLegs" isIT="true" isR="false" find=""/>
-        <Item dbr="xpack\item\le_new\secreto_shield.dbr" id="tagSetSecretoShield" isIT="true" isR="false" find=""/>
-        <Item dbr="xpack\item\le_new\secreto_club.dbr" id="tagSetSecretoClub" isIT="true" isR="false" find=""/>
+        <Item dbr="xpack\item\le_new\secreto_helm.dbr" id="tagSetSecretoHelm" isIT="true" isR="false" find="Quest reward for helping the Promethean Order"/>
+        <Item dbr="xpack\item\le_new\secreto_torso.dbr" id="tagSetSecretoTorso" isIT="true" isR="false" find="Quest reward for helping the Promethean Order"/>
+        <Item dbr="xpack\item\le_new\secreto_greaves.dbr" id="tagSetSecretoLegs" isIT="true" isR="false" find="Quest reward for helping the Promethean Order"/>
+        <Item dbr="xpack\item\le_new\secreto_shield.dbr" id="tagSetSecretoShield" isIT="true" isR="false" find="Quest reward for helping the Promethean Order"/>
+        <Item dbr="xpack\item\le_new\secreto_club.dbr" id="tagSetSecretoClub" isIT="true" isR="false" find="Quest reward for helping the Promethean Order"/>
       </Set>
       <Set name="tagSetNameLE5">
         <Item dbr="item\equipmentarmor\um_e_pythia'svestment.dbr" id="tagUArmor343" isIT="false" isR="false" find="@level05$: @act01$"/>
