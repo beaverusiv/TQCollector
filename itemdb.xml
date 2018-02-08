@@ -2756,7 +2756,7 @@
         <Item dbr="xpack\item\equipmentweapons\spear\u_e_002.dbr" id="xtagUWeapon064" isIT="true" isR="false" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentweapons\spear\u_l_001.dbr" id="xtagUWeapon065" isIT="true" isR="false" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentweapons\spear\u_l_002.dbr" id="xtagUWeapon066" isIT="true" isR="false" find="@level06$: @act04$"/>
-        <Item dbr="xpack2\item\equipmentweapons\spear\u_l_01.dbr" id="x2tagUWeapon002" isIT="true" isR="true" find="@level06$: @act06$"/>
+        <Item dbr="xpack2\item\equipmentweapons\spear\u_l_02.dbr" id="x2tagUWeapon002" isIT="true" isR="true" find="@level06$: @act06$"/>
       </Set>
       <Set name="uheader12">
         <Item dbr="item\equipmentweapon\staff\u_e_archon'sjudgement.dbr" id="tagUWeapon240" isIT="false" isR="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
