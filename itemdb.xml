@@ -309,7 +309,7 @@
         <Item dbr="xpack2\item\equipmentweapons\bow\mi_n_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapons\shield\mi_n_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapons\spear\mi_n_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapons\staff\mi_n_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_n_fjordmage.dbr" id="x2tagMIWeapon034" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader45">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_n_kelpie.dbr" id="x2tagMIArmor030" isIT="true" isR="true" find=""/>
@@ -660,7 +660,7 @@
         <Item dbr="xpack2\item\equipmentweapons\bow\mi_e_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapons\shield\mi_e_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapons\spear\mi_e_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapons\staff\mi_e_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_e_fjordmage.dbr" id="x2tagMIWeapon034" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader45">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_e_kelpie.dbr" id="x2tagMIArmor030" isIT="true" isR="true" find=""/>
@@ -1011,7 +1011,7 @@
         <Item dbr="xpack2\item\equipmentweapons\bow\mi_l_fjordmelee.dbr" id="x2tagMIWeapon032" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapons\shield\mi_l_fjordmelee.dbr" id="x2tagMIWeapon007" isIT="true" isR="true" find=""/>
         <Item dbr="xpack2\item\equipmentweapons\spear\mi_l_fjordmelee.dbr" id="x2tagMIWeapon006" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\equipmentweapons\staff\mi_l_fjordmage.dbr" id="x2tagMIWeapon019" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\equipmentweapons\staff\mi_l_fjordmage.dbr" id="x2tagMIWeapon034" isIT="true" isR="true" find=""/>
       </Set>
       <Set name="miheader45">
         <Item dbr="xpack2\item\equipmentarmor\helm\mi_l_kelpie.dbr" id="x2tagMIArmor030" isIT="true" isR="true" find=""/>
@@ -1440,6 +1440,9 @@
         <Item dbr="xpack\item\parchments\parchment15.dbr" id="xtagParchmentTitle15" isIT="true" isR="false" find="Yeti champion, ice caverns and Silkroad, @act03$"/>
         <Item dbr="xpack\item\parchments\parchment06.dbr" id="xtagParchmentTitle06" isIT="true" isR="false" find="Anouran heroes, @act04$"/>
         <Item dbr="xpack\item\parchments\parchment09.dbr" id="xtagParchmentTitle09" isIT="true" isR="false" find="Lostsoul heroes (non-quest), @act04$"/>
+        <Item dbr="xpack2\item\miscellaneous\parchments\parchment_x2a.dbr" id="x2tagParchmentTitle01" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\miscellaneous\parchments\parchment_x2b.dbr" id="x2tagParchmentTitle02" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\miscellaneous\parchments\parchment_x2c.dbr" id="x2tagParchmentTitle03" isIT="true" isR="true" find=""/>
       </Set>
     </Normal>
   </Parchments>
@@ -1961,6 +1964,10 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\us_l_hornedgod.dbr" id="x2tagUArmor001" isIT="true" isR="true" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\spear\us_l_hornedgod.dbr" id="x2tagUArmor003" isIT="true" isR="true" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\amulet\us_l_hornedgod.dbr" id="x2tagUArmor121" isIT="true" isR="true" find="@level06$: @act06$"/>
+      </Set>
+      <Set name="x2tagSet010">
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_03.dbr" id="x2tagUWeapon059" isIT="true" isR="true" find="@level06$: @act02$, @act03$"/>
+        <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_04.dbr" id="x2tagUWeapon060" isIT="true" isR="true" find="@level06$: @act02$, @act03$"/>
       </Set>
       <Set name="x2tagSet009">
         <Item dbr="xpack2\item\equipmentarmor\helm\z_tracksuit.dbr" id="x2tagZArmor002" isIT="true" isR="true" find=""/>
@@ -2815,8 +2822,6 @@
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_e_09.dbr" id="x2tagUWeapon075" isIT="true" isR="true" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_01.dbr" id="x2tagUWeapon057" isIT="true" isR="true" find="@level06$: @act01$, @act02$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_02.dbr" id="x2tagUWeapon058" isIT="true" isR="true" find="@level06$: @act01$, @act02$"/>
-        <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_03.dbr" id="x2tagUWeapon059" isIT="true" isR="true" find="@level06$: @act02$, @act03$"/>
-        <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_04.dbr" id="x2tagUWeapon060" isIT="true" isR="true" find="@level06$: @act02$, @act03$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_05.dbr" id="x2tagUWeapon061" isIT="true" isR="true" find="@level06$: @act03$, @act04$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_06.dbr" id="x2tagUWeapon062" isIT="true" isR="true" find="@level06$: @act03$, @act04$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_07.dbr" id="x2tagUWeapon063" isIT="true" isR="true" find="@level06$: @act04$, @act06$"/>
