@@ -847,6 +847,7 @@ namespace TQCollector
                                 if (!ParseTextDB(dbFile, "text\\x2commonequipment.txt")) return false;
                                 if (!ParseTextDB(dbFile, "text\\x2uniqueequipment.txt")) return false;
                                 if (!ParseTextDB(dbFile, "text\\x2ui.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x2quest.txt")) return false;
                             }
                             return true;
                         }
