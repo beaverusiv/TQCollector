@@ -1441,8 +1441,8 @@
         <Item dbr="xpack\item\parchments\parchment06.dbr" id="xtagParchmentTitle06" isIT="true" isR="false" find="Anouran heroes, @act04$"/>
         <Item dbr="xpack\item\parchments\parchment09.dbr" id="xtagParchmentTitle09" isIT="true" isR="false" find="Lostsoul heroes (non-quest), @act04$"/>
         <Item dbr="xpack2\item\miscellaneous\parchments\parchment_x2a.dbr" id="x2tagParchmentTitle01" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\miscellaneous\parchments\parchment_x2b.dbr" id="x2tagParchmentTitle02" isIT="true" isR="true" find=""/>
-        <Item dbr="xpack2\item\miscellaneous\parchments\parchment_x2c.dbr" id="x2tagParchmentTitle03" isIT="true" isR="true" find=""/>
+        <Item dbr="xpack2\item\miscellaneous\parchments\parchment_x2b.dbr" id="x2tagParchmentTitle02" isIT="true" isR="true" find="Secret quest"/>
+        <Item dbr="xpack2\item\miscellaneous\parchments\parchment_x2c.dbr" id="x2tagParchmentTitle03" isIT="true" isR="true" find="Secret quest"/>
       </Set>
     </Normal>
   </Parchments>
