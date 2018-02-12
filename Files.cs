@@ -1763,7 +1763,7 @@ namespace TQCollector
             }
             else if (baseItemID.Contains("\\relics\\")) //A relic
             {
-                if (var1 == 3)
+                if (var1 == 3 || baseItemID.Contains("nerthusmistletoe"))
                 {
                     Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover04"], vault, sack.ToString()));
                 }
@@ -1828,7 +1828,7 @@ namespace TQCollector
                 }
                 else if (baseItemID.Contains("\\relics\\")) //A relic
                 {
-                    if (var1 == 3)
+                    if (var1 == 3 || baseItemID.Contains("nerthusmistletoe"))
                     {
                         Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover06"], player));
                     }
@@ -1980,7 +1980,7 @@ namespace TQCollector
             }
             else if (baseItemID.Contains("\\relics\\")) //A relic
             {
-                if (var1 == 3)
+                if (var1 == 3 || baseItemID.Contains("nerthusmistletoe"))
                 {
                     Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
                 }
