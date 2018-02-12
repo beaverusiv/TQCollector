@@ -59,3 +59,8 @@ v1.1.0 15/01/2018
 
 v1.1.1 21/01/2018
 -Added missing Aegis of Athena relic
+
+v1.1.2 XX/02/2018
+-updated French translation (thanks to AlcyonV)
+-several item recognition fixes
+-added new parchments added by patch 1.54
