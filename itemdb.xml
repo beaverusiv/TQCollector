@@ -1879,7 +1879,7 @@
         <Item dbr="item\equipmentarmband\um_l_blackpearlbracelet.dbr" id="tagUArmor050" isIT="false" isR="false" find="@level06$: @act01$"/>
       </Set>
       <Set name="tagSetNameLE8">
-        <Item dbr="xpack\item\equipmentarmor\armband\u_l_002.dbr" id="xtagUArmor058" isIT="true" isR="false" find="@level06$: @act04$"/>
+        <Item dbr="xpack\item\equipmentarmor\armband\u_l_001.dbr" id="xtagUArmor058" isIT="true" isR="false" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\greaves\u_l_002.dbr" id="xtagUArmor086" isIT="true" isR="false" find="@level06$: @act04$"/>
       </Set>
       <Set name="tagSetNameLE11">
@@ -2611,7 +2611,7 @@
         <Item dbr="item\equipmentarmband\um_e_scourgewrap.dbr" id="tagUArmor049" isIT="false" isR="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentarmband\um_l_senbi'sclasp.dbr" id="tagUArmor053" isIT="false" isR="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentarmband\um_l_truesilverbracelet.dbr" id="tagUArmor054" isIT="false" isR="false" find="@level06$: @act01$, @act02$, @act03$"/>
-        <Item dbr="xpack\item\equipmentarmor\armband\u_l_001.dbr" id="xtagUArmor058" isIT="true" isR="false" find="@level06$: @act04$"/>
+        <Item dbr="xpack\item\equipmentarmor\armband\u_l_002.dbr" id="xtagUArmor059" isIT="true" isR="false" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\um_l_001.dbr" id="xtagUArmor066" isIT="true" isR="false" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\um_e_001.dbr" id="xtagUArmor063" isIT="true" isR="false" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\armband\um_e_002.dbr" id="xtagUArmor064" isIT="true" isR="false" find="@level05$: @act04$, @level06$: @act04$"/>
