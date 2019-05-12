@@ -13,6 +13,7 @@
   <UseSP>false</UseSP>
   <UseAE>false</UseAE>
   <UseR>false</UseR>
+  <UseAtl>false</UseAtl>
   <Language>en</Language>
   <UseItemCount>true</UseItemCount>
   <UseItemOwned>true</UseItemOwned>
