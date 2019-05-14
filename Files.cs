@@ -1736,6 +1736,16 @@ namespace TQCollector
 
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
+ 
+            //Atlantis added secondary relic
+            ValidateNextString("relicName2", b);
+            string relicID2 = ReadString(b);
+
+            ValidateNextString("relicBonus2", b);
+            string relicBonusID2 = ReadString(b);
+
+            ValidateNextString("var2", b);
+            int var2 = b.ReadInt32();
 
             ValidateNextString("end_block", b);
             int endBlockCrap2 = b.ReadInt32();
@@ -1808,6 +1818,16 @@ namespace TQCollector
 
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
+
+             //Atlantis added secondary relic
+            ValidateNextString("relicName2", b);
+            string relicID2 = ReadString(b);
+
+            ValidateNextString("relicBonus2", b);
+            string relicBonusID2 = ReadString(b);
+
+            ValidateNextString("var2", b);
+            int var2 = b.ReadInt32();
 
             ValidateNextString("end_block", b);
             int endBlockCrap2 = b.ReadInt32();
@@ -1956,6 +1976,16 @@ namespace TQCollector
 
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
+
+            //Atlantis added secondary relic
+            ValidateNextString("relicName2", b);
+            string relicID2 = ReadString(b);
+
+            ValidateNextString("relicBonus2", b);
+            string relicBonusID2 = ReadString(b);
+
+            ValidateNextString("var2", b);
+            int var2 = b.ReadInt32();
 
             ValidateNextString("end_block", b);
             int endBlockCrap2 = b.ReadInt32();
