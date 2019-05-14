@@ -40,6 +40,8 @@ public partial class Config {
     
     private bool useRField;
     
+    private bool useAtlField;
+    
     private string languageField;
     
     private bool useItemCountField;
@@ -136,6 +138,16 @@ public partial class Config {
         }
         set {
             this.useRField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public bool UseAtl {
+        get {
+            return this.useAtlField;
+        }
+        set {
+            this.useAtlField = value;
         }
     }
     

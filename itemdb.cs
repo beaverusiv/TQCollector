@@ -8,636 +8,648 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Xml.Serialization;
+
 // 
 // Dieser Quellcode wurde automatisch generiert von xsd, Version=4.6.1055.0.
 // 
-namespace TQCollector {
-    using System.Xml.Serialization;
+
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class ItemDB {
     
+    private MonsterInfrequent monsterInfrequentField;
+    
+    private Relics relicsField;
+    
+    private Charms charmsField;
+    
+    private Artifacts artifactsField;
+    
+    private Parchments parchmentsField;
+    
+    private Sets setsField;
+    
+    private Uniques uniquesField;
+    
+    private Formulae formulaeField;
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class ItemDB {
-        
-        private MonsterInfrequent monsterInfrequentField;
-        
-        private Relics relicsField;
-        
-        private Charms charmsField;
-        
-        private Artifacts artifactsField;
-        
-        private Parchments parchmentsField;
-        
-        private Sets setsField;
-        
-        private Uniques uniquesField;
-        
-        private Formulae formulaeField;
-        
-        /// <remarks/>
-        public MonsterInfrequent MonsterInfrequent {
-            get {
-                return this.monsterInfrequentField;
-            }
-            set {
-                this.monsterInfrequentField = value;
-            }
+    public MonsterInfrequent MonsterInfrequent {
+        get {
+            return this.monsterInfrequentField;
         }
-        
-        /// <remarks/>
-        public Relics Relics {
-            get {
-                return this.relicsField;
-            }
-            set {
-                this.relicsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Charms Charms {
-            get {
-                return this.charmsField;
-            }
-            set {
-                this.charmsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Artifacts Artifacts {
-            get {
-                return this.artifactsField;
-            }
-            set {
-                this.artifactsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Parchments Parchments {
-            get {
-                return this.parchmentsField;
-            }
-            set {
-                this.parchmentsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Sets Sets {
-            get {
-                return this.setsField;
-            }
-            set {
-                this.setsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Uniques Uniques {
-            get {
-                return this.uniquesField;
-            }
-            set {
-                this.uniquesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Formulae Formulae {
-            get {
-                return this.formulaeField;
-            }
-            set {
-                this.formulaeField = value;
-            }
+        set {
+            this.monsterInfrequentField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class MonsterInfrequent {
-        
-        private Set[] normalField;
-        
-        private Set[] epicField;
-        
-        private Set[] legendaryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Normal {
-            get {
-                return this.normalField;
-            }
-            set {
-                this.normalField = value;
-            }
+    public Relics Relics {
+        get {
+            return this.relicsField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Epic {
-            get {
-                return this.epicField;
-            }
-            set {
-                this.epicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Legendary {
-            get {
-                return this.legendaryField;
-            }
-            set {
-                this.legendaryField = value;
-            }
+        set {
+            this.relicsField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Set {
-        
-        private Item[] itemField;
-        
-        private string nameField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Item")]
-        public Item[] Item {
-            get {
-                return this.itemField;
-            }
-            set {
-                this.itemField = value;
-            }
+    public Charms Charms {
+        get {
+            return this.charmsField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
+        set {
+            this.charmsField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Item {
-        
-        private string dbrField;
-        
-        private string idField;
-        
-        private bool isITField;
-        
-        private bool isRField;
-        
-        private string findField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string dbr {
-            get {
-                return this.dbrField;
-            }
-            set {
-                this.dbrField = value;
-            }
+    public Artifacts Artifacts {
+        get {
+            return this.artifactsField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool isIT {
-            get {
-                return this.isITField;
-            }
-            set {
-                this.isITField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool isR {
-            get {
-                return this.isRField;
-            }
-            set {
-                this.isRField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string find {
-            get {
-                return this.findField;
-            }
-            set {
-                this.findField = value;
-            }
+        set {
+            this.artifactsField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Relics {
-        
-        private Set[] normalField;
-        
-        private Set[] epicField;
-        
-        private Set[] legendaryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Normal {
-            get {
-                return this.normalField;
-            }
-            set {
-                this.normalField = value;
-            }
+    public Parchments Parchments {
+        get {
+            return this.parchmentsField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Epic {
-            get {
-                return this.epicField;
-            }
-            set {
-                this.epicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Legendary {
-            get {
-                return this.legendaryField;
-            }
-            set {
-                this.legendaryField = value;
-            }
+        set {
+            this.parchmentsField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Charms {
-        
-        private Set[] normalField;
-        
-        private Set[] epicField;
-        
-        private Set[] legendaryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Normal {
-            get {
-                return this.normalField;
-            }
-            set {
-                this.normalField = value;
-            }
+    public Sets Sets {
+        get {
+            return this.setsField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Epic {
-            get {
-                return this.epicField;
-            }
-            set {
-                this.epicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Legendary {
-            get {
-                return this.legendaryField;
-            }
-            set {
-                this.legendaryField = value;
-            }
+        set {
+            this.setsField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Artifacts {
-        
-        private Set[] normalField;
-        
-        private Set[] epicField;
-        
-        private Set[] legendaryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Normal {
-            get {
-                return this.normalField;
-            }
-            set {
-                this.normalField = value;
-            }
+    public Uniques Uniques {
+        get {
+            return this.uniquesField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Epic {
-            get {
-                return this.epicField;
-            }
-            set {
-                this.epicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Legendary {
-            get {
-                return this.legendaryField;
-            }
-            set {
-                this.legendaryField = value;
-            }
+        set {
+            this.uniquesField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Parchments {
-        
-        private Set[] normalField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Normal {
-            get {
-                return this.normalField;
-            }
-            set {
-                this.normalField = value;
-            }
+    public Formulae Formulae {
+        get {
+            return this.formulaeField;
+        }
+        set {
+            this.formulaeField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class MonsterInfrequent {
+    
+    private Set[] normalField;
+    
+    private Set[] epicField;
+    
+    private Set[] legendaryField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Normal {
+        get {
+            return this.normalField;
+        }
+        set {
+            this.normalField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Sets {
-        
-        private Set[] epicField;
-        
-        private Set[] legendaryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Epic {
-            get {
-                return this.epicField;
-            }
-            set {
-                this.epicField = value;
-            }
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Epic {
+        get {
+            return this.epicField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Legendary {
-            get {
-                return this.legendaryField;
-            }
-            set {
-                this.legendaryField = value;
-            }
+        set {
+            this.epicField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Uniques {
-        
-        private Set[] epicField;
-        
-        private Set[] legendaryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Epic {
-            get {
-                return this.epicField;
-            }
-            set {
-                this.epicField = value;
-            }
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Legendary {
+        get {
+            return this.legendaryField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Legendary {
-            get {
-                return this.legendaryField;
-            }
-            set {
-                this.legendaryField = value;
-            }
+        set {
+            this.legendaryField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Set {
+    
+    private Item[] itemField;
+    
+    private string nameField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("Item")]
+    public Item[] Item {
+        get {
+            return this.itemField;
+        }
+        set {
+            this.itemField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Formulae {
-        
-        private Set[] normalField;
-        
-        private Set[] epicField;
-        
-        private Set[] legendaryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Normal {
-            get {
-                return this.normalField;
-            }
-            set {
-                this.normalField = value;
-            }
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string name {
+        get {
+            return this.nameField;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Epic {
-            get {
-                return this.epicField;
-            }
-            set {
-                this.epicField = value;
-            }
+        set {
+            this.nameField = value;
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
-        public Set[] Legendary {
-            get {
-                return this.legendaryField;
-            }
-            set {
-                this.legendaryField = value;
-            }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Item {
+    
+    private string dbrField;
+    
+    private string idField;
+    
+    private bool isITField;
+    
+    private bool isRField;
+    
+    private bool isAtlField;
+    
+    private string findField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string dbr {
+        get {
+            return this.dbrField;
+        }
+        set {
+            this.dbrField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Normal {
-        
-        private Set[] setField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Set")]
-        public Set[] Set {
-            get {
-                return this.setField;
-            }
-            set {
-                this.setField = value;
-            }
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string id {
+        get {
+            return this.idField;
+        }
+        set {
+            this.idField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Epic {
-        
-        private Set[] setField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Set")]
-        public Set[] Set {
-            get {
-                return this.setField;
-            }
-            set {
-                this.setField = value;
-            }
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public bool isIT {
+        get {
+            return this.isITField;
+        }
+        set {
+            this.isITField = value;
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
-    public partial class Legendary {
-        
-        private Set[] setField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Set")]
-        public Set[] Set {
-            get {
-                return this.setField;
-            }
-            set {
-                this.setField = value;
-            }
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public bool isR {
+        get {
+            return this.isRField;
+        }
+        set {
+            this.isRField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public bool isAtl {
+        get {
+            return this.isAtlField;
+        }
+        set {
+            this.isAtlField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlAttributeAttribute()]
+    public string find {
+        get {
+            return this.findField;
+        }
+        set {
+            this.findField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Relics {
+    
+    private Set[] normalField;
+    
+    private Set[] epicField;
+    
+    private Set[] legendaryField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Normal {
+        get {
+            return this.normalField;
+        }
+        set {
+            this.normalField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Epic {
+        get {
+            return this.epicField;
+        }
+        set {
+            this.epicField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Legendary {
+        get {
+            return this.legendaryField;
+        }
+        set {
+            this.legendaryField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Charms {
+    
+    private Set[] normalField;
+    
+    private Set[] epicField;
+    
+    private Set[] legendaryField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Normal {
+        get {
+            return this.normalField;
+        }
+        set {
+            this.normalField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Epic {
+        get {
+            return this.epicField;
+        }
+        set {
+            this.epicField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Legendary {
+        get {
+            return this.legendaryField;
+        }
+        set {
+            this.legendaryField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Artifacts {
+    
+    private Set[] normalField;
+    
+    private Set[] epicField;
+    
+    private Set[] legendaryField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Normal {
+        get {
+            return this.normalField;
+        }
+        set {
+            this.normalField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Epic {
+        get {
+            return this.epicField;
+        }
+        set {
+            this.epicField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Legendary {
+        get {
+            return this.legendaryField;
+        }
+        set {
+            this.legendaryField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Parchments {
+    
+    private Set[] normalField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Normal {
+        get {
+            return this.normalField;
+        }
+        set {
+            this.normalField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Sets {
+    
+    private Set[] epicField;
+    
+    private Set[] legendaryField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Epic {
+        get {
+            return this.epicField;
+        }
+        set {
+            this.epicField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Legendary {
+        get {
+            return this.legendaryField;
+        }
+        set {
+            this.legendaryField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Uniques {
+    
+    private Set[] epicField;
+    
+    private Set[] legendaryField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Epic {
+        get {
+            return this.epicField;
+        }
+        set {
+            this.epicField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Legendary {
+        get {
+            return this.legendaryField;
+        }
+        set {
+            this.legendaryField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Formulae {
+    
+    private Set[] normalField;
+    
+    private Set[] epicField;
+    
+    private Set[] legendaryField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Normal {
+        get {
+            return this.normalField;
+        }
+        set {
+            this.normalField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Epic {
+        get {
+            return this.epicField;
+        }
+        set {
+            this.epicField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayItemAttribute("Set", IsNullable=false)]
+    public Set[] Legendary {
+        get {
+            return this.legendaryField;
+        }
+        set {
+            this.legendaryField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Normal {
+    
+    private Set[] setField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("Set")]
+    public Set[] Set {
+        get {
+            return this.setField;
+        }
+        set {
+            this.setField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Epic {
+    
+    private Set[] setField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("Set")]
+    public Set[] Set {
+        get {
+            return this.setField;
+        }
+        set {
+            this.setField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://localhost/TQCItemDB")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace="http://localhost/TQCItemDB", IsNullable=false)]
+public partial class Legendary {
+    
+    private Set[] setField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("Set")]
+    public Set[] Set {
+        get {
+            return this.setField;
+        }
+        set {
+            this.setField = value;
         }
     }
 }

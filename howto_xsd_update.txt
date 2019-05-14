@@ -1,0 +1,5 @@
+How to update the config.xsd file:
+- Open dev console in code directory
+- Run: xsd config.xsd /c
+- check config.cs for successful autogeneration
+- do the same for itemdb.xsd
