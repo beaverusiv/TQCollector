@@ -242,6 +242,9 @@
     <Resource Include="ragnarok.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="atlantis.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="text_en.xml">
       <SubType>Designer</SubType>
     </Resource>
