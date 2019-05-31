@@ -849,6 +849,12 @@ namespace TQCollector
                                 if (!ParseTextDB(dbFile, "text\\x2ui.txt")) return false;
                                 if (!ParseTextDB(dbFile, "text\\x2quest.txt")) return false;
                             }
+                            if (File.Exists(Files.Configuration.Directories.AE + "\\Resources\\XPack3\\Scenery.arc")) //condition to determine whether Atlantis is installed
+                            {
+                                if (!ParseTextDB(dbFile, "text\\x3basegame_nonvoiced.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x3items_nonvoiced.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x3misctags_nonvoiced.txt")) return false;
+                            }
                             return true;
                         }
                         MessageBox.Show(Files.Language["error23"]);
@@ -1211,6 +1217,42 @@ namespace TQCollector
                 }
                 s.Item = nor_item;
                 if (s.Item != null) //only add set if it has non R items
+                {
+                    ls.Add(s);
+                }
+            }
+
+            Set[] ret = new Set[ls.Count];
+
+            for (int i = 0; i < ls.Count; i++)
+            {
+                ret[i] = ls[i];
+            }
+
+            return ret;
+        }
+
+        public static Set[] removeAtl(Set[] sets) //removes Atlantis items from display
+        {
+            List<Set> ls = new List<Set>();
+            
+            foreach (Set s in sets) //create a new set of items not from Atlantis
+            {
+                List<Item> noatl = new List<Item>();
+                for (int i = 0; i < s.Item.Length; i++)
+                {
+                    if (!s.Item[i].isAtl)
+                    {
+                        noatl.Add(s.Item[i]); //create new item list w/o Atlantis items
+                    }
+                }
+                Item[] noatl_item = new Item[noatl.Count];
+                for (int i = 0; i < noatl.Count; i++) //recreate new Item array from list w/o Atl items
+                {
+                    noatl_item[i] = noatl[i];
+                }
+                s.Item = noatl_item;
+                if (s.Item != null) //only add set if it has non Atl items
                 {
                     ls.Add(s);
                 }
