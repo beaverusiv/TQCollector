@@ -1,5 +1,9 @@
-How to update the config.xsd file:
+How to update the config.cs file:
 - Open dev console in code directory
 - Run: xsd config.xsd /c
 - check config.cs for successful autogeneration
-- do the same for itemdb.xsd
+
+How to update the itemdb.cs file:
+- Open dev console in code directory
+- Run: xsd itemdb.xsd /c /namespace:TQCollector
+- check itemdb.cs for successful autogeneration
