@@ -828,6 +828,132 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_e_yerren.dbr" id="x2tagMIArmor038" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_e_yerren.dbr" id="x2tagMIArmor039" isIT="true" isR="true" isAtl="false" find=""/>
       </Set>
+      <Set name="miheader52">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_coralguardianmage.dbr" id="x3tagMICoralGuardianArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_coralguardianmage.dbr" id="x3tagMICoralGuardianLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_coralguardianmage.dbr" id="x3tagMICoralGuardianHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_coralguardianmage.dbr" id="x3tagMICoralGuardianTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_coralguardianmelee.dbr" id="x3tagMICoralGuardianArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_coralguardianmelee.dbr" id="x3tagMICoralGuardianLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_coralguardianmelee.dbr" id="x3tagMICoralGuardianHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_coralguardianmelee.dbr" id="x3tagMICoralGuardianTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_e_coralguardian.dbr" id="x3tagMICoralGuardianAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\mi_e_coralguardian.dbr" id="x3tagMICoralGuardianBow" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_e_coralguardian.dbr" id="x3tagMICoralGuardianClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_e_coralguardian.dbr" id="x3tagMICoralGuardianShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_e_coralguardian.dbr" id="x3tagMICoralGuardianSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_e_coralguardian.dbr" id="x3tagMICoralGuardianSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_coralguardian_fire.dbr" id="x3tagMICoralGuardianStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_coralguardian_frost.dbr" id="x3tagMICoralGuardianStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_coralguardian_lightning.dbr" id="x3tagMICoralGuardianStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader53">
+        <Item dbr="xpack3\items\equimentarmor\torso\mi_e_crabmanmelee.dbr" id="x3tagMICrabmanTorso" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader54">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_embalmedpriestmelee.dbr" id="x3tagMIEmbalmedPriestArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_embalmedpriestmelee.dbr" id="x3tagMIEmbalmedPriestLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_embalmedpriestmelee.dbr" id="x3tagMIEmbalmedPriestHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_embalmedpriestmelee.dbr" id="x3tagMIEmbalmedPriestTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_e_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\mi_e_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestBow" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_e_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_e_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_e_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_embalmedpriest_fire.dbr" id="x3tagMIEmbalmedPriestStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_embalmedpriest_frost.dbr" id="x3tagMIEmbalmedPriestStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_embalmedpriest_lightning.dbr" id="x3tagMIEmbalmedPriestStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader55">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_hesperidemage.dbr" id="x3tagMIHesperideArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_hesperidemage.dbr" id="x3tagMIHesperideHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_hesperidemage.dbr" id="x3tagMIHesperideTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_e_hesperide.dbr" id="x3tagMIHesperideAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_e_hesperide.dbr" id="x3tagMIHesperideClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_e_hesperide.dbr" id="x3tagMIHesperideShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_e_hesperide.dbr" id="x3tagMIHesperideSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_hesperide_fire.dbr" id="x3tagMIHesperideStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_hesperide_frost.dbr" id="x3tagMIHesperideStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_hesperide_lightning.dbr" id="x3tagMIHesperideStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader56">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_monkeymanmage.dbr" id="x3tagMILibyanSatyrArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_monkeymanmage.dbr" id="x3tagMILibyanSatyrLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_monkeymanmage.dbr" id="x3tagMILibyanSatyrHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_monkeymanmage.dbr" id="x3tagMILibyanSatyrTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_monkeymanmelee.dbr" id="x3tagMILibyanSatyrArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_monkeymanmelee.dbr" id="x3tagMILibyanSatyrLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_monkeymanmelee.dbr" id="x3tagMILibyanSatyrHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_monkeymanmelee.dbr" id="x3tagMILibyanSatyrTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\mi_e_monkeyman.dbr" id="x3tagMILibyanSatyr1HR" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_e_monkeyman.dbr" id="x3tagMILibyanSatyrAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_e_monkeyman.dbr" id="x3tagMILibyanSatyrClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_e_monkeyman.dbr" id="x3tagMILibyanSatyrShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_e_monkeyman.dbr" id="x3tagMILibyanSatyrSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_e_monkeyman.dbr" id="x3tagMILibyanSatyrSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_monkeyman_fire.dbr" id="x3tagMILibyanSatyrStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_monkeyman_frost.dbr" id="x3tagMILibyanSatyrStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_monkeyman_lightning.dbr" id="x3tagMILibyanSatyrStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader57">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_potamoimagemage.dbr" id="x3tagMIPotamoiMageArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_potamoimagemage.dbr" id="x3tagMIPotamoiMageLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_potamoimagemage.dbr" id="x3tagMIPotamoiMageHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_potamoimagemage.dbr" id="x3tagMIPotamoiMageTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_potamoiwarriormelee.dbr" id="x3tagMIPotamoiWarriorArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_potamoiwarriormelee.dbr" id="x3tagMIPotamoiWarriorLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_potamoiwarriormelee.dbr" id="x3tagMIPotamoiWarriorHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_potamoiwarriormelee.dbr" id="x3tagMIPotamoiWarriorTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\mi_e_potamoiwarrior.dbr" id="x3tagMIPotamoiWarrior1HR" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_e_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_e_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_e_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_e_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_e_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_potamoimage_fire.dbr" id="x3tagMIPotamoiMageStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_potamoimage_frost.dbr" id="x3tagMIPotamoiMageStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_potamoimage_lightning.dbr" id="x3tagMIPotamoiMageStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader58">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_serpentoidmage.dbr" id="x3tagMISerpentoidArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_serpentoidmage.dbr" id="x3tagMISerpentoidLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_serpentoidmage.dbr" id="x3tagMISerpentoidHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_serpentoidmage.dbr" id="x3tagMISerpentoidTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_serpentoidmelee.dbr" id="x3tagMISerpentoidArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_e_serpentoidmelee.dbr" id="x3tagMISerpentoidLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_serpentoidmelee.dbr" id="x3tagMISerpentoidHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_serpentoidmelee.dbr" id="x3tagMISerpentoidTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_e_serpentoid.dbr" id="x3tagMISerpentoidAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\mi_e_serpentoidvanguardmelee.dbr" id="x3tagMISerpentoidVanguardBow" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_e_serpentoid.dbr" id="x3tagMISerpentoidClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_e_serpentoid.dbr" id="x3tagMISerpentoidShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_e_serpentoid.dbr" id="x3tagMISerpentoidSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_e_serpentoid.dbr" id="x3tagMISerpentoidSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_serpentoid_fire.dbr" id="x3tagMISerpentoidStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_serpentoid_frost.dbr" id="x3tagMISerpentoidStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_serpentoid_lightning.dbr" id="x3tagMISerpentoidStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader59">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_tritonwarriormelee.dbr" id="x3tagMITritonWarriorArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_tritonwarriormelee.dbr" id="x3tagMITritonWarriorHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_tritonwarriormelee.dbr" id="x3tagMITritonWarriorTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_e_tritonwitchmage.dbr" id="x3tagMITritonWitchArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_e_tritonwitchmage.dbr" id="x3tagMITritonWitchHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_e_tritonwitchmage.dbr" id="x3tagMITritonWitchTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_e_tritonwarrior.dbr" id="x3tagMITritonWarriorAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\mi_e_tritonwarrior.dbr" id="x3tagMITritonWarriorBow" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_e_tritonwarrior.dbr" id="x3tagMITritonWarriorClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_e_tritonwarrior.dbr" id="x3tagMITritonWarriorShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_e_tritonwarrior.dbr" id="x3tagMITritonWarriorSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_e_tritonwarrior.dbr" id="x3tagMITritonWarriorSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_tritonwitch_fire.dbr" id="x3tagMITritonWitchStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_tritonwitch_frost.dbr" id="x3tagMITritonWitchStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_e_tritonwitch_lightning.dbr" id="x3tagMITritonWitchStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
     </Epic>
     <Legendary>
       <Set name="miheader01">
@@ -1178,6 +1304,132 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\mi_l_yerren.dbr" id="x2tagMIArmor037" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\armband\mi_l_yerren.dbr" id="x2tagMIArmor038" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\mi_l_yerren.dbr" id="x2tagMIArmor039" isIT="true" isR="true" isAtl="false" find=""/>
+      </Set>
+      <Set name="miheader52">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_coralguardianmage.dbr" id="x3tagMICoralGuardianArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_coralguardianmage.dbr" id="x3tagMICoralGuardianLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_coralguardianmage.dbr" id="x3tagMICoralGuardianHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_coralguardianmage.dbr" id="x3tagMICoralGuardianTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_coralguardianmelee.dbr" id="x3tagMICoralGuardianArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_coralguardianmelee.dbr" id="x3tagMICoralGuardianLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_coralguardianmelee.dbr" id="x3tagMICoralGuardianHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_coralguardianmelee.dbr" id="x3tagMICoralGuardianTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_l_coralguardian.dbr" id="x3tagMICoralGuardianAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\mi_l_coralguardian.dbr" id="x3tagMICoralGuardianBow" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_l_coralguardian.dbr" id="x3tagMICoralGuardianClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_l_coralguardian.dbr" id="x3tagMICoralGuardianShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_l_coralguardian.dbr" id="x3tagMICoralGuardianSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_l_coralguardian.dbr" id="x3tagMICoralGuardianSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_coralguardian_fire.dbr" id="x3tagMICoralGuardianStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_coralguardian_frost.dbr" id="x3tagMICoralGuardianStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_coralguardian_lightning.dbr" id="x3tagMICoralGuardianStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader53">
+        <Item dbr="xpack3\items\equimentarmor\torso\mi_l_crabmanmelee.dbr" id="x3tagMICrabmanTorso" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader54">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_embalmedpriestmelee.dbr" id="x3tagMIEmbalmedPriestArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_embalmedpriestmelee.dbr" id="x3tagMIEmbalmedPriestLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_embalmedpriestmelee.dbr" id="x3tagMIEmbalmedPriestHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_embalmedpriestmelee.dbr" id="x3tagMIEmbalmedPriestTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_l_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\mi_l_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestBow" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_l_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_l_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_l_embalmedpriest.dbr" id="x3tagMIEmbalmedPriestSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_embalmedpriest_fire.dbr" id="x3tagMIEmbalmedPriestStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_embalmedpriest_frost.dbr" id="x3tagMIEmbalmedPriestStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_embalmedpriest_lightning.dbr" id="x3tagMIEmbalmedPriestStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader55">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_hesperidemage.dbr" id="x3tagMIHesperideArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_hesperidemage.dbr" id="x3tagMIHesperideHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_hesperidemage.dbr" id="x3tagMIHesperideTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_l_hesperide.dbr" id="x3tagMIHesperideAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_l_hesperide.dbr" id="x3tagMIHesperideClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_l_hesperide.dbr" id="x3tagMIHesperideShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_l_hesperide.dbr" id="x3tagMIHesperideSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_hesperide_fire.dbr" id="x3tagMIHesperideStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_hesperide_frost.dbr" id="x3tagMIHesperideStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_hesperide_lightning.dbr" id="x3tagMIHesperideStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader56">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_monkeymanmage.dbr" id="x3tagMILibyanSatyrArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_monkeymanmage.dbr" id="x3tagMILibyanSatyrLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_monkeymanmage.dbr" id="x3tagMILibyanSatyrHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_monkeymanmage.dbr" id="x3tagMILibyanSatyrTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_monkeymanmelee.dbr" id="x3tagMILibyanSatyrArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_monkeymanmelee.dbr" id="x3tagMILibyanSatyrLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_monkeymanmelee.dbr" id="x3tagMILibyanSatyrHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_monkeymanmelee.dbr" id="x3tagMILibyanSatyrTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\mi_l_monkeyman.dbr" id="x3tagMILibyanSatyr1HR" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_l_monkeyman.dbr" id="x3tagMILibyanSatyrAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_l_monkeyman.dbr" id="x3tagMILibyanSatyrClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_l_monkeyman.dbr" id="x3tagMILibyanSatyrShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_l_monkeyman.dbr" id="x3tagMILibyanSatyrSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_l_monkeyman.dbr" id="x3tagMILibyanSatyrSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_monkeyman_fire.dbr" id="x3tagMILibyanSatyrStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_monkeyman_frost.dbr" id="x3tagMILibyanSatyrStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_monkeyman_lightning.dbr" id="x3tagMILibyanSatyrStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader57">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_potamoimagemage.dbr" id="x3tagMIPotamoiMageArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_potamoimagemage.dbr" id="x3tagMIPotamoiMageLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_potamoimagemage.dbr" id="x3tagMIPotamoiMageHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_potamoimagemage.dbr" id="x3tagMIPotamoiMageTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_potamoiwarriormelee.dbr" id="x3tagMIPotamoiWarriorArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_potamoiwarriormelee.dbr" id="x3tagMIPotamoiWarriorLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_potamoiwarriormelee.dbr" id="x3tagMIPotamoiWarriorHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_potamoiwarriormelee.dbr" id="x3tagMIPotamoiWarriorTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\mi_l_potamoiwarrior.dbr" id="x3tagMIPotamoiWarrior1HR" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_l_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_l_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_l_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_l_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_l_potamoiwarrior.dbr" id="x3tagMIPotamoiWarriorSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_potamoimage_fire.dbr" id="x3tagMIPotamoiMageStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_potamoimage_frost.dbr" id="x3tagMIPotamoiMageStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_potamoimage_lightning.dbr" id="x3tagMIPotamoiMageStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader58">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_serpentoidmage.dbr" id="x3tagMISerpentoidArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_serpentoidmage.dbr" id="x3tagMISerpentoidLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_serpentoidmage.dbr" id="x3tagMISerpentoidHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_serpentoidmage.dbr" id="x3tagMISerpentoidTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_serpentoidmelee.dbr" id="x3tagMISerpentoidArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\mi_l_serpentoidmelee.dbr" id="x3tagMISerpentoidLegs" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_serpentoidmelee.dbr" id="x3tagMISerpentoidHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_serpentoidmelee.dbr" id="x3tagMISerpentoidTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_l_serpentoid.dbr" id="x3tagMISerpentoidAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\mi_l_serpentoidvanguardmelee.dbr" id="x3tagMISerpentoidVanguardBow" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_l_serpentoid.dbr" id="x3tagMISerpentoidClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_l_serpentoid.dbr" id="x3tagMISerpentoidShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_l_serpentoid.dbr" id="x3tagMISerpentoidSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_l_serpentoid.dbr" id="x3tagMISerpentoidSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_serpentoid_fire.dbr" id="x3tagMISerpentoidStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_serpentoid_frost.dbr" id="x3tagMISerpentoidStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_serpentoid_lightning.dbr" id="x3tagMISerpentoidStaff" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="miheader59">
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_tritonwarriormelee.dbr" id="x3tagMITritonWarriorArms" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_tritonwarriormelee.dbr" id="x3tagMITritonWarriorHead" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_tritonwarriormelee.dbr" id="x3tagMITritonWarriorTorso" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\mi_l_tritonwitchmage.dbr" id="x3tagMITritonWitchArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\mi_l_tritonwitchmage.dbr" id="x3tagMITritonWitchHeadCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\mi_l_tritonwitchmage.dbr" id="x3tagMITritonWitchTorsoCaster" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\mi_l_tritonwarrior.dbr" id="x3tagMITritonWarriorAxe" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\mi_l_tritonwarrior.dbr" id="x3tagMITritonWarriorBow" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\mi_l_tritonwarrior.dbr" id="x3tagMITritonWarriorClub" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\mi_l_tritonwarrior.dbr" id="x3tagMITritonWarriorShield" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\mi_l_tritonwarrior.dbr" id="x3tagMITritonWarriorSpear" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\mi_l_tritonwarrior.dbr" id="x3tagMITritonWarriorSword" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_tritonwitch_fire.dbr" id="x3tagMITritonWitchStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_tritonwitch_frost.dbr" id="x3tagMITritonWitchStaff" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\mi_l_tritonwitch_lightning.dbr" id="x3tagMITritonWitchStaff" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
     </Legendary>
   </MonsterInfrequent>
@@ -1924,6 +2176,60 @@
         <Item dbr="xpack2\item\equipmentweapons\bow\usm_e_shade.dbr" id="x2tagUArmor026" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\staff\usm_e_shade.dbr" id="x2tagUArmor027" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
       </Set>
+      <Set name="x3tagSetName03">
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_e_Set03.dbr" id="x3tagUArmor113" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_e_Set03.dbr" id="x3tagUArmor213" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_e_Set03.dbr" id="x3tagUArmor513" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_e_Set03.dbr" id="x3tagUArmor013" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName05">
+        <Item dbr="xpack3\items\equipmentarmor\armband\um_e_Set05.dbr" id="x3tagUArmor115" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\um_e_Set05.dbr" id="x3tagUArmor215" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_e_Set05.dbr" id="x3tagUArmor315" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\um_e_Set05.dbr" id="x3tagUArmor515" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_e_Set05.dbr" id="x3tagUWeapon703" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName06">
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_e_Set06.dbr" id="x3tagUArmor116" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_e_Set06.dbr" id="x3tagUArmor216" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_e_Set06.dbr" id="x3tagUArmor316" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_e_Set06.dbr" id="x3tagUArmor516" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName07">
+        <Item dbr="xpack3\items\equipmentarmor\armband\um_l_Set07.dbr" id="x3tagUArmor117" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\um_l_Set07.dbr" id="x3tagUArmor217" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_l_Set07.dbr" id="x3tagUArmor317" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\um_l_Set07.dbr" id="x3tagUArmor517" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_l_Set07.dbr" id="x3tagU_Shield06" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName08">
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_n_Set08.dbr" id="x3tagUArmor118" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_n_Set08.dbr" id="x3tagUArmor218" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName09">
+        <Item dbr="xpack3\items\equipmentarmor\armband\um_n_Set09.dbr" id="x3tagUArmor119" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\um_n_Set09.dbr" id="x3tagUArmor219" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_n_Set09.dbr" id="x3tagUArmor319" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\um_n_Set09.dbr" id="x3tagUArmor419" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName10">
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_n_Set10.dbr" id="x3tagUArmor120" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_n_Set10.dbr" id="x3tagUArmor220" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_n_Set10.dbr" id="x3tagUArmor320" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_n_Set10.dbr" id="x3tagUArmor520" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName11">
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_n_Set11.dbr" id="x3tagUArmor318" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_n_Set11.dbr" id="x3tagUArmor518" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName12">
+        <Item dbr="xpack3\items\equipmentweapon\club\u_n_Set12.dbr" id="x3tagU_Club08" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\u_n_Set12.dbr" id="x3tagU_Shield05" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName13">
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_n_Set13.dbr" id="x3tagU_Bow07" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_n_Set13.dbr" id="x3tagU_Spear06" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
     </Epic>
     <Legendary>
       <Set name="tagSetName031">
@@ -2131,6 +2437,26 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\z_tracksuit.dbr" id="x2tagZArmor003" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\z_tracksuit.dbr" id="x2tagZArmor004" isIT="true" isR="true" isAtl="false" find=""/>
       </Set>
+      <Set name="x3tagSetName01">
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_l_Set01.dbr" id="x3tagUArmor111" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_l_Set01.dbr" id="x3tagUArmor211" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_l_Set01.dbr" id="x3tagUArmor311" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_l_Set01.dbr" id="x3tagUArmor511" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\u_l_Set01.dbr" id="x3tagU_Club05" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_l_02.dbr" id="x3tagU_Bow05" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName02">
+        <Item dbr="xpack3\items\equipmentarmor\armband\um_l_Set02.dbr" id="x3tagUArmor112" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\um_l_Set02.dbr" id="x3tagUArmor212" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_l_Set02.dbr" id="x3tagUArmor312" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\um_l_Set02.dbr" id="x3tagUArmor512" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
+      <Set name="x3tagSetName04">
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_l_Set04.dbr" id="x3tagUArmor114" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_l_Set04.dbr" id="x3tagUArmor214" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_l_Set04.dbr" id="x3tagUArmor314" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_l_Set04.dbr" id="x3tagUArmor514" isIT="true" isR="false" isAtl="true" find=""/>
+      </Set>
     </Legendary>
   </Sets>
   <Uniques>
@@ -2166,6 +2492,9 @@
         <Item dbr="xpack2\item\equipmentarmor\amulet\u_n_004.dbr" id="x2tagUArmor120" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$; @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\amulet\u_e_002.dbr" id="x2tagUArmor114" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$; @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\amulet\u_e_004.dbr" id="x2tagUArmor116" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$; @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_n_01.dbr" id="x3tagUArmor008" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_n_02.dbr" id="x3tagUArmor009" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_n_03.dbr" id="x3tagUArmor010" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader02">
         <Item dbr="item\equipmentarmor\um_n_archon'schiton.dbr" id="tagUArmor356" isIT="false" isR="false" isAtl="false" find="@level04$: @act01$"/>
@@ -2244,6 +2573,9 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\u_e_04.dbr" id="x2tagUArmor040" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$; @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\torso\u_e_05.dbr" id="x2tagUArmor041" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$; @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\torso\u_e_06.dbr" id="x2tagUArmor042" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$; @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_n_01.dbr" id="x3tagUArmor501" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_n_02.dbr" id="x3tagUArmor506" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\um_n_01.dbr" id="x3tagUArmor509" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader03">
         <Item dbr="item\equipmentweapon\axe\u_n_adranis.dbr" id="tagUWeapon342" isIT="false" isR="false" isAtl="false" find="@level04$: @act03$, @act04$"/>
@@ -2278,6 +2610,9 @@
         <Item dbr="xpack2\item\equipmentweapons\axe\u_n_02.dbr" id="x2tagUWeapon031" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\axe\u_n_03.dbr" id="x2tagUWeapon032" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\axe\u_e_01.dbr" id="x2tagUWeapon028" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\u_n_01.dbr" id="x3tagU_Axe08" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\u_n_02.dbr" id="x3tagU_Axe07" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\u_n_03.dbr" id="x3tagU_Axe01" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader04">
         <Item dbr="item\equipmentweapon\bow\u_e_barrage.dbr" id="tagUWeapon128" isIT="false" isR="false" isAtl="false" find="@level05$: @act01$, @level06$: @act01$"/>
@@ -2313,6 +2648,8 @@
         <Item dbr="xpack2\item\equipmentweapons\bow\u_n_02.dbr" id="x2tagUWeapon047" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\bow\u_n_03.dbr" id="x2tagUWeapon048" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\bow\u_e_01.dbr" id="x2tagUWeapon044" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_n_01.dbr" id="x3tagU_Bow03" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_n_02.dbr" id="x3tagU_Bow08" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader05">
         <Item dbr="item\equipmentarmband\um_e_arcanebindings.dbr" id="tagUArmor036" isIT="false" isR="false" isAtl="false" find="@level05$: @act03$, @act04$; @level06$: @act03$, @act04$"/>
@@ -2342,6 +2679,10 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\u_n_06.dbr" id="x2tagUArmor078" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\armband\u_e_04.dbr" id="x2tagUArmor071" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\armband\u_e_05.dbr" id="x2tagUArmor072" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_n_01.dbr" id="x3tagUArmor101" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_n_02.dbr" id="x3tagUArmor102" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\um_n_01.dbr" id="x3tagUArmor104" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\um_n_02.dbr" id="x3tagUArmor110" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader06">
         <Item dbr="item\equipmentweapon\club\u_e_arcadionjudgement.dbr" id="tagUWeapon154" isIT="false" isR="false" isAtl="false" find="@level05$: @act03$, @act04$; @level06$: @act03$, @act04$"/>
@@ -2374,6 +2715,8 @@
         <Item dbr="xpack2\item\equipmentweapons\club\u_n_02.dbr" id="x2tagUWeapon014" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\club\u_n_03.dbr" id="x2tagUWeapon092" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\club\u_e_01.dbr" id="x2tagUWeapon011" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentweapon\club\u_n_01.dbr" id="x3tagU_Club06" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\u_n_02.dbr" id="x3tagU_Club07" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader07">
         <Item dbr="item\equipmentgreaves\u_n_ardentgreaves.dbr" id="tagUArmor146" isIT="false" isR="false" isAtl="false" find="@level04$: @act01$, @act02$"/>
@@ -2396,6 +2739,9 @@
         <Item dbr="xpack2\item\equipmentarmor\greaves\u_n_05.dbr" id="x2tagUArmor092" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\u_e_04.dbr" id="x2tagUArmor086" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\u_e_05.dbr" id="x2tagUArmor087" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_n_01.dbr" id="x3tagUArmor208" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_n_02.dbr" id="x3tagUArmor210" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\um_n_01.dbr" id="x3tagUArmor209" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader08">
         <Item dbr="item\equipmenthelm\u_e_ao-chin'sredcap.dbr" id="tagUArmor186" isIT="false" isR="false" isAtl="false" find="@level05$: @act03$, @level06$: @act03$"/>
@@ -2432,6 +2778,9 @@
         <Item dbr="xpack2\item\equipmentarmor\helm\u_e_05.dbr" id="x2tagUArmor056" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\helm\u_e_06.dbr" id="x2tagUArmor057" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\helm\u_e_07.dbr" id="x2tagUArmor058" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_n_01.dbr" id="x3tagUArmor304" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_n_02.dbr" id="x3tagUArmor306" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_n_01.dbr" id="x3tagUArmor310" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader09">
         <Item dbr="item\equipmentring\u_e_adroitloop.dbr" id="tagUArmor001" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @act03$; @level06$: @act02$, @act03$"/>
@@ -2459,6 +2808,9 @@
         <Item dbr="xpack2\item\equipmentarmor\ring\u_n_003.dbr" id="x2tagUArmor109" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\ring\u_e_002.dbr" id="x2tagUArmor105" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\ring\u_e_003.dbr" id="x2tagUArmor106" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_n_01.dbr" id="x3tagUArmor408" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_n_02.dbr" id="x3tagUArmor409" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_n_03.dbr" id="x3tagUArmor410" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader10">
         <Item dbr="item\equipmentshield\u_e_adamanteshield.dbr" id="tagUWeapon001" isIT="false" isR="false" isAtl="false" find="@level05$: @act01$, @level06$: @act01$"/>
@@ -2504,6 +2856,8 @@
         <Item dbr="xpack2\item\equipmentweapons\shield\u_n_02.dbr" id="x2tagUWeapon039" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\shield\u_n_03.dbr" id="x2tagUWeapon040" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\shield\u_e_01.dbr" id="x2tagUWeapon036" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\u_n_01.dbr" id="x3tagU_Shield07" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\u_n_02.dbr" id="x3tagU_Shield08" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader11">
         <Item dbr="item\equipmentweapon\spear\u_e_anendjib'sspear.dbr" id="tagUWeapon197" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @level06$: @act02$"/>
@@ -2537,6 +2891,8 @@
         <Item dbr="xpack2\item\equipmentweapons\spear\u_n_03.dbr" id="x2tagUWeapon007" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\spear\u_e_01.dbr" id="x2tagUWeapon904" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\spear\u_e_02.dbr" id="x2tagUWeapon004" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_n_01.dbr" id="x3tagU_Spear01" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_n_02.dbr" id="x3tagU_Spear07" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader12">
         <Item dbr="item\equipmentweapon\staff\u_e_apophisserpent.dbr" id="tagUWeapon239" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @level06$: @act02$"/>
@@ -2572,6 +2928,9 @@
         <Item dbr="xpack2\item\equipmentweapons\staff\u_n_03.dbr" id="x2tagUWeapon056" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\staff\u_e_01.dbr" id="x2tagUWeapon052" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\staff\u_e_02.dbr" id="x2tagUWeapon053" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_n_01.dbr" id="x3tagU_Staff01" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_n_02.dbr" id="x3tagU_Staff07" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_n_03.dbr" id="x3tagU_Staff08" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader13">
         <Item dbr="item\equipmentweapon\sword\u_e_ajaxiberias.dbr" id="tagUWeapon283" isIT="false" isR="false" isAtl="false" find="@level05$: @act01$, @level06$: @act01$"/>
@@ -2607,6 +2966,9 @@
         <Item dbr="xpack2\item\equipmentweapons\sword\u_n_04.dbr" id="x2tagUWeapon024" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$, @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\sword\u_e_01.dbr" id="x2tagUWeapon018" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentweapons\sword\u_e_02.dbr" id="x2tagUWeapon019" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\u_n_01.dbr" id="x3tagU_Sword02" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\u_n_02.dbr" id="x3tagU_Sword07" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\u_n_03.dbr" id="x3tagU_Sword08" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader14">
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_n_01.dbr" id="x2tagUWeapon077" isIT="true" isR="true" isAtl="false" find="@level04$: @act01$"/>
@@ -2629,6 +2991,9 @@
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_e_06.dbr" id="x2tagUWeapon072" isIT="true" isR="true" isAtl="false" find="@level05$: @act04$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_e_08.dbr" id="x2tagUWeapon074" isIT="true" isR="true" isAtl="false" find="@level05$: @act04$, @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_e_10.dbr" id="x2tagUWeapon076" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\u_n_01.dbr" id="x3tagU_1hr01" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\u_n_02.dbr" id="x3tagU_1hr07" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\u_n_03.dbr" id="x3tagU_1hr08" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
     </Epic>
     <Legendary>
@@ -2654,6 +3019,13 @@
         <Item dbr="xpack2\item\equipmentarmor\amulet\u_e_003.dbr" id="x2tagUArmor115" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$; @level05$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\amulet\u_l_001.dbr" id="x2tagUArmor111" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\amulet\u_l_002.dbr" id="x2tagUArmor112" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_e_01.dbr" id="x3tagUArmor001" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_e_02.dbr" id="x3tagUArmor002" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_e_03.dbr" id="x3tagUArmor003" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_l_01.dbr" id="x3tagUArmor004" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_l_02.dbr" id="x3tagUArmor005" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_l_03.dbr" id="x3tagUArmor006" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\amulet\u_l_04.dbr" id="x3tagUArmor007" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader02">
         <Item dbr="item\equipmentarmor\u_l_armorofanubis.dbr" id="tagUArmor304" isIT="false" isR="false" isAtl="false" find="@level06$: @act02$"/>
@@ -2705,6 +3077,13 @@
         <Item dbr="xpack2\item\equipmentarmor\torso\u_e_03.dbr" id="x2tagUArmor039" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$; @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\torso\u_l_01.dbr" id="x2tagUArmor035" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\torso\u_l_02.dbr" id="x2tagUArmor036" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_e_01.dbr" id="x3tagUArmor510" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_e_02.dbr" id="x3tagUArmor502" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\um_e_01.dbr" id="x3tagUArmor504" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\um_e_02.dbr" id="x3tagUArmor508" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_l_01.dbr" id="x3tagUArmor505" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\u_l_02.dbr" id="x3tagUArmor503" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\torso\um_l_01.dbr" id="x3tagUArmor507" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader03">
         <Item dbr="item\equipmentweapon\axe\u_l_acheron'stouch.dbr" id="tagUWeapon085" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
@@ -2729,6 +3108,11 @@
         <Item dbr="xpack2\item\equipmentweapons\axe\u_l_01.dbr" id="x2tagUWeapon025" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\axe\u_l_02.dbr" id="x2tagUWeapon026" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\axe\u_l_03.dbr" id="x2tagUWeapon027" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\u_e_01.dbr" id="x3tagU_Axe02" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\u_e_02.dbr" id="x3tagU_Axe03" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\u_l_01.dbr" id="x3tagU_Axe04" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\u_l_02.dbr" id="x3tagU_Axe05" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\axe\u_l_03.dbr" id="x3tagU_Axe06" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader04">
         <Item dbr="item\equipmentweapon\bow\u_l_apollo'scurvedbow.dbr" id="tagUWeapon130" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
@@ -2756,6 +3140,11 @@
         <Item dbr="xpack2\item\equipmentweapons\bow\u_l_01.dbr" id="x2tagUWeapon041" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\bow\u_l_02.dbr" id="x2tagUWeapon042" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\bow\u_l_03.dbr" id="x2tagUWeapon043" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_e_01.dbr" id="x3tagU_Bow01" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_e_02.dbr" id="x3tagU_Bow02" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_l_01.dbr" id="x3tagU_Bow04" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_l_01.dbr" id="x3tagU_Bow05" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_l_01.dbr" id="x3tagU_Bow06" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader05">
         <Item dbr="item\equipmentarmband\um_l_braceletofaman'da.dbr" id="tagUArmor051" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
@@ -2778,6 +3167,12 @@
         <Item dbr="xpack2\item\equipmentarmor\armband\u_l_01.dbr" id="x2tagUArmor065" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\armband\u_l_02.dbr" id="x2tagUArmor066" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\armband\u_l_03.dbr" id="x2tagUArmor067" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_e_01.dbr" id="x3tagUArmor108" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_e_02.dbr" id="x3tagUArmor105" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\um_e_01.dbr" id="x3tagUArmor109" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_l_01.dbr" id="x3tagUArmor107" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\u_l_02.dbr" id="x3tagUArmor106" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\armband\um_l_01.dbr" id="x3tagUArmor103" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader06">
         <Item dbr="item\equipmentweapon\club\u_l_agamemnon'sscepter.dbr" id="tagUWeapon168" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
@@ -2802,6 +3197,10 @@
         <Item dbr="xpack2\item\equipmentweapons\club\u_l_01.dbr" id="x2tagUWeapon008" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\club\u_l_02.dbr" id="x2tagUWeapon009" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\club\u_l_03.dbr" id="x2tagUWeapon010" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentweapon\club\u_e_01.dbr" id="x3tagU_Club01" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\u_e_02.dbr" id="x3tagU_Club04" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\u_l_01.dbr" id="x3tagU_Club02" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\club\u_l_02.dbr" id="x3tagU_Club03" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader07">
         <Item dbr="item\equipmentgreaves\u_e_athena'sbattlegreaves.dbr" id="tagUArmor138" isIT="false" isR="false" isAtl="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
@@ -2823,6 +3222,13 @@
         <Item dbr="xpack2\item\equipmentarmor\greaves\u_l_02.dbr" id="x2tagUArmor080" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\u_l_03.dbr" id="x2tagUArmor081" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\greaves\u_l_04.dbr" id="x2tagUArmor082" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_e_01.dbr" id="x3tagUArmor202" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_e_02.dbr" id="x3tagUArmor203" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_l_01.dbr" id="x3tagUArmor204" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_l_02.dbr" id="x3tagUArmor205" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\u_l_03.dbr" id="x3tagUArmor207" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\um_e_01.dbr" id="x3tagUArmor201" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\greaves\um_l_01.dbr" id="x3tagUArmor206" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader08">
         <Item dbr="item\equipmenthelm\u_l_agamemnon'sdeathmask.dbr" id="tagUArmor198" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
@@ -2848,6 +3254,13 @@
         <Item dbr="xpack2\item\equipmentarmor\helm\u_l_02.dbr" id="x2tagUArmor049" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\helm\u_l_03.dbr" id="x2tagUArmor050" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\helm\u_l_04.dbr" id="x2tagUArmor051" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_e_01.dbr" id="x3tagUArmor309" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_e_02.dbr" id="x3tagUArmor302" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_l_01.dbr" id="x3tagUArmor305" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\u_l_02.dbr" id="x3tagUArmor303" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_e_01.dbr" id="x3tagUArmor301" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_l_01.dbr" id="x3tagUArmor307" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_l_02.dbr" id="x3tagUArmor308" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader09">
         <Item dbr="item\equipmentring\u_l_apollo'swill.dbr" id="tagUArmor015" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
@@ -2869,6 +3282,13 @@
         <Item dbr="xpack2\item\equipmentarmor\ring\u_l_001.dbr" id="x2tagUArmor101" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\ring\u_l_002.dbr" id="x2tagUArmor102" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\ring\u_l_003.dbr" id="x2tagUArmor103" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_e_01.dbr" id="x3tagUArmor401" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_e_02.dbr" id="x3tagUArmor402" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_e_03.dbr" id="x3tagUArmor403" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_l_01.dbr" id="x3tagUArmor404" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_l_02.dbr" id="x3tagUArmor405" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_l_03.dbr" id="x3tagUArmor406" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\u_l_04.dbr" id="x3tagUArmor407" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader10">
         <Item dbr="item\equipmentshield\u_l_ajax'bronzetower.dbr" id="tagUWeapon026" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
@@ -2899,6 +3319,10 @@
         <Item dbr="xpack2\item\equipmentweapons\shield\u_l_01.dbr" id="x2tagUWeapon033" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\shield\u_l_02.dbr" id="x2tagUWeapon034" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\shield\u_l_03.dbr" id="x2tagUWeapon035" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\u_e_01.dbr" id="x3tagU_Shield02" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\u_e_02.dbr" id="x3tagU_Shield03" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\u_l_01.dbr" id="x3tagU_Shield01" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\shield\u_l_02.dbr" id="x3tagU_Shield04" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader11">
         <Item dbr="item\equipmentweapon\spear\u_e_amazonianspear.dbr" id="tagUWeapon196" isIT="false" isR="false" isAtl="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
@@ -2920,6 +3344,11 @@
         <Item dbr="xpack\item\equipmentweapons\spear\u_l_001.dbr" id="xtagUWeapon065" isIT="true" isR="false" isAtl="false" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentweapons\spear\u_l_002.dbr" id="xtagUWeapon066" isIT="true" isR="false" isAtl="false" find="@level06$: @act04$"/>
         <Item dbr="xpack2\item\equipmentweapons\spear\u_l_02.dbr" id="x2tagUWeapon002" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_e_01.dbr" id="x3tagU_Spear02" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_e_02.dbr" id="x3tagU_Spear03" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_l_01.dbr" id="x3tagU_Spear04" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_l_02.dbr" id="x3tagU_Spear05" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_l_03.dbr" id="x3tagU_Spear08" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader12">
         <Item dbr="item\equipmentweapon\staff\u_e_archon'sjudgement.dbr" id="tagUWeapon240" isIT="false" isR="false" isAtl="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
@@ -2945,6 +3374,10 @@
         <Item dbr="xpack2\item\equipmentweapons\staff\u_l_01.dbr" id="x2tagUWeapon049" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\staff\u_l_02.dbr" id="x2tagUWeapon050" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\staff\u_l_03.dbr" id="x2tagUWeapon051" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_e_01.dbr" id="x3tagU_Staff04" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_l_01.dbr" id="x3tagU_Staff02" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_l_02.dbr" id="x3tagU_Staff05" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\staff\u_l_03.dbr" id="x3tagU_Staff06" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader13">
         <Item dbr="item\equipmentweapon\sword\u_l_amenra'smagebane.dbr" id="tagUWeapon299" isIT="false" isR="false" isAtl="false" find="@level06$: @act02$, @act04$"/>
@@ -2969,6 +3402,11 @@
         <Item dbr="xpack2\item\equipmentweapons\sword\u_l_01.dbr" id="x2tagUWeapon015" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\sword\u_l_02.dbr" id="x2tagUWeapon016" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\sword\u_l_03.dbr" id="x2tagUWeapon017" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\u_e_01.dbr" id="x3tagU_Sword03" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\u_e_02.dbr" id="x3tagU_Sword06" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\u_l_01.dbr" id="x3tagU_Sword01" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\u_l_02.dbr" id="x3tagU_Sword04" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\sword\u_l_03.dbr" id="x3tagU_Sword05" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader14">
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_e_01.dbr" id="x2tagUWeapon067" isIT="true" isR="true" isAtl="false" find="@level05$: @act01$, @act02$"/>
@@ -2983,6 +3421,11 @@
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_07.dbr" id="x2tagUWeapon063" isIT="true" isR="true" isAtl="false" find="@level06$: @act04$, @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_08.dbr" id="x2tagUWeapon064" isIT="true" isR="true" isAtl="false" find="@level06$: @act04$, @act06$"/>
         <Item dbr="xpack2\item\equipmentweapons\1hranged\u_l_10.dbr" id="x2tagUWeapon066" isIT="true" isR="true" isAtl="false" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\u_e_01.dbr" id="x3tagU_1hr02" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\u_e_02.dbr" id="x3tagU_1hr03" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\u_l_01.dbr" id="x3tagU_1hr04" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\u_l_02.dbr" id="x3tagU_1hr05" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\1hranged\u_l_03.dbr" id="x3tagU_1hr06" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
     </Legendary>
   </Uniques>
