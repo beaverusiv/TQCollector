@@ -3143,8 +3143,8 @@
         <Item dbr="xpack3\items\equipmentweapon\bow\u_e_01.dbr" id="x3tagU_Bow01" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\equipmentweapon\bow\u_e_02.dbr" id="x3tagU_Bow02" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\equipmentweapon\bow\u_l_01.dbr" id="x3tagU_Bow04" isIT="true" isR="false" isAtl="true" find=""/>
-        <Item dbr="xpack3\items\equipmentweapon\bow\u_l_01.dbr" id="x3tagU_Bow05" isIT="true" isR="false" isAtl="true" find=""/>
-        <Item dbr="xpack3\items\equipmentweapon\bow\u_l_01.dbr" id="x3tagU_Bow06" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_l_02.dbr" id="x3tagU_Bow05" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_l_03.dbr" id="x3tagU_Bow06" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader05">
         <Item dbr="item\equipmentarmband\um_l_braceletofaman'da.dbr" id="tagUArmor051" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
