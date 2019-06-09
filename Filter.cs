@@ -385,17 +385,20 @@ namespace TQCollector
                 TabControl MonsterInfrequentTabControl = new TabControl();
                 if (!Files.Configuration.UseR || !Files.Configuration.UseAtl)
                 {
+                    Set [] minormal;
+                    Set [] miepic;
+                    Set [] milegendary;
                     if (Files.Configuration.UseAtl)
                     {
-                        Set[] minormal = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal);
-                        Set[] miepic = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic);
-                        Set[] milegendary = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                        minormal = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal);
+                        miepic = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic);
+                        milegendary = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary);
                     }
                     else
                     {
-                        Set[] minormal = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Normal);
-                        Set[] miepic = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Epic);
-                        Set[] milegendary = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                        minormal = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Normal);
+                        miepic = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Epic);
+                        milegendary = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Legendary);
                     }
                     if (Files.Configuration.Filters.MonsterInfrequent.Normal)
                     {
