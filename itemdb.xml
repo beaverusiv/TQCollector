@@ -2344,7 +2344,7 @@
         <Item dbr="xpack\item\equipmentarmor\armband\u_l_001.dbr" id="xtagUArmor058" isIT="true" isR="false" isAtl="false" find="@level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\greaves\u_l_002.dbr" id="xtagUArmor086" isIT="true" isR="false" isAtl="false" find="@level06$: @act04$"/>
       </Set>
-      <Set name="tagSetNameLE11">
+      <Set name="xtagArtifactDescription062">
         <Item dbr="item\equipmentweapon\club\u_l_handofhephaestus.dbr" id="tagUWeapon171" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentshield\u_l_hephaestus'moltenshield.dbr" id="tagUWeapon034" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentring\u_l_sealofhephaestus.dbr" id="tagUArmor021" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>

@@ -1779,7 +1779,7 @@ namespace TQCollector
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
  
-            //Atlantis added secondary relic
+            //Atlantis added second relic
             ValidateNextString("relicName2", b);
             string relicID2 = ReadString(b);
 
@@ -1825,7 +1825,7 @@ namespace TQCollector
                 Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover04"], vault, sack.ToString()));
             }
 
-            if (Files.Configuration.UseSocketed && !relicID.Equals(""))
+            if (Files.Configuration.UseSocketed && !relicID.Equals("")) // TODO: add handling for second relic
             {
                 int oo = relicID.LastIndexOf("records");
                 if (oo < 0) oo = 0;
@@ -1861,7 +1861,7 @@ namespace TQCollector
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
 
-             //Atlantis added secondary relic
+             //Atlantis added second relic
             ValidateNextString("relicName2", b);
             string relicID2 = ReadString(b);
 
@@ -1900,7 +1900,7 @@ namespace TQCollector
                     Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover06"], player));
                 }
 
-                if (Files.Configuration.UseSocketed && !relicID.Equals(""))
+                if (Files.Configuration.UseSocketed && !relicID.Equals("")) // TODO: add handling for second relic
                 {
                     int oo = relicID.LastIndexOf("records");
                     if (oo < 0) oo = 0;
@@ -2019,7 +2019,7 @@ namespace TQCollector
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
 
-            //Atlantis added secondary relic
+            //Atlantis added second relic
             ValidateNextString("relicName2", b);
             string relicID2 = ReadString(b);
 
@@ -2062,7 +2062,7 @@ namespace TQCollector
                 Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
             }
 
-            if (Files.Configuration.UseSocketed && !relicID.Equals(""))
+            if (Files.Configuration.UseSocketed && !relicID.Equals("")) // TODO: add handling for second relic
             {
                 int oo = relicID.LastIndexOf("records");
                 if (oo < 0) oo = 0;
