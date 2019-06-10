@@ -848,6 +848,7 @@ namespace TQCollector
                                 if (!ParseTextDB(dbFile, "text\\x2uniqueequipment.txt")) return false;
                                 if (!ParseTextDB(dbFile, "text\\x2ui.txt")) return false;
                                 if (!ParseTextDB(dbFile, "text\\x2quest.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x2monsters.txt")) return false;
                             }
                             if (File.Exists(Files.Configuration.Directories.AE + "\\Resources\\XPack3\\Scenery.arc")) //condition to determine whether Atlantis is installed
                             {
