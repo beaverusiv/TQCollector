@@ -1671,7 +1671,8 @@ namespace TQCollector
             string ans = ReadString(b);
             if (ans.Equals(s)) return true;
 
-            MessageBox.Show("Failed to validate string: " + s + ", got: " + ans);
+            //MessageBox.Show("Failed to validate string: " + s + ", got: " + ans);
+            File.AppendAllText(Directory.GetCurrentDirectory() + "\\errorlog.log", "[" + System.DateTime.Now.ToString() + "]\tFailed to validate string: " + s + ", got: " + ans + System.Environment.NewLine);
 
             return false;
         }
@@ -1780,17 +1781,28 @@ namespace TQCollector
             int var1 = b.ReadInt32();
  
             //Atlantis added second relic
-            ValidateNextString("relicName2", b);
-            string relicID2 = ReadString(b);
+            string an = ReadString(b);
+            if (an.Equals("relicName2"))
+            {
+                string relicID2 = ReadString(b);
 
-            ValidateNextString("relicBonus2", b);
-            string relicBonusID2 = ReadString(b);
+                ValidateNextString("relicBonus2", b);
+                string relicBonusID2 = ReadString(b);
 
-            ValidateNextString("var2", b);
-            int var2 = b.ReadInt32();
+                ValidateNextString("var2", b);
+                int var2 = b.ReadInt32();
 
-            ValidateNextString("end_block", b);
-            int endBlockCrap2 = b.ReadInt32();
+                ValidateNextString("end_block", b);
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else if (an.Equals("end_block"))
+            {
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else
+            {
+                MessageBox.Show("Failed to validate string, got: " + an);
+            }
 
             ValidateNextString("pointX", b);
             int x = b.ReadInt32();
@@ -1861,18 +1873,29 @@ namespace TQCollector
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
 
-             //Atlantis added second relic
-            ValidateNextString("relicName2", b);
-            string relicID2 = ReadString(b);
+            //Atlantis added second relic
+            string an = ReadString(b);
+            if (an.Equals("relicName2"))
+            {
+                string relicID2 = ReadString(b);
 
-            ValidateNextString("relicBonus2", b);
-            string relicBonusID2 = ReadString(b);
+                ValidateNextString("relicBonus2", b);
+                string relicBonusID2 = ReadString(b);
 
-            ValidateNextString("var2", b);
-            int var2 = b.ReadInt32();
+                ValidateNextString("var2", b);
+                int var2 = b.ReadInt32();
 
-            ValidateNextString("end_block", b);
-            int endBlockCrap2 = b.ReadInt32();
+                ValidateNextString("end_block", b);
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else if (an.Equals("end_block"))
+            {
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else
+            {
+                MessageBox.Show("Failed to validate string, got: " + an);
+            }
 
             if (!baseItemID.Equals("")) //Nothing equipped
             {
@@ -2020,17 +2043,28 @@ namespace TQCollector
             int var1 = b.ReadInt32();
 
             //Atlantis added second relic
-            ValidateNextString("relicName2", b);
-            string relicID2 = ReadString(b);
+            string an = ReadString(b);
+            if (an.Equals("relicName2"))
+            {
+                string relicID2 = ReadString(b);
 
-            ValidateNextString("relicBonus2", b);
-            string relicBonusID2 = ReadString(b);
+                ValidateNextString("relicBonus2", b);
+                string relicBonusID2 = ReadString(b);
 
-            ValidateNextString("var2", b);
-            int var2 = b.ReadInt32();
+                ValidateNextString("var2", b);
+                int var2 = b.ReadInt32();
 
-            ValidateNextString("end_block", b);
-            int endBlockCrap2 = b.ReadInt32();
+                ValidateNextString("end_block", b);
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else if (an.Equals("end_block"))
+            {
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else
+            {
+                MessageBox.Show("Failed to validate string, got: " + an);
+            }
 
             ValidateNextString("xOffset", b);
 			float x = b.ReadSingle();
