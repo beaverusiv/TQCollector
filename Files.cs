@@ -1796,9 +1796,10 @@ namespace TQCollector
  
             //Atlantis added second relic
             string an = ReadString(b);
+            string relicID2 ="";
             if (an.Equals("relicName2"))
             {
-                string relicID2 = ReadString(b);
+                relicID2 = ReadString(b);
 
                 ValidateNextString("relicBonus2", b);
                 string relicBonusID2 = ReadString(b);
@@ -1851,13 +1852,21 @@ namespace TQCollector
                 Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover04"], vault, sack.ToString()));
             }
 
-            if (Files.Configuration.UseSocketed && !relicID.Equals("")) // TODO: add handling for second relic
+            if (Files.Configuration.UseSocketed && !relicID.Equals(""))
             {
                 int oo = relicID.LastIndexOf("records");
                 if (oo < 0) oo = 0;
                 relicID = relicID.Substring(oo + 8);
                 relicID = relicID.ToLower(System.Globalization.CultureInfo.InvariantCulture);
                 Files.ItemDatabase.addItem(relicID, string.Format(Files.Language["mouseover05"], vault, sack.ToString()));
+                if (!relicID2.Equals(""))
+                {
+                    int ooo = relicID2.LastIndexOf("records");
+                    if (ooo < 0) ooo = 0;
+                    relicID2 = relicID2.Substring(ooo + 8);
+                    relicID2 = relicID2.ToLower(System.Globalization.CultureInfo.InvariantCulture);
+                    Files.ItemDatabase.addItem(relicID2, string.Format(Files.Language["mouseover05"], vault, sack.ToString()));
+                }
             }
         }
 
@@ -1889,9 +1898,10 @@ namespace TQCollector
 
             //Atlantis added second relic
             string an = ReadString(b);
+            string relicID2 = "";
             if (an.Equals("relicName2"))
             {
-                string relicID2 = ReadString(b);
+                relicID2 = ReadString(b);
 
                 ValidateNextString("relicBonus2", b);
                 string relicBonusID2 = ReadString(b);
@@ -1937,13 +1947,21 @@ namespace TQCollector
                     Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover06"], player));
                 }
 
-                if (Files.Configuration.UseSocketed && !relicID.Equals("")) // TODO: add handling for second relic
+                if (Files.Configuration.UseSocketed && !relicID.Equals(""))
                 {
                     int oo = relicID.LastIndexOf("records");
                     if (oo < 0) oo = 0;
                     relicID = relicID.Substring(oo + 8);
                     relicID = relicID.ToLower(System.Globalization.CultureInfo.InvariantCulture);
                     Files.ItemDatabase.addItem(relicID, string.Format(Files.Language["mouseover07"], player));
+                    if (!relicID2.Equals(""))
+                    {
+                        int ooo = relicID2.LastIndexOf("records");
+                        if (ooo < 0) ooo = 0;
+                        relicID2 = relicID2.Substring(ooo + 8);
+                        relicID2 = relicID2.ToLower(System.Globalization.CultureInfo.InvariantCulture);
+                        Files.ItemDatabase.addItem(relicID2, string.Format(Files.Language["mouseover07"], player));
+                    }
                 }
             }
         }
@@ -2070,9 +2088,10 @@ namespace TQCollector
 
             //Atlantis added second relic
             string an = ReadString(b);
+            string relicID2 = "";
             if (an.Equals("relicName2"))
             {
-                string relicID2 = ReadString(b);
+                relicID2 = ReadString(b);
 
                 ValidateNextString("relicBonus2", b);
                 string relicBonusID2 = ReadString(b);
@@ -2155,13 +2174,21 @@ namespace TQCollector
                 }
             }
 
-            if (Files.Configuration.UseSocketed && !relicID.Equals("")) // TODO: add handling for second relic
+            if (Files.Configuration.UseSocketed && !relicID.Equals(""))
             {
                 int oo = relicID.LastIndexOf("records");
                 if (oo < 0) oo = 0;
                 relicID = relicID.Substring(oo + 8);
                 relicID = relicID.ToLower(System.Globalization.CultureInfo.InvariantCulture);
                 Files.ItemDatabase.addItem(relicID, string.Format(Files.Language["mouseover09"], player));
+                if (!relicID2.Equals(""))
+                {
+                    int ooo = relicID2.LastIndexOf("records");
+                    if (ooo < 0) ooo = 0;
+                    relicID2 = relicID2.Substring(ooo + 8);
+                    relicID2 = relicID2.ToLower(System.Globalization.CultureInfo.InvariantCulture);
+                    Files.ItemDatabase.addItem(relicID2, string.Format(Files.Language["mouseover09"], player));
+                }
             }
         }
 
