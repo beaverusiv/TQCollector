@@ -161,6 +161,7 @@
   <NameValuePair><Name>error21</Name><Value>Error parsing player.chr.</Value></NameValuePair>
   <NameValuePair><Name>error22</Name><Value>Error trying to read stash file.</Value></NameValuePair>
   <NameValuePair><Name>error23</Name><Value>Unable to locate Anniversary Edition ARC file! Please set AE directory.</Value></NameValuePair>
+  <NameValuePair><Name>error24</Name><Value>Error trying to read relic stash file.</Value></NameValuePair>
 
   <NameValuePair><Name>count01</Name><Value>Total items count: </Value></NameValuePair>
 

@@ -1663,6 +1663,19 @@ namespace TQCollector
                     MessageBox.Show(Files.Language["error22"]);
                     return false;
                 }
+                if (Files.Configuration.UseAE)
+                {
+                    string relicStashFile = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "My Games\\Titan Quest - Immortal Throne\\SaveData\\Sys\\miscsys.dxb");
+                    try
+                    {
+                        LoadStash(relicStashFile);
+                    }
+                    catch
+                    {
+                        MessageBox.Show(Files.Language["error24"]);
+                        return false;
+                    }
+                }
             }
             return true;
         }
@@ -1965,6 +1978,10 @@ namespace TQCollector
                         try
                         {
                             string player = filename.Substring(0, filename.Length - 11);
+                            if (Path.GetFileName(filename) == "miscsys.dxb")
+                            {
+                                player = filename.Substring(0, filename.Length - 12);
+                            }
                             int lastDir = player.LastIndexOf("\\");
                             player = player.Substring(lastDir + 2);
                             ParseStashItemBlock(reader, player);
