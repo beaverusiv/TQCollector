@@ -370,9 +370,9 @@
         <Item dbr="xpack3\items\equipmentweapon\staff\mi_n_coralguardian_frost.dbr" id="x3tagMICoralGuardianStaff" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\equipmentweapon\staff\mi_n_coralguardian_lightning.dbr" id="x3tagMICoralGuardianStaff" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
-      <Set name="miheader53">
+      <!--<Set name="miheader53">
         <Item dbr="xpack3\items\equimentarmor\torso\mi_n_crabmanmelee.dbr" id="x3tagMICrabmanTorso" isIT="true" isR="false" isAtl="true" find=""/>
-      </Set>
+      </Set>-->
       <Set name="miheader54">
         <Item dbr="xpack3\items\equipmentarmor\armband\mi_n_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestArmsCaster" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\equipmentarmor\greaves\mi_n_embalmedpriestmage.dbr" id="x3tagMIEmbalmedPriestLegsCaster" isIT="true" isR="false" isAtl="true" find=""/>
@@ -1649,7 +1649,7 @@
         <Item dbr="xpack3\items\charms\01_x3_basiliskeye.dbr" id="x3tag_animalpart01" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\charms\01_x3_coralfragment.dbr" id="x3tag_animalpart02" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\charms\01_x3_insectwings.dbr" id="x3tag_animalpart03" isIT="true" isR="false" isAtl="true" find=""/>
-        <Item dbr="xpack3\items\charms\01_x3_questartifice.dbr" id="x3tag_animalpart04" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\charms\01_x3_quest_artifice.dbr" id="x3tag_animalpart04" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
     </Normal>
     <Epic>
@@ -1688,7 +1688,7 @@
         <Item dbr="xpack3\items\charms\02_x3_basiliskeye.dbr" id="x3tag_animalpart01_e" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\charms\02_x3_coralfragment.dbr" id="x3tag_animalpart02_e" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\charms\02_x3_insectwings.dbr" id="x3tag_animalpart03_e" isIT="true" isR="false" isAtl="true" find=""/>
-        <Item dbr="xpack3\items\charms\02_x3_questartifice.dbr" id="x3tag_animalpart04_e" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\charms\02_x3_quest_artifice.dbr" id="x3tag_animalpart04_e" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
     </Epic>
     <Legendary>
@@ -1727,7 +1727,7 @@
         <Item dbr="xpack3\items\charms\03_x3_basiliskeye.dbr" id="x3tag_animalpart01_l" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\charms\03_x3_coralfragment.dbr" id="x3tag_animalpart02_l" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\charms\03_x3_insectwings.dbr" id="x3tag_animalpart03_l" isIT="true" isR="false" isAtl="true" find=""/>
-        <Item dbr="xpack3\items\charms\03_x3_questartifice.dbr" id="x3tag_animalpart04_l" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\charms\03_x3_quest_artifice.dbr" id="x3tag_animalpart04_l" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
     </Legendary>
   </Charms>

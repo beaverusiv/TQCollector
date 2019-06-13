@@ -1821,7 +1821,7 @@ namespace TQCollector
 
             if (baseItemID.Contains("\\animalrelics\\") || baseItemID.Contains("\\charms\\")) //A charm
             {
-                if (var1 == 5)
+                if (var1 == 5 || baseItemID.Contains("quest_artifice"))
                 {
                     Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover04"], vault, sack.ToString()));
                 }
@@ -1907,7 +1907,7 @@ namespace TQCollector
 
                 if (baseItemID.Contains("\\animalrelics\\") || baseItemID.Contains("\\charms\\")) //A charm
                 {
-                    if (var1 == 5)
+                    if (var1 == 5 || baseItemID.Contains("quest_artifice"))
                     {
                         Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover06"], player));
                     }
@@ -2080,7 +2080,7 @@ namespace TQCollector
 
             if (baseItemID.Contains("\\animalrelics\\") || baseItemID.Contains("\\charms\\")) //A charm
             {
-                if (var1 == 5)
+                if (var1 == 5 || baseItemID.Contains("quest_artifice"))
                 {
                     Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
                 }
