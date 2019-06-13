@@ -178,6 +178,8 @@
   <NameValuePair><Name>mouseover07</Name><Value>{0}, socketed on equipped item</Value></NameValuePair>
   <NameValuePair><Name>mouseover08</Name><Value>{0}, stash</Value></NameValuePair>
   <NameValuePair><Name>mouseover09</Name><Value>{0}, socketed on stashed item</Value></NameValuePair>
+  <NameValuePair><Name>mouseover10</Name><Value>Shared stash</Value></NameValuePair>
+  <NameValuePair><Name>mouseover11</Name><Value>Relic stash</Value></NameValuePair>
 
   <NameValuePair><Name>act01</Name><Value>Greece</Value></NameValuePair>
   <NameValuePair><Name>act02</Name><Value>Egypt</Value></NameValuePair>

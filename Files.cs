@@ -1977,13 +1977,21 @@ namespace TQCollector
 
                         try
                         {
-                            string player = filename.Substring(0, filename.Length - 11);
-                            if (Path.GetFileName(filename) == "miscsys.dxb")
+                            string player;
+                            if (Path.GetFileName(filename) == "miscsys.dxb") // Stash being loaded is the shared relic stash
                             {
-                                player = filename.Substring(0, filename.Length - 12);
+                                player = ":relicstash:";
                             }
-                            int lastDir = player.LastIndexOf("\\");
-                            player = player.Substring(lastDir + 2);
+                            else if (Path.GetFileName(filename) == "winsys.dxb" && filename.Substring(filename.Length - 14, 3) == "Sys") // Stash being loaded is the general shared stash
+                            {
+                                player = ":sharedstash:";
+                            }
+                            else // character exclusive stash
+                            {
+                                player = filename.Substring(0, filename.Length - 11);
+                                int lastDir = player.LastIndexOf("\\");
+                                player = player.Substring(lastDir + 2);
+                            }
                             ParseStashItemBlock(reader, player);
                         }
                         catch
@@ -2099,19 +2107,52 @@ namespace TQCollector
             {
                 if (var1 == 5 || baseItemID.Contains("quest_artifice"))
                 {
-                    Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                    if (player == ":relicstash:")
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover11"]);
+                    }
+                    else if (player == ":sharedstash:")
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover10"]);
+                    }
+                    else
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                    }
                 }
             }
             else if (baseItemID.Contains("\\relics\\")) //A relic
             {
                 if (var1 == 3 || baseItemID.Contains("nerthusmistletoe"))
                 {
-                    Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                    if (player == ":relicstash:")
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover11"]);
+                    }
+                    else if (player == ":sharedstash:")
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover10"]);
+                    }
+                    else
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                    }
                 }
             }
             else
             {
-                Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                if (player == ":relicstash:")
+                {
+                    Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover11"]);
+                }
+                else if (player == ":sharedstash:")
+                {
+                    Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover10"]);
+                }
+                else
+                {
+                    Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                }
             }
 
             if (Files.Configuration.UseSocketed && !relicID.Equals("")) // TODO: add handling for second relic
