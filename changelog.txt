@@ -72,5 +72,5 @@ v1.2.0 19/06/2019 (Atlantis)
 - updated French translation (thanks to W.N.G.)
 - added parsing for dual relic items
 - added atlantis items
-- added parsing for the relic vault
+- added parsing for the new relic vault
 - improved tooltip hint for items in the shared stash & relic vault
