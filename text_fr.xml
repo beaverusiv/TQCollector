@@ -71,6 +71,14 @@
   <NameValuePair><Name>miheader49</Name><Value>Trolls</Value></NameValuePair>
   <NameValuePair><Name>miheader50</Name><Value>Valkyries</Value></NameValuePair>
   <NameValuePair><Name>miheader51</Name><Value>Yerrens nordiques</Value></NameValuePair>
+  <NameValuePair><Name>miheader52</Name><Value>Gardiens coralliens</Value></NameValuePair>
+<!--  <NameValuePair><Name>miheader53</Name><Value>Crabelins</Value></NameValuePair>-->
+  <NameValuePair><Name>miheader54</Name><Value>Prêtres embaumés</Value></NameValuePair>
+  <NameValuePair><Name>miheader55</Name><Value>Hespérides</Value></NameValuePair>
+  <NameValuePair><Name>miheader56</Name><Value>Aegipans</Value></NameValuePair>
+  <NameValuePair><Name>miheader57</Name><Value>Potamoï</Value></NameValuePair>
+  <NameValuePair><Name>miheader58</Name><Value>Serpentoïdes</Value></NameValuePair>
+  <NameValuePair><Name>miheader59</Name><Value>Tritons</Value></NameValuePair>
 
   <NameValuePair><Name>uheader01</Name><Value>Amulettes</Value></NameValuePair>
   <NameValuePair><Name>uheader02</Name><Value>Torse</Value></NameValuePair>
@@ -100,6 +108,7 @@
   <NameValuePair><Name>tooltip11</Name><Value>Options de filtrage</Value></NameValuePair>
   <NameValuePair><Name>tooltip12</Name><Value>Prendre en compte l'Anniversary Edition</Value></NameValuePair>
   <NameValuePair><Name>tooltip13</Name><Value>Prendre en compte Ragnarök</Value></NameValuePair>
+  <NameValuePair><Name>tooltip14</Name><Value>Prendre en compte Atlantis</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Crédits pour Titan Quest Collector v{0} :</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying pour l'utilisation de l'icône Titan Quest qu'il a créée.</Value></NameValuePair>
@@ -152,6 +161,7 @@
   <NameValuePair><Name>error21</Name><Value>Erreur en analysant player.chr.</Value></NameValuePair>
   <NameValuePair><Name>error22</Name><Value>Erreur en essayant de lire le fichier de la caravane.</Value></NameValuePair>
   <NameValuePair><Name>error23</Name><Value>Impossible de localiser le fichier ARC de l'Anniversary Edition ! Veuillez configurer le répertoire de l'AE.</Value></NameValuePair>
+  <NameValuePair><Name>error24</Name><Value>Erreur en essayant de lire le fichier de l'abri à reliques.</Value></NameValuePair>
 
   <NameValuePair><Name>count01</Name><Value>Somme totale d'objets :</Value></NameValuePair>
 
@@ -168,6 +178,8 @@
   <NameValuePair><Name>mouseover07</Name><Value>{0}, enchâssé dans un objet équipé</Value></NameValuePair>
   <NameValuePair><Name>mouseover08</Name><Value>{0}, caravane</Value></NameValuePair>
   <NameValuePair><Name>mouseover09</Name><Value>{0}, enchâssé dans un objet de la caravane</Value></NameValuePair>
+  <NameValuePair><Name>mouseover10</Name><Value>Réserve partagée</Value></NameValuePair>
+  <NameValuePair><Name>mouseover11</Name><Value>Abri à reliques</Value></NameValuePair>
 
   <NameValuePair><Name>act01</Name><Value>Grèce</Value></NameValuePair>
   <NameValuePair><Name>act02</Name><Value>Egypte</Value></NameValuePair>
@@ -175,6 +187,7 @@
   <NameValuePair><Name>act04</Name><Value>Les Enfers</Value></NameValuePair>
   <NameValuePair><Name>act05</Name><Value>Passage secret</Value></NameValuePair>
   <NameValuePair><Name>act06</Name><Value>Le Nord</Value></NameValuePair>
+  <NameValuePair><Name>act07</Name><Value>Atlantis</Value></NameValuePair>
 
   <NameValuePair><Name>misc01</Name><Value>Compter reliques/charmes enchâssés</Value></NameValuePair>
   <NameValuePair><Name>misc02</Name><Value>Case cochée au lieu de surbrillance</Value></NameValuePair>

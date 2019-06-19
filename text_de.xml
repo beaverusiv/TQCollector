@@ -71,6 +71,14 @@
   <NameValuePair><Name>miheader49</Name><Value>Trolle</Value></NameValuePair>
   <NameValuePair><Name>miheader50</Name><Value>Walküren</Value></NameValuePair>
   <NameValuePair><Name>miheader51</Name><Value>Nord-Yerren</Value></NameValuePair>
+  <NameValuePair><Name>miheader52</Name><Value>Korallenwächter</Value></NameValuePair>
+  <!--  <NameValuePair><Name>miheader53</Name><Value>Krabblinge</Value></NameValuePair>-->
+  <NameValuePair><Name>miheader54</Name><Value>Einbalsamierte Priester</Value></NameValuePair>
+  <NameValuePair><Name>miheader55</Name><Value>Hesperiden</Value></NameValuePair>
+  <NameValuePair><Name>miheader56</Name><Value>Aegipane</Value></NameValuePair>
+  <NameValuePair><Name>miheader57</Name><Value>Potamoi</Value></NameValuePair>
+  <NameValuePair><Name>miheader58</Name><Value>Serpentoide</Value></NameValuePair>
+  <NameValuePair><Name>miheader59</Name><Value>Tritonen</Value></NameValuePair>
 
   <NameValuePair><Name>uheader01</Name><Value>Amulette</Value></NameValuePair>
   <NameValuePair><Name>uheader02</Name><Value>Rüstungen</Value></NameValuePair>
@@ -100,6 +108,7 @@
   <NameValuePair><Name>tooltip11</Name><Value>Filter Optionen</Value></NameValuePair>
   <NameValuePair><Name>tooltip12</Name><Value>Nutzung der Anniversary Edition aktivieren</Value></NameValuePair>
   <NameValuePair><Name>tooltip13</Name><Value>Nutzung des Ragnarök Addons aktivieren</Value></NameValuePair>
+  <NameValuePair><Name>tooltip14</Name><Value>Nutzung des Atlantis Addons aktivieren</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Titan Quest Collector v{0} Credits:</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying für die Titan Quest Icons, die er erstellt hat.</Value></NameValuePair>
@@ -152,6 +161,7 @@
   <NameValuePair><Name>error21</Name><Value>Fehler beim Parsen der player.chr.</Value></NameValuePair>
   <NameValuePair><Name>error22</Name><Value>Fehler beim Laden der Karawane.</Value></NameValuePair>
   <NameValuePair><Name>error23</Name><Value>Die Anniversary Edition ARC Datei wurde nicht gefunden! Bitte überprüfen Sie die Pfadangabe.</Value></NameValuePair>
+  <NameValuePair><Name>error24</Name><Value>Fehler beim Laden des Reliktstauraums der Karawane.</Value></NameValuePair>
 
   <NameValuePair><Name>count01</Name><Value>Gesamtanzahl der Items: </Value></NameValuePair>
 
@@ -168,6 +178,8 @@
   <NameValuePair><Name>mouseover07</Name><Value>{0}, in einem getragenen Item gesockelt</Value></NameValuePair>
   <NameValuePair><Name>mouseover08</Name><Value>{0}, in der Karawane</Value></NameValuePair>
   <NameValuePair><Name>mouseover09</Name><Value>{0}, in einem Karawanen-Item gesockelt</Value></NameValuePair>
+  <NameValuePair><Name>mouseover10</Name><Value>Übergabestauraum</Value></NameValuePair>
+  <NameValuePair><Name>mouseover11</Name><Value>Reliktstauraum</Value></NameValuePair>
 
   <NameValuePair><Name>act01</Name><Value>Griechenland</Value></NameValuePair>
   <NameValuePair><Name>act02</Name><Value>Ägypten</Value></NameValuePair>
@@ -175,6 +187,7 @@
   <NameValuePair><Name>act04</Name><Value>Hades</Value></NameValuePair>
   <NameValuePair><Name>act05</Name><Value>Geheime Passage</Value></NameValuePair>
   <NameValuePair><Name>act06</Name><Value>Der Norden</Value></NameValuePair>
+  <NameValuePair><Name>act07</Name><Value>Atlantis</Value></NameValuePair>
 
   <NameValuePair><Name>misc01</Name><Value>Anzahl gesockelter Relikte/Talismane</Value></NameValuePair>
   <NameValuePair><Name>misc02</Name><Value>Checkbox statt Fettschrift</Value></NameValuePair>
