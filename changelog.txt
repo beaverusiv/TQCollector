@@ -68,4 +68,9 @@ v1.1.2 12/02/2018
 v1.1.3 09/04/2018
 -fixed bracers of the argonauts appearing twice
 
-v1.2.0 XX/06/2019 (Atlantis)
+v1.2.0 19/06/2019 (Atlantis)
+- updated French translation (thanks to W.N.G.)
+- added parsing for dual relic items
+- added atlantis items
+- added parsing for the relic vault
+- improved tooltip hint for items in the shared stash & relic vault

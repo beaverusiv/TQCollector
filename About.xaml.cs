@@ -32,6 +32,8 @@ namespace TQCollector
             Label_Arperum.Content = Files.Language["credits06"];
             Label_CreatedBy.Content = Files.Language["credits07"];
             Label_Spectre.Content = Files.Language["credits08"];
+            Label_CreatedBy2.Content = Files.Language["credits09"];
+            Label_Translators.Content = Files.Language["credits10"];
         }
     }
 }
