@@ -176,35 +176,35 @@ namespace TQCollector
                         {
                             ring.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\shield"))
+                        else if (x.dbr.Contains("weapons\\shield") || x.dbr.Contains("weapon\\shield")) // Atlantis changed the path yet again, from weapons to weapon
                         {
                             shield.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\axe"))
+                        else if (x.dbr.Contains("weapons\\axe") || x.dbr.Contains("weapon\\axe"))
                         {
                             axe.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\bow"))
+                        else if (x.dbr.Contains("weapons\\bow") || x.dbr.Contains("weapon\\bow"))
                         {
                             bow.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\club"))
+                        else if (x.dbr.Contains("weapons\\club") || x.dbr.Contains("weapon\\club"))
                         {
                             club.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\spear"))
+                        else if (x.dbr.Contains("weapons\\spear") || x.dbr.Contains("weapon\\spear"))
                         {
                             spear.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\staff"))
+                        else if (x.dbr.Contains("weapons\\staff") || x.dbr.Contains("weapon\\staff"))
                         {
                             staff.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\sword"))
+                        else if (x.dbr.Contains("weapons\\sword") || x.dbr.Contains("weapon\\sword"))
                         {
                             sword.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\1hranged"))
+                        else if (x.dbr.Contains("weapons\\1hranged") || x.dbr.Contains("weapon\\1hranged"))
                         {
                             ohranged.Add(x);
                         }
@@ -297,35 +297,35 @@ namespace TQCollector
                         {
                             ring.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\shield"))
+                        else if (x.dbr.Contains("weapons\\shield") || x.dbr.Contains("weapon\\shield"))
                         {
                             shield.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\axe"))
+                        else if (x.dbr.Contains("weapons\\axe") || x.dbr.Contains("weapon\\axe"))
                         {
                             axe.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\bow"))
+                        else if (x.dbr.Contains("weapons\\bow") || x.dbr.Contains("weapon\\bow"))
                         {
                             bow.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\club"))
+                        else if (x.dbr.Contains("weapons\\club") || x.dbr.Contains("weapon\\club"))
                         {
                             club.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\spear"))
+                        else if (x.dbr.Contains("weapons\\spear") || x.dbr.Contains("weapon\\spear"))
                         {
                             spear.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\staff"))
+                        else if (x.dbr.Contains("weapons\\staff") || x.dbr.Contains("weapon\\staff"))
                         {
                             staff.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\sword"))
+                        else if (x.dbr.Contains("weapons\\sword") || x.dbr.Contains("weapon\\sword"))
                         {
                             sword.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\1hranged"))
+                        else if (x.dbr.Contains("weapons\\1hranged") || x.dbr.Contains("weapon\\1hranged"))
                         {
                             ohranged.Add(x);
                         }
@@ -1184,7 +1184,24 @@ namespace TQCollector
 
             foreach (Set s in sets)
             {
-                if (!s.Item[0].dbr.Contains("z_")) ls.Add(s);
+                List<Item> nosp = new List<Item>();
+                for (int i = 0; i < s.Item.Length; i++)
+                {
+                    if (!s.Item[i].dbr.Contains("\\z_"))
+                    {
+                        nosp.Add(s.Item[i]); //create new item list w/o secret passage items
+                    }
+                }
+                Item[] nosp_item = new Item[nosp.Count];
+                for (int i = 0; i < nosp.Count; i++) //recreate new Item array from list w/o SP items
+                {
+                    nosp_item[i] = nosp[i];
+                }
+                s.Item = nosp_item;
+                if (s.Item != null) //only add set if it has non SP items
+                {
+                    ls.Add(s);
+                }
             }
 
             Set[] ret = new Set[ls.Count];

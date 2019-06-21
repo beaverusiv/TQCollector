@@ -565,13 +565,13 @@ namespace TQCollector
         {
             TabItem ti = null;
             Set[] temp = null;
-
+            
             if (Files.Configuration.Filters.Sets.Count)
             {
                 //Make Set[] according to what we need (Secret Passage (&Ragnarök/Atlantis) or not)
-                if (Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl)
+                if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
                 {
-                    temp = Files.Add(uniques, sets);
+                    temp = Files.Add(Files.removeAtl(Files.removeR(Files.removeSP(sets))), Files.removeAtl(Files.removeR(Files.removeSP(uniques))));
                 }
                 else if (!Files.Configuration.UseSP)
                 {
@@ -605,7 +605,7 @@ namespace TQCollector
                 }
                 else
                 {
-                    temp = Files.Add(Files.removeAtl(Files.removeR(Files.removeSP(sets))), Files.removeAtl(Files.removeR(Files.removeSP(uniques))));
+                    temp = Files.Add(uniques, sets);
                 }
             }
             else
@@ -618,9 +618,21 @@ namespace TQCollector
                 {
                     temp = Files.removeSP(uniques);
                 }
+                else if (!Files.Configuration.UseSP && !Files.Configuration.UseR && Files.Configuration.UseAtl)
+                {
+                    temp = Files.removeR(Files.removeSP(uniques));
+                }
                 else if (Files.Configuration.UseSP && !Files.Configuration.UseR && Files.Configuration.UseAtl)
                 {
                     temp = Files.removeR(uniques);
+                }
+                else if (Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
+                {
+                    temp = Files.removeAtl(Files.removeR(uniques));
+                }
+                else if (!Files.Configuration.UseSP && Files.Configuration.UseR && !Files.Configuration.UseAtl)
+                {
+                    temp = Files.removeAtl(Files.removeSP(uniques));
                 }
                 else if (Files.Configuration.UseSP && Files.Configuration.UseR && !Files.Configuration.UseAtl)
                 {
@@ -1227,12 +1239,16 @@ namespace TQCollector
             if (Files.Configuration.Filters.Sets.Amount == Amount.All)
             {
                 TabControl SetsTabControl = new TabControl();
-                if (Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl)
+                if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
                 {
-                    sub = Files.Count(Files.ItemDatabase.Sets.Epic) + Files.Count(Files.ItemDatabase.Sets.Legendary);
-                    tot = Files.Total(Files.ItemDatabase.Sets.Epic) + Files.Total(Files.ItemDatabase.Sets.Legendary);
-                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.Sets.Epic));
-                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.Sets.Legendary));
+                    Set[] es = Files.removeSP(Files.ItemDatabase.Sets.Epic);
+                    Set[] ls = Files.removeSP(Files.ItemDatabase.Sets.Legendary);
+                    Set[] er = Files.removeAtl(Files.removeR(es));
+                    Set[] lr = Files.removeAtl(Files.removeR(ls));
+                    sub = Files.Count(er) + Files.Count(lr);
+                    tot = Files.Total(er) + Files.Total(lr);
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], lr));
                 }
                 else if (!Files.Configuration.UseSP)
                 {
@@ -1296,14 +1312,10 @@ namespace TQCollector
                 }
                 else
                 {
-                    Set[] es = Files.removeSP(Files.ItemDatabase.Sets.Epic);
-                    Set[] ls = Files.removeSP(Files.ItemDatabase.Sets.Legendary);
-                    Set[] er = Files.removeAtl(Files.removeR(es));
-                    Set[] lr = Files.removeAtl(Files.removeR(ls));
-                    sub = Files.Count(er) + Files.Count(lr);
-                    tot = Files.Total(er) + Files.Total(lr);
-                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
-                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], lr));
+                    sub = Files.Count(Files.ItemDatabase.Sets.Epic) + Files.Count(Files.ItemDatabase.Sets.Legendary);
+                    tot = Files.Total(Files.ItemDatabase.Sets.Epic) + Files.Total(Files.ItemDatabase.Sets.Legendary);
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.Sets.Epic));
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.Sets.Legendary));
                 }
                 
                 tb.Header = generateText(Files.Language["category05"], sub, tot);
@@ -1314,11 +1326,12 @@ namespace TQCollector
                 TabControl SetsTabControl = new TabControl();
                 if (Files.Configuration.Filters.Sets.Epic)
                 {
-                    if (Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl)
+                    if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
                     {
-                        sub += Files.Count(Files.ItemDatabase.Sets.Epic);
-                        tot += Files.Total(Files.ItemDatabase.Sets.Epic);
-                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.Sets.Epic));
+                        Set[] ers = Files.removeAtl(Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Epic)));
+                        sub += Files.Count(ers);
+                        tot += Files.Total(ers);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], ers));
                     }
                     else if (!Files.Configuration.UseSP)
                     {
@@ -1370,19 +1383,19 @@ namespace TQCollector
                     }
                     else
                     {
-                        Set[] ers = Files.removeAtl(Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Epic)));
-                        sub += Files.Count(ers);
-                        tot += Files.Total(ers);
-                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], ers));
+                        sub += Files.Count(Files.ItemDatabase.Sets.Epic);
+                        tot += Files.Total(Files.ItemDatabase.Sets.Epic);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.Sets.Epic));
                     }
                 }
                 if (Files.Configuration.Filters.Sets.Legendary)
                 {
-                    if (Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl)
+                    if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
                     {
-                        sub += Files.Count(Files.ItemDatabase.Sets.Legendary);
-                        tot += Files.Total(Files.ItemDatabase.Sets.Legendary);
-                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.Sets.Legendary));
+                        Set[] lrs = Files.removeAtl(Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Legendary)));
+                        sub += Files.Count(lrs);
+                        tot += Files.Total(lrs);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], lrs));
                     }
                     else if (!Files.Configuration.UseSP)
                     {
@@ -1434,10 +1447,9 @@ namespace TQCollector
                     }
                     else
                     {
-                        Set[] lrs = Files.removeAtl(Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Legendary)));
-                        sub += Files.Count(lrs);
-                        tot += Files.Total(lrs);
-                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], lrs));
+                        sub += Files.Count(Files.ItemDatabase.Sets.Legendary);
+                        tot += Files.Total(Files.ItemDatabase.Sets.Legendary);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.Sets.Legendary));
                     }
                 }
                 tb.Header = generateText(Files.Language["category05"], sub, tot);
