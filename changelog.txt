@@ -74,3 +74,6 @@ v1.2.0 19/06/2019 (Atlantis)
 - added atlantis items
 - added parsing for the new relic vault
 - improved tooltip hint for items in the shared stash & relic vault
+
+v1.2.1 21/06/2019
+- fixed crash after adjusting filtering options
