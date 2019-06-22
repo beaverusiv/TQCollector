@@ -2226,10 +2226,6 @@
         <Item dbr="xpack3\items\equipmentweapon\club\u_n_Set12.dbr" id="x3tagU_Club08" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\equipmentweapon\shield\u_n_Set12.dbr" id="x3tagU_Shield05" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
-      <Set name="x3tagSetName13">
-        <Item dbr="xpack3\items\equipmentweapon\bow\u_n_Set13.dbr" id="x3tagU_Bow07" isIT="true" isR="false" isAtl="true" find=""/>
-        <Item dbr="xpack3\items\equipmentweapon\spear\u_n_Set13.dbr" id="x3tagU_Spear06" isIT="true" isR="false" isAtl="true" find=""/>
-      </Set>
     </Epic>
     <Legendary>
       <Set name="tagSetName031">
@@ -2650,6 +2646,7 @@
         <Item dbr="xpack2\item\equipmentweapons\bow\u_e_01.dbr" id="x2tagUWeapon044" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack3\items\equipmentweapon\bow\u_n_01.dbr" id="x3tagU_Bow03" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\equipmentweapon\bow\u_n_02.dbr" id="x3tagU_Bow08" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\bow\u_n_Set13.dbr" id="x3tagU_Bow07" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader05">
         <Item dbr="item\equipmentarmband\um_e_arcanebindings.dbr" id="tagUArmor036" isIT="false" isR="false" isAtl="false" find="@level05$: @act03$, @act04$; @level06$: @act03$, @act04$"/>
@@ -2893,6 +2890,7 @@
         <Item dbr="xpack2\item\equipmentweapons\spear\u_e_02.dbr" id="x2tagUWeapon004" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack3\items\equipmentweapon\spear\u_n_01.dbr" id="x3tagU_Spear01" isIT="true" isR="false" isAtl="true" find=""/>
         <Item dbr="xpack3\items\equipmentweapon\spear\u_n_02.dbr" id="x3tagU_Spear07" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentweapon\spear\u_n_Set13.dbr" id="x3tagU_Spear06" isIT="true" isR="false" isAtl="true" find=""/>
       </Set>
       <Set name="uheader12">
         <Item dbr="item\equipmentweapon\staff\u_e_apophisserpent.dbr" id="tagUWeapon239" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @level06$: @act02$"/>
