@@ -77,3 +77,8 @@ v1.2.0 19/06/2019 (Atlantis)
 
 v1.2.1 21/06/2019
 - fixed crash after adjusting filtering options
+
+v1.2.2 22/06/2019
+- fixed various Atlantis set filenames which caused items not to be listed as owned
+- fixed checkbox setting only having an effect on MI and Set categories
+- fixed tooltips not appearing when using checkboxes (caveat: checkboxes can be clicked, but will reset after periodic refresh)
