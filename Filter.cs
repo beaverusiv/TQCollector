@@ -155,7 +155,7 @@ namespace TQCollector
         private static CheckBox _createCheckBox(Item item)
         {
             CheckBox ct = new CheckBox();
-            ct.IsEnabled = false;
+            ct.IsEnabled = true;
             ct.ToolTip = _createTooltip(item);
             ct.Margin = new Thickness(5, 0, 0, 0);
             ct.Content = generateContent(item.name);
