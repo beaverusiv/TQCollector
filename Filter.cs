@@ -212,13 +212,23 @@ namespace TQCollector
 
                 for (int i = 0; i < s.Item.Length; i++)
                 {
-                    if ((Files.Configuration.UseIT || Files.Configuration.UseAE || !s.Item[i].isIT) && (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0)))
+                    if (Files.Configuration.UseIT || Files.Configuration.UseAE || !s.Item[i].isIT)
                     {
-                        w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 3), Int32.Parse(Files.Language["width01"]), new Thickness(0)));
+                        if (Files.Configuration.UseCheckBox)
+                        {
+                            w.Children.Add(_createCheckBox(s.Item[i]));
+                        }
+                        else
+                        {
+                            if (Files.Configuration.UseItemOwned || (!Files.Configuration.UseItemOwned && s.Item[i].count == 0))
+                            {
+                                w.Children.Add(_createLabel(s.Item[i], new Thickness(5, 0, 0, 3), Int32.Parse(Files.Language["width01"]), new Thickness(0)));
+                            }
+                        }
                     }
                 }
 
-                if(w.Children.Count==0)
+                if (w.Children.Count == 0)
                 {
                     sp2.Children.Remove(w);
                     sp2.Children.Remove(t);
