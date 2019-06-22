@@ -2043,7 +2043,7 @@
         <Item dbr="item\equipmentarmband\usm_e_umbralraiment.dbr" id="tagUArmor066" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @act03$, @level06$: @act02$, @act03$"/>
         <Item dbr="item\equipmentarmor\usm_e_umbralraiment.dbr" id="tagUArmor398" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @act03$, @level06$: @act02$, @act03$"/>
         <Item dbr="item\equipmenthelm\usm_e_umbralraiment.dbr" id="tagUArmor250" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @act03$, @level06$: @act02$, @act03$"/>
-        <Item dbr="item\equipmentweapon\club\us_e_umbralraiment.dbr" id="tagUWeapon193" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @act03$, @level06$: @act02$, @act03$"/>
+        <Item dbr="item\equipmentweapon\staff\u_e_soulquencher.dbr" id="tagUWeapon265" isIT="false" isR="false" isAtl="false" find="@level05$: @act03$, @level06$: @act02$, @act03$"/>
       </Set>
       <Set name="tagSetName021">
         <Item dbr="item\equipmentarmband\us_e_warden'scharge.dbr" id="tagUArmor120" isIT="false" isR="false" isAtl="false" find="@level05$: @act01$, @act02$, @level06$: @act01$, @act02$"/>
@@ -2914,7 +2914,6 @@
         <Item dbr="item\equipmentweapon\staff\u_n_shepherd'scrook.dbr" id="tagUWeapon275" isIT="false" isR="false" isAtl="false" find="@level04$: @act01$"/>
         <Item dbr="item\equipmentweapon\staff\u_e_shiva'scompanion.dbr" id="tagUWeapon256" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @act03$; @level06$: @act02$, @act03$"/>
         <Item dbr="item\equipmentweapon\staff\u_n_siphon.dbr" id="tagUWeapon276" isIT="false" isR="false" isAtl="false" find="@level04$: @act01$, @act02$"/>
-        <Item dbr="item\equipmentweapon\staff\u_e_soulquencher.dbr" id="tagUWeapon265" isIT="false" isR="false" isAtl="false" find="@level05$: @act03$, @level06$: @act02$, @act03$"/>
         <Item dbr="item\equipmentweapon\staff\u_n_spectralrod.dbr" id="tagUWeapon277" isIT="false" isR="false" isAtl="false" find="@level04$: @act02$, @act03$, @act04$"/>
         <Item dbr="item\equipmentweapon\staff\u_n_staffofkheprer.dbr" id="tagUWeapon267" isIT="false" isR="false" isAtl="false" find="@level04$: @act02$"/>
         <Item dbr="item\equipmentweapon\staff\u_n_staffofnabukhuthnusar.dbr" id="tagUWeapon278" isIT="false" isR="false" isAtl="false" find="@level04$: @act02$, @act03$"/>
@@ -3185,6 +3184,7 @@
         <Item dbr="item\equipmentweapon\club\u_l_prometheus'gift.dbr" id="tagUWeapon161" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\club\u_l_saprosthecorrupter.dbr" id="tagUWeapon175" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\club\u_l_scepterofthanatos.dbr" id="tagUWeapon176" isIT="false" isR="false" isAtl="false" find="@level06$: @amount07$"/>
+        <Item dbr="item\equipmentweapon\club\us_e_umbralraiment.dbr" id="tagUWeapon193" isIT="false" isR="false" isAtl="false" find="@level05$: @act02$, @act03$, @level06$: @act02$, @act03$"/>
         <Item dbr="item\equipmentweapon\club\u_e_spinebreaker.dbr" id="tagUWeapon177" isIT="false" isR="false" isAtl="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
         <Item dbr="item\equipmentweapon\club\u_e_thornymaul.dbr" id="tagUWeapon165" isIT="false" isR="false" isAtl="false" find="@level05$: @act01$, @act03$; @level06$: @act01$, @act03$"/>
         <Item dbr="item\equipmentweapon\club\u_e_truncheonofmalice.dbr" id="tagUWeapon167" isIT="false" isR="false" isAtl="false" find="@level05$: @amount07$, @level06$: @amount07$"/>
