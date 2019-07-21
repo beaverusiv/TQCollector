@@ -3012,8 +3012,8 @@
         <Item dbr="xpack\item\equipmentarmor\amulet\u_e_003.dbr" id="xtagUArmor021" isIT="true" isR="false" isAtl="false" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\amulet\u_e_001.dbr" id="xtagUArmor019" isIT="true" isR="false" isAtl="false" find="@level05$: @act04$, @level06$: @act04$"/>
         <Item dbr="xpack\item\equipmentarmor\amulet\u_e_002.dbr" id="xtagUArmor020" isIT="true" isR="false" isAtl="false" find="@level05$: @act04$, @level06$: @act04$"/>
-        <Item dbr="xpack2\item\equipmentarmor\amulet\u_e_001.dbr" id="x2tagUArmor113" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$; @level05$: @act01$"/>
-        <Item dbr="xpack2\item\equipmentarmor\amulet\u_e_003.dbr" id="x2tagUArmor115" isIT="true" isR="true" isAtl="false" find="@level04$: @act06$; @level05$: @act01$"/>
+        <Item dbr="xpack2\item\equipmentarmor\amulet\u_e_001.dbr" id="x2tagUArmor113" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$; @level06$: @act01$"/>
+        <Item dbr="xpack2\item\equipmentarmor\amulet\u_e_003.dbr" id="x2tagUArmor115" isIT="true" isR="true" isAtl="false" find="@level05$: @act06$; @level06$: @act01$"/>
         <Item dbr="xpack2\item\equipmentarmor\amulet\u_l_001.dbr" id="x2tagUArmor111" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <Item dbr="xpack2\item\equipmentarmor\amulet\u_l_002.dbr" id="x2tagUArmor112" isIT="true" isR="true" isAtl="false" find="@level06$: @act06$"/>
         <!--<Item dbr="xpack3\items\equipmentarmor\amulet\u_e_01.dbr" id="x3tagUArmor001" isIT="true" isR="false" isAtl="true" find=""/>
