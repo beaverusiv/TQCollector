@@ -82,3 +82,8 @@ v1.2.2 22/06/2019
 - fixed various Atlantis set filenames which caused items not to be listed as owned
 - fixed checkbox setting only having an effect on MI and Set categories
 - fixed tooltips not appearing when using checkboxes (caveat: checkboxes can be clicked, but will reset after periodic refresh)
+
+v1.2.2.1 30/08/2019
+- moved "The Shade" set to correct difficulty
+- fixed wrong drop locations for "Necklace of Glauberg" and "Pendant of Skadi"
+- removed epic and legendary version of Power of Nerthus relic
