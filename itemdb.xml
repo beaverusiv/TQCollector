@@ -1539,7 +1539,7 @@
         <Item dbr="xpack2\item\relics\02_act5_donarshammer.dbr" id="x2tagRelicName011" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\relics\02_act5_eponashorses.dbr" id="x2tagRelicName012" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\relics\02_act5_lightofbelenus.dbr" id="x2tagRelicName013" isIT="true" isR="true" isAtl="false" find=""/>
-        <Item dbr="xpack2\item\relics\02_act5_nerthusmistletoe.dbr" id="x2tagRelicName018" isIT="true" isR="true" isAtl="false" find=""/>
+        <!--<Item dbr="xpack2\item\relics\02_act5_nerthusmistletoe.dbr" id="x2tagRelicName018" isIT="true" isR="true" isAtl="false" find=""/>-->
         <Item dbr="xpack2\item\relics\02_act5_ogmioseloquence.dbr" id="x2tagRelicName014" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\relics\02_act5_sigurdscourage.dbr" id="x2tagRelicName015" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\relics\02_act5_stewofeldhrimnir.dbr" id="x2tagRelicName016" isIT="true" isR="true" isAtl="false" find=""/>
@@ -1598,7 +1598,7 @@
         <Item dbr="xpack2\item\relics\03_act5_donarshammer.dbr" id="x2tagRelicName020" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\relics\03_act5_eponashorses.dbr" id="x2tagRelicName021" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\relics\03_act5_lightofbelenus.dbr" id="x2tagRelicName022" isIT="true" isR="true" isAtl="false" find=""/>
-        <Item dbr="xpack2\item\relics\03_act5_nerthusmistletoe.dbr" id="x2tagRelicName027" isIT="true" isR="true" isAtl="false" find=""/>
+        <!--<Item dbr="xpack2\item\relics\03_act5_nerthusmistletoe.dbr" id="x2tagRelicName027" isIT="true" isR="true" isAtl="false" find=""/>-->
         <Item dbr="xpack2\item\relics\03_act5_ogmioseloquence.dbr" id="x2tagRelicName023" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\relics\03_act5_sigurdscourage.dbr" id="x2tagRelicName024" isIT="true" isR="true" isAtl="false" find=""/>
         <Item dbr="xpack2\item\relics\03_act5_stewofeldhrimnir.dbr" id="x2tagRelicName025" isIT="true" isR="true" isAtl="false" find=""/>
