@@ -1400,7 +1400,7 @@ namespace TQCollector
 
             foreach (FileInfo fi in rgFiles)
             {
-                file = new FileStream(fi.FullName, FileMode.Open);
+                file = new FileStream(fi.FullName, FileMode.Open, FileAccess.Read);
                 br = new System.IO.BinaryReader(file);
 
                 try
