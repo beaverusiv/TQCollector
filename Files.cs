@@ -128,7 +128,7 @@ namespace TQCollector
         public static Set[] Add(Set[] set1, Set[] set2)
         {
             //This function only works on uniques
-            Set[] retSet = new Set[13];
+            Set[] retSet = new Set[14];
 
             List<Item> amulet = new List<Item>();
             List<Item> bracer = new List<Item>();
@@ -143,6 +143,7 @@ namespace TQCollector
             List<Item> spear = new List<Item>();
             List<Item> staff = new List<Item>();
             List<Item> sword = new List<Item>();
+            List<Item> ohranged = new List<Item>();
 
             //Find out what Set it should be inserted into
             foreach (Set ss in set1)
@@ -175,33 +176,37 @@ namespace TQCollector
                         {
                             ring.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\shield"))
+                        else if (x.dbr.Contains("weapons\\shield") || x.dbr.Contains("weapon\\shield")) // Atlantis changed the path yet again, from weapons to weapon
                         {
                             shield.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\axe"))
+                        else if (x.dbr.Contains("weapons\\axe") || x.dbr.Contains("weapon\\axe"))
                         {
                             axe.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\bow"))
+                        else if (x.dbr.Contains("weapons\\bow") || x.dbr.Contains("weapon\\bow"))
                         {
                             bow.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\club"))
+                        else if (x.dbr.Contains("weapons\\club") || x.dbr.Contains("weapon\\club"))
                         {
                             club.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\spear"))
+                        else if (x.dbr.Contains("weapons\\spear") || x.dbr.Contains("weapon\\spear"))
                         {
                             spear.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\staff"))
+                        else if (x.dbr.Contains("weapons\\staff") || x.dbr.Contains("weapon\\staff"))
                         {
                             staff.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\sword"))
+                        else if (x.dbr.Contains("weapons\\sword") || x.dbr.Contains("weapon\\sword"))
                         {
                             sword.Add(x);
+                        }
+                        else if (x.dbr.Contains("weapons\\1hranged") || x.dbr.Contains("weapon\\1hranged"))
+                        {
+                            ohranged.Add(x);
                         }
                     }
                     else
@@ -292,33 +297,37 @@ namespace TQCollector
                         {
                             ring.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\shield"))
+                        else if (x.dbr.Contains("weapons\\shield") || x.dbr.Contains("weapon\\shield"))
                         {
                             shield.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\axe"))
+                        else if (x.dbr.Contains("weapons\\axe") || x.dbr.Contains("weapon\\axe"))
                         {
                             axe.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\bow"))
+                        else if (x.dbr.Contains("weapons\\bow") || x.dbr.Contains("weapon\\bow"))
                         {
                             bow.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\club"))
+                        else if (x.dbr.Contains("weapons\\club") || x.dbr.Contains("weapon\\club"))
                         {
                             club.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\spear"))
+                        else if (x.dbr.Contains("weapons\\spear") || x.dbr.Contains("weapon\\spear"))
                         {
                             spear.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\staff"))
+                        else if (x.dbr.Contains("weapons\\staff") || x.dbr.Contains("weapon\\staff"))
                         {
                             staff.Add(x);
                         }
-                        else if (x.dbr.Contains("weapons\\sword"))
+                        else if (x.dbr.Contains("weapons\\sword") || x.dbr.Contains("weapon\\sword"))
                         {
                             sword.Add(x);
+                        }
+                        else if (x.dbr.Contains("weapons\\1hranged") || x.dbr.Contains("weapon\\1hranged"))
+                        {
+                            ohranged.Add(x);
                         }
                     }
                     else
@@ -392,6 +401,7 @@ namespace TQCollector
             spear.Sort(delegate(Item p1, Item p2) { return p1.name.CompareTo(p2.name); });
             staff.Sort(delegate(Item p1, Item p2) { return p1.name.CompareTo(p2.name); });
             sword.Sort(delegate(Item p1, Item p2) { return p1.name.CompareTo(p2.name); });
+            ohranged.Sort(delegate(Item p1, Item p2) { return p1.name.CompareTo(p2.name); });
 
             retSet[0] = new Set();
             retSet[0].name = "uheader01";
@@ -495,6 +505,14 @@ namespace TQCollector
             for (int i = 0; i < sword.Count; i++)
             {
                 retSet[12].Item[i] = sword[i];
+            }
+
+            retSet[13] = new Set();
+            retSet[13].name = "uheader14";
+            retSet[13].Item = new Item[ohranged.Count];
+            for (int i = 0; i < ohranged.Count; i++)
+            {
+                retSet[13].Item[i] = ohranged[i];
             }
 
             return retSet;
@@ -618,9 +636,9 @@ namespace TQCollector
             StreamReader str = null;
             try
             {
-                if (File.Exists(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData), "TQ Collector Release\\config.xml")))
+                if (File.Exists("config.xml"))
                 {
-                    str = new StreamReader(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData), "TQ Collector Release\\config.xml"));
+                    str = new StreamReader("config.xml");
                     XMLConfigSerializer = new XmlSerializer(typeof(Config));
                     XMLConfig = (Config)XMLConfigSerializer.Deserialize(str);
                     //null means it hasn't been set to 'documents' yet.
@@ -659,7 +677,7 @@ namespace TQCollector
             {
                 if (XMLConfig != null)
                 {
-                    stream = File.Open(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData), "TQ Collector Release\\config.xml"), FileMode.Truncate);
+                    stream = File.Open("config.xml", FileMode.Truncate);
                     XMLConfigSerializer.Serialize(stream, XMLConfig);
                     return true;
                 }
@@ -824,6 +842,20 @@ namespace TQCollector
                             if (!ParseTextDB(dbFile, "text\\xcommonequipment.txt")) return false;
                             if (!ParseTextDB(dbFile, "text\\xuniqueequipment.txt")) return false;
                             if (!ParseTextDB(dbFile, "text\\xui.txt")) return false;
+                            if (File.Exists(Files.Configuration.Directories.AE + "\\Resources\\XPack2\\SceneryAsgard.arc")) //condition to determine whether Ragnarök is installed
+                            {
+                                if (!ParseTextDB(dbFile, "text\\x2commonequipment.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x2uniqueequipment.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x2ui.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x2quest.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x2monsters.txt")) return false;
+                            }
+                            if (File.Exists(Files.Configuration.Directories.AE + "\\Resources\\XPack3\\Scenery.arc")) //condition to determine whether Atlantis is installed
+                            {
+                                if (!ParseTextDB(dbFile, "text\\x3basegame_nonvoiced.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x3items_nonvoiced.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x3misctags_nonvoiced.txt")) return false;
+                            }
                             return true;
                         }
                         MessageBox.Show(Files.Language["error23"]);
@@ -1152,7 +1184,96 @@ namespace TQCollector
 
             foreach (Set s in sets)
             {
-                if (!s.Item[0].dbr.Contains("z_")) ls.Add(s);
+                List<Item> nosp = new List<Item>();
+                for (int i = 0; i < s.Item.Length; i++)
+                {
+                    if (!s.Item[i].dbr.Contains("\\z_"))
+                    {
+                        nosp.Add(s.Item[i]); //create new item list w/o secret passage items
+                    }
+                }
+                Item[] nosp_item = new Item[nosp.Count];
+                for (int i = 0; i < nosp.Count; i++) //recreate new Item array from list w/o SP items
+                {
+                    nosp_item[i] = nosp[i];
+                }
+                s.Item = nosp_item;
+                if (s.Item != null) //only add set if it has non SP items
+                {
+                    ls.Add(s);
+                }
+            }
+
+            Set[] ret = new Set[ls.Count];
+
+            for (int i = 0; i < ls.Count; i++)
+            {
+                ret[i] = ls[i];
+            }
+
+            return ret;
+        }
+
+        public static Set[] removeR(Set[] sets) //removes Ragnarök items from display
+        {
+            List<Set> ls = new List<Set>();
+            
+            foreach (Set s in sets) //create a new set of items not from Ragnarök
+            {
+                List<Item> nor = new List<Item>();
+                for (int i = 0; i < s.Item.Length; i++)
+                {
+                    if (!s.Item[i].isR)
+                    {
+                        nor.Add(s.Item[i]); //create new item list w/o Ragnarök items
+                    }
+                }
+                Item[] nor_item = new Item[nor.Count];
+                for (int i = 0; i < nor.Count; i++) //recreate new Item array from list w/o R items
+                {
+                    nor_item[i] = nor[i];
+                }
+                s.Item = nor_item;
+                if (s.Item != null) //only add set if it has non R items
+                {
+                    ls.Add(s);
+                }
+            }
+
+            Set[] ret = new Set[ls.Count];
+
+            for (int i = 0; i < ls.Count; i++)
+            {
+                ret[i] = ls[i];
+            }
+
+            return ret;
+        }
+
+        public static Set[] removeAtl(Set[] sets) //removes Atlantis items from display
+        {
+            List<Set> ls = new List<Set>();
+            
+            foreach (Set s in sets) //create a new set of items not from Atlantis
+            {
+                List<Item> noatl = new List<Item>();
+                for (int i = 0; i < s.Item.Length; i++)
+                {
+                    if (!s.Item[i].isAtl)
+                    {
+                        noatl.Add(s.Item[i]); //create new item list w/o Atlantis items
+                    }
+                }
+                Item[] noatl_item = new Item[noatl.Count];
+                for (int i = 0; i < noatl.Count; i++) //recreate new Item array from list w/o Atl items
+                {
+                    noatl_item[i] = noatl[i];
+                }
+                s.Item = noatl_item;
+                if (s.Item != null) //only add set if it has non Atl items
+                {
+                    ls.Add(s);
+                }
             }
 
             Set[] ret = new Set[ls.Count];
@@ -1279,7 +1400,7 @@ namespace TQCollector
 
             foreach (FileInfo fi in rgFiles)
             {
-                file = new FileStream(fi.FullName, FileMode.Open);
+                file = new FileStream(fi.FullName, FileMode.Open, FileAccess.Read);
                 br = new System.IO.BinaryReader(file);
 
                 try
@@ -1559,6 +1680,19 @@ namespace TQCollector
                     MessageBox.Show(Files.Language["error22"]);
                     return false;
                 }
+                if (Files.Configuration.UseAE)
+                {
+                    string relicStashFile = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "My Games\\Titan Quest - Immortal Throne\\SaveData\\Sys\\miscsys.dxb");
+                    try
+                    {
+                        LoadStash(relicStashFile);
+                    }
+                    catch
+                    {
+                        MessageBox.Show(Files.Language["error24"]);
+                        return false;
+                    }
+                }
             }
             return true;
         }
@@ -1568,7 +1702,8 @@ namespace TQCollector
             string ans = ReadString(b);
             if (ans.Equals(s)) return true;
 
-            MessageBox.Show("Failed to validate string: " + s + ", got: " + ans);
+            //MessageBox.Show("Failed to validate string: " + s + ", got: " + ans);
+            File.AppendAllText(Directory.GetCurrentDirectory() + "\\errorlog.log", "[" + System.DateTime.Now.ToString() + "]\tFailed to validate string: " + s + ", got: " + ans + System.Environment.NewLine);
 
             return false;
         }
@@ -1675,9 +1810,31 @@ namespace TQCollector
 
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
+ 
+            //Atlantis added second relic
+            string an = ReadString(b);
+            string relicID2 ="";
+            if (an.Equals("relicName2"))
+            {
+                relicID2 = ReadString(b);
 
-            ValidateNextString("end_block", b);
-            int endBlockCrap2 = b.ReadInt32();
+                ValidateNextString("relicBonus2", b);
+                string relicBonusID2 = ReadString(b);
+
+                ValidateNextString("var2", b);
+                int var2 = b.ReadInt32();
+
+                ValidateNextString("end_block", b);
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else if (an.Equals("end_block"))
+            {
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else
+            {
+                MessageBox.Show("Failed to validate string, got: " + an);
+            }
 
             ValidateNextString("pointX", b);
             int x = b.ReadInt32();
@@ -1695,14 +1852,14 @@ namespace TQCollector
 
             if (baseItemID.Contains("\\animalrelics\\") || baseItemID.Contains("\\charms\\")) //A charm
             {
-                if (var1 == 5)
+                if (var1 == 5 || baseItemID.Contains("quest_artifice"))
                 {
                     Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover04"], vault, sack.ToString()));
                 }
             }
             else if (baseItemID.Contains("\\relics\\")) //A relic
             {
-                if (var1 == 3)
+                if (var1 == 3 || baseItemID.Contains("nerthusmistletoe"))
                 {
                     Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover04"], vault, sack.ToString()));
                 }
@@ -1719,6 +1876,14 @@ namespace TQCollector
                 relicID = relicID.Substring(oo + 8);
                 relicID = relicID.ToLower(System.Globalization.CultureInfo.InvariantCulture);
                 Files.ItemDatabase.addItem(relicID, string.Format(Files.Language["mouseover05"], vault, sack.ToString()));
+                if (!relicID2.Equals(""))
+                {
+                    int ooo = relicID2.LastIndexOf("records");
+                    if (ooo < 0) ooo = 0;
+                    relicID2 = relicID2.Substring(ooo + 8);
+                    relicID2 = relicID2.ToLower(System.Globalization.CultureInfo.InvariantCulture);
+                    Files.ItemDatabase.addItem(relicID2, string.Format(Files.Language["mouseover05"], vault, sack.ToString()));
+                }
             }
         }
 
@@ -1748,8 +1913,30 @@ namespace TQCollector
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
 
-            ValidateNextString("end_block", b);
-            int endBlockCrap2 = b.ReadInt32();
+            //Atlantis added second relic
+            string an = ReadString(b);
+            string relicID2 = "";
+            if (an.Equals("relicName2"))
+            {
+                relicID2 = ReadString(b);
+
+                ValidateNextString("relicBonus2", b);
+                string relicBonusID2 = ReadString(b);
+
+                ValidateNextString("var2", b);
+                int var2 = b.ReadInt32();
+
+                ValidateNextString("end_block", b);
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else if (an.Equals("end_block"))
+            {
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else
+            {
+                MessageBox.Show("Failed to validate string, got: " + an);
+            }
 
             if (!baseItemID.Equals("")) //Nothing equipped
             {
@@ -1760,14 +1947,14 @@ namespace TQCollector
 
                 if (baseItemID.Contains("\\animalrelics\\") || baseItemID.Contains("\\charms\\")) //A charm
                 {
-                    if (var1 == 5)
+                    if (var1 == 5 || baseItemID.Contains("quest_artifice"))
                     {
                         Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover06"], player));
                     }
                 }
                 else if (baseItemID.Contains("\\relics\\")) //A relic
                 {
-                    if (var1 == 3)
+                    if (var1 == 3 || baseItemID.Contains("nerthusmistletoe"))
                     {
                         Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover06"], player));
                     }
@@ -1784,6 +1971,14 @@ namespace TQCollector
                     relicID = relicID.Substring(oo + 8);
                     relicID = relicID.ToLower(System.Globalization.CultureInfo.InvariantCulture);
                     Files.ItemDatabase.addItem(relicID, string.Format(Files.Language["mouseover07"], player));
+                    if (!relicID2.Equals(""))
+                    {
+                        int ooo = relicID2.LastIndexOf("records");
+                        if (ooo < 0) ooo = 0;
+                        relicID2 = relicID2.Substring(ooo + 8);
+                        relicID2 = relicID2.ToLower(System.Globalization.CultureInfo.InvariantCulture);
+                        Files.ItemDatabase.addItem(relicID2, string.Format(Files.Language["mouseover07"], player));
+                    }
                 }
             }
         }
@@ -1817,9 +2012,21 @@ namespace TQCollector
 
                         try
                         {
-                            string player = filename.Substring(0, filename.Length - 11);
-                            int lastDir = player.LastIndexOf("\\");
-                            player = player.Substring(lastDir + 2);
+                            string player;
+                            if (Path.GetFileName(filename) == "miscsys.dxb") // Stash being loaded is the shared relic stash
+                            {
+                                player = ":relicstash:";
+                            }
+                            else if (Path.GetFileName(filename) == "winsys.dxb" && filename.Substring(filename.Length - 14, 3) == "Sys") // Stash being loaded is the general shared stash
+                            {
+                                player = ":sharedstash:";
+                            }
+                            else // character exclusive stash
+                            {
+                                player = filename.Substring(0, filename.Length - 11);
+                                int lastDir = player.LastIndexOf("\\");
+                                player = player.Substring(lastDir + 2);
+                            }
                             ParseStashItemBlock(reader, player);
                         }
                         catch
@@ -1896,8 +2103,30 @@ namespace TQCollector
             ValidateNextString("var1", b);
             int var1 = b.ReadInt32();
 
-            ValidateNextString("end_block", b);
-            int endBlockCrap2 = b.ReadInt32();
+            //Atlantis added second relic
+            string an = ReadString(b);
+            string relicID2 = "";
+            if (an.Equals("relicName2"))
+            {
+                relicID2 = ReadString(b);
+
+                ValidateNextString("relicBonus2", b);
+                string relicBonusID2 = ReadString(b);
+
+                ValidateNextString("var2", b);
+                int var2 = b.ReadInt32();
+
+                ValidateNextString("end_block", b);
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else if (an.Equals("end_block"))
+            {
+                int endBlockCrap2 = b.ReadInt32();
+            }
+            else
+            {
+                MessageBox.Show("Failed to validate string, got: " + an);
+            }
 
             ValidateNextString("xOffset", b);
 			float x = b.ReadSingle();
@@ -1912,21 +2141,54 @@ namespace TQCollector
 
             if (baseItemID.Contains("\\animalrelics\\") || baseItemID.Contains("\\charms\\")) //A charm
             {
-                if (var1 == 5)
+                if (var1 == 5 || baseItemID.Contains("quest_artifice"))
                 {
-                    Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                    if (player == ":relicstash:")
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover11"]);
+                    }
+                    else if (player == ":sharedstash:")
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover10"]);
+                    }
+                    else
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                    }
                 }
             }
             else if (baseItemID.Contains("\\relics\\")) //A relic
             {
-                if (var1 == 3)
+                if (var1 == 3 || baseItemID.Contains("nerthusmistletoe"))
                 {
-                    Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                    if (player == ":relicstash:")
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover11"]);
+                    }
+                    else if (player == ":sharedstash:")
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover10"]);
+                    }
+                    else
+                    {
+                        Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                    }
                 }
             }
             else
             {
-                Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                if (player == ":relicstash:")
+                {
+                    Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover11"]);
+                }
+                else if (player == ":sharedstash:")
+                {
+                    Files.ItemDatabase.addItem(baseItemID, Files.Language["mouseover10"]);
+                }
+                else
+                {
+                    Files.ItemDatabase.addItem(baseItemID, string.Format(Files.Language["mouseover08"], player));
+                }
             }
 
             if (Files.Configuration.UseSocketed && !relicID.Equals(""))
@@ -1936,6 +2198,14 @@ namespace TQCollector
                 relicID = relicID.Substring(oo + 8);
                 relicID = relicID.ToLower(System.Globalization.CultureInfo.InvariantCulture);
                 Files.ItemDatabase.addItem(relicID, string.Format(Files.Language["mouseover09"], player));
+                if (!relicID2.Equals(""))
+                {
+                    int ooo = relicID2.LastIndexOf("records");
+                    if (ooo < 0) ooo = 0;
+                    relicID2 = relicID2.Substring(ooo + 8);
+                    relicID2 = relicID2.ToLower(System.Globalization.CultureInfo.InvariantCulture);
+                    Files.ItemDatabase.addItem(relicID2, string.Format(Files.Language["mouseover09"], player));
+                }
             }
         }
 

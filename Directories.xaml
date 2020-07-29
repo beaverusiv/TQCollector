@@ -28,6 +28,6 @@
         <Button x:Name="button2" HorizontalAlignment="Left" Margin="431.686,10,0,0" VerticalAlignment="Top" Width="119.049" Height="91.319" Click="button2_Click">
             <TextBlock TextAlignment="Center">Titan Quest<LineBreak/>Anniversay Edition</TextBlock>
         </Button>
-        <CheckBox x:Name="checkBox" Content="Use Vaults" HorizontalAlignment="Left" Margin="153.892,150.491,0,-29.789" VerticalAlignment="Top" IsChecked="True" IsEnabled="False" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+        <CheckBox x:Name="checkBox" Content="Use Vaults" HorizontalAlignment="Left" Margin="153.892,150.491,0,-29.789" VerticalAlignment="Top" IsChecked="False" IsEnabled="False" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
     </Grid>
 </Window>
