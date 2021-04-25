@@ -1,6 +1,6 @@
 How to update the config.cs file:
 - Open dev console in code directory
-- Run: xsd config.xsd /c
+- Run: xsd config.xsd /c (path to xsd: C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.2 Tools\)
 - check config.cs for successful autogeneration
 
 How to update the itemdb.cs file:

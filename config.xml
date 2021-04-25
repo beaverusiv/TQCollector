@@ -17,6 +17,7 @@
   <Language>en</Language>
   <UseItemCount>true</UseItemCount>
   <UseItemOwned>true</UseItemOwned>
+  <UseItemNameCount>false</UseItemNameCount>
   <UseCheckBox>false</UseCheckBox>
   <UseSocketed>false</UseSocketed>
   <RefreshTimer>180</RefreshTimer>

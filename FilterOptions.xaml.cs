@@ -462,10 +462,12 @@ namespace TQCollector
             Misc_Check_Socketed.Content = Files.Language["misc01"];
             Misc_Check_Bold.Content = Files.Language["misc02"];
             Misc_Check_ItemOwned.Content = Files.Language["misc03"];
+            Misc_Check_ItemNameCount.Content = Files.Language["misc04"];
 
             Misc_Check_Bold.IsChecked = Files.Configuration.UseCheckBox;
             Misc_Check_Socketed.IsChecked = Files.Configuration.UseSocketed;
             Misc_Check_ItemOwned.IsChecked = Files.Configuration.UseItemOwned;
+            Misc_Check_ItemNameCount.IsChecked = Files.Configuration.UseItemNameCount;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -739,5 +741,14 @@ namespace TQCollector
             Files.Configuration.UseItemOwned = false;
         }
 
+        private void Misc_Check_ItemNameCount_Checked(object sender, RoutedEventArgs e)
+        {
+            Files.Configuration.UseItemNameCount = true;
+        }
+
+        private void Misc_Check_ItemNameCount_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Files.Configuration.UseItemNameCount = false;
+        }
     }
 }

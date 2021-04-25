@@ -144,7 +144,14 @@ namespace TQCollector
 
             ct.ToolTip = _createTooltip(item);
             ct.Margin = margin;
-            ct.Content = generateContent(item.name);
+            if (item.count > 0 && Files.Configuration.UseItemNameCount)
+            {
+                ct.Content = "[" + item.count + "] " + generateContent(item.name);
+            }
+            else
+            {
+                ct.Content = generateContent(item.name);
+            }
             ct.FontWeight = (item.count > 0) ? FontWeights.Bold : FontWeights.Normal;
             ct.Width = width;
             ct.Padding = padding;
