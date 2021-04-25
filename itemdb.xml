@@ -2200,8 +2200,8 @@
       <Set name="x3tagSetName09">
         <Item dbr="xpack3\items\equipmentarmor\armband\um_n_set09.dbr" id="x3tagUArmor119" isIT="true" isR="false" isAtl="true" find=""/>
         <!--<Item dbr="xpack3\items\equipmentarmor\greaves\um_n_set09.dbr" id="x3tagUArmor219" isIT="true" isR="false" isAtl="true" find=""/>
-        <Item dbr="xpack3\items\equipmentarmor\helm\um_n_set09.dbr" id="x3tagUArmor319" isIT="true" isR="false" isAtl="true" find=""/>-->
-        <Item dbr="xpack3\items\equipmentarmor\ring\um_n_set09.dbr" id="x3tagUArmor419" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\helm\um_n_set09.dbr" id="x3tagUArmor319" isIT="true" isR="false" isAtl="true" find=""/>
+        <Item dbr="xpack3\items\equipmentarmor\ring\um_n_set09.dbr" id="x3tagUArmor419" isIT="true" isR="false" isAtl="true" find=""/>-->
       </Set>
       <Set name="x3tagSetName10">
         <Item dbr="xpack3\items\equipmentarmor\armband\u_n_set10.dbr" id="x3tagUArmor120" isIT="true" isR="false" isAtl="true" find=""/>
