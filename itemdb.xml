@@ -3768,12 +3768,12 @@
         <Item dbr="xpack\item\artifacts\arcaneformulae\l_da_thothsglory_formula.dbr" id="xtagArtifactDescription072" isIT="true" isR="false" isAtl="false" isEE="false" find="@level06$: @act04$"/>
         <Item dbr="xpack2\item\artifacts\arcaneformulae\e_da_wheeloftaranis_formula.dbr" id="x2tagArtifactDescription002" isIT="true" isR="true" isAtl="false" isEE="false" find="@level05$: @act06$, @level06$: @act01$"/>
         <Item dbr="xpack2\item\artifacts\arcaneformulae\l_da_applesofidun_formula.dbr" id="x2tagArtifactDescription001" isIT="true" isR="true" isAtl="false" isEE="false" find="@level06$: @act06$"/>
-        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_disciplineofkunlun_formula.dbr" id="x4tagU_Artifact_Formula_06" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act07$"/>
-        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_envyofsett_formula.dbr" id="x4tagU_Artifact_Formula_01" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act07$"/>
-        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_essenceofanubishaste_formula.dbr" id="x4tagU_Artifact_Formula_02" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act07$"/>
-        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_orbofsihailongwang_formula.dbr" id="x4tagU_Artifact_Formula_03" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act07$"/>
-        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_peachofimmortality_formula.dbr" id="x4tagU_Artifact_Formula_04" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act07$"/>
-        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_strengthofpangu_formula.dbr" id="x4tagU_Artifact_Formula_05" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act07$"/>
+        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_disciplineofkunlun_formula.dbr" id="x4tagU_Artifact_Formula_06" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act08$"/>
+        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_envyofsett_formula.dbr" id="x4tagU_Artifact_Formula_01" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act08$"/>
+        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_essenceofanubishaste_formula.dbr" id="x4tagU_Artifact_Formula_02" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act08$"/>
+        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_orbofsihailongwang_formula.dbr" id="x4tagU_Artifact_Formula_03" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act08$"/>
+        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_peachofimmortality_formula.dbr" id="x4tagU_Artifact_Formula_04" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act08$"/>
+        <Item dbr="xpack4\item\artifacts\arcaneformulae\l_da_strengthofpangu_formula.dbr" id="x4tagU_Artifact_Formula_05" isIT="true" isR="false" isAtl="false" isEE="true" find="@level06$: @act08$"/>
       </Set>
     </Legendary>
   </Formulae>
