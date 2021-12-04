@@ -9,14 +9,14 @@
 //------------------------------------------------------------------------------
 
 // 
-// Dieser Quellcode wurde automatisch generiert von xsd, Version=4.6.1055.0.
+// Dieser Quellcode wurde automatisch generiert von xsd, Version=4.7.3081.0.
 // 
 namespace TQCollector {
     using System.Xml.Serialization;
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -122,7 +122,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -171,7 +171,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -207,7 +207,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -224,6 +224,8 @@ namespace TQCollector {
         private bool isRField;
         
         private bool isAtlField;
+        
+        private bool isEEField;
         
         private string findField;
         
@@ -284,6 +286,17 @@ namespace TQCollector {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
+        public bool isEE {
+            get {
+                return this.isEEField;
+            }
+            set {
+                this.isEEField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         public string find {
             get {
                 return this.findField;
@@ -295,7 +308,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -344,7 +357,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -393,7 +406,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -442,7 +455,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -465,7 +478,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -501,7 +514,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -537,7 +550,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -586,7 +599,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -609,7 +622,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -632,7 +645,7 @@ namespace TQCollector {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.7.3081.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
