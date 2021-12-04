@@ -79,6 +79,14 @@
   <NameValuePair><Name>miheader57</Name><Value>Potamoï</Value></NameValuePair>
   <NameValuePair><Name>miheader58</Name><Value>Serpentoïdes</Value></NameValuePair>
   <NameValuePair><Name>miheader59</Name><Value>Tritons</Value></NameValuePair>
+  <NameValuePair><Name>miheader60</Name><Value>Homme-tigre (L'est)</Value></NameValuePair>
+  <NameValuePair><Name>miheader61</Name><Value>Ichtien (L'est)</Value></NameValuePair>
+  <NameValuePair><Name>miheader62</Name><Value>Élémentaire de feu</Value></NameValuePair>
+  <NameValuePair><Name>miheader63</Name><Value>Guerrier en terre cuite (L'est)</Value></NameValuePair>
+  <NameValuePair><Name>miheader64</Name><Value>Squelette (L'est)</Value></NameValuePair>
+  <NameValuePair><Name>miheader65</Name><Value>Mogwai</Value></NameValuePair>
+  <NameValuePair><Name>miheader66</Name><Value>Bandit (L'est)</Value></NameValuePair>
+  <NameValuePair><Name>miheader67</Name><Value>Fanatique</Value></NameValuePair>
 
   <NameValuePair><Name>uheader01</Name><Value>Amulettes</Value></NameValuePair>
   <NameValuePair><Name>uheader02</Name><Value>Torse</Value></NameValuePair>
@@ -109,6 +117,7 @@
   <NameValuePair><Name>tooltip12</Name><Value>Prendre en compte l'Anniversary Edition</Value></NameValuePair>
   <NameValuePair><Name>tooltip13</Name><Value>Prendre en compte Ragnarök</Value></NameValuePair>
   <NameValuePair><Name>tooltip14</Name><Value>Prendre en compte Atlantis</Value></NameValuePair>
+  <NameValuePair><Name>tooltip15</Name><Value>Prendre en compte Eternal Embers</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Crédits pour Titan Quest Collector v{0} :</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying pour l'utilisation de l'icône Titan Quest qu'il a créée.</Value></NameValuePair>
@@ -119,7 +128,7 @@
   <NameValuePair><Name>credits07</Name><Value>Créateur de TQC : BeaverusIV, pour titanquest.net.</Value></NameValuePair>
   <NameValuePair><Name>credits08</Name><Value>Malgardian pour l'aide sur la localisation des objets et l'ajout des objets de Ragnarök et Atlantis.</Value></NameValuePair>
   <NameValuePair><Name>credits09</Name><Value>TQC 1.1+ (Ragnarök + Atlantis) créé par Malgardian</Value></NameValuePair>
-  <NameValuePair><Name>credits10</Name><Value>Traduction française mise à jour par AlcyonV et W.N.G.</Value></NameValuePair>
+  <NameValuePair><Name>credits10</Name><Value>Traduction française mise à jour par AlcyonV, Wagi et W.N.G.</Value></NameValuePair>
 
   <NameValuePair><Name>amount01</Name><Value>Ne pas recenser</Value></NameValuePair>
   <NameValuePair><Name>amount02</Name><Value>Recenser tout</Value></NameValuePair>
@@ -190,6 +199,7 @@
   <NameValuePair><Name>act05</Name><Value>Passage secret</Value></NameValuePair>
   <NameValuePair><Name>act06</Name><Value>Le Nord</Value></NameValuePair>
   <NameValuePair><Name>act07</Name><Value>Atlantis</Value></NameValuePair>
+  <NameValuePair><Name>act08</Name><Value>L'Est</Value></NameValuePair>
 
   <NameValuePair><Name>misc01</Name><Value>Compter reliques/charmes enchâssés</Value></NameValuePair>
   <NameValuePair><Name>misc02</Name><Value>Case cochée au lieu de surbrillance</Value></NameValuePair>

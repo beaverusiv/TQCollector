@@ -31,10 +31,10 @@
   <NameValuePair><Name>miheader09</Name><Value>Dune Raider</Value></NameValuePair>
   <NameValuePair><Name>miheader10</Name><Value>Gilded Skeleton</Value></NameValuePair>
   <NameValuePair><Name>miheader11</Name><Value>Gorgon</Value></NameValuePair>
-  <NameValuePair><Name>miheader12</Name><Value>Icthian</Value></NameValuePair>
+  <NameValuePair><Name>miheader12</Name><Value>Ichthian</Value></NameValuePair>
   <NameValuePair><Name>miheader13</Name><Value>Jackalman</Value></NameValuePair>
   <NameValuePair><Name>miheader14</Name><Value>Abyssal Liche</Value></NameValuePair>
-  <NameValuePair><Name>miheader15</Name><Value>Maenads</Value></NameValuePair>
+  <NameValuePair><Name>miheader15</Name><Value>Maenad</Value></NameValuePair>
   <NameValuePair><Name>miheader16</Name><Value>Minotaur Lord</Value></NameValuePair>
   <NameValuePair><Name>miheader17</Name><Value>Mummy</Value></NameValuePair>
   <NameValuePair><Name>miheader18</Name><Value>Neanderthal</Value></NameValuePair>
@@ -57,29 +57,37 @@
   <NameValuePair><Name>miheader35</Name><Value>Melinoe</Value></NameValuePair>
   <NameValuePair><Name>miheader36</Name><Value>Troglodyte</Value></NameValuePair>
   <NameValuePair><Name>miheader37</Name><Value>Alfr</Value></NameValuePair>
-  <NameValuePair><Name>miheader38</Name><Value>Bandits</Value></NameValuePair>
-  <NameValuePair><Name>miheader39</Name><Value>Centaurs (Corinth)</Value></NameValuePair>
+  <NameValuePair><Name>miheader38</Name><Value>Bandit</Value></NameValuePair>
+  <NameValuePair><Name>miheader39</Name><Value>Centaur (Corinth)</Value></NameValuePair>
   <NameValuePair><Name>miheader40</Name><Value>Draugr</Value></NameValuePair>
   <NameValuePair><Name>miheader41</Name><Value>Dvergr</Value></NameValuePair>
   <NameValuePair><Name>miheader42</Name><Value>Einherjar</Value></NameValuePair>
   <NameValuePair><Name>miheader43</Name><Value>Eldjotun</Value></NameValuePair>
   <NameValuePair><Name>miheader44</Name><Value>Fjord-Ichthians</Value></NameValuePair>
-  <NameValuePair><Name>miheader45</Name><Value>Kelpies</Value></NameValuePair>
-  <NameValuePair><Name>miheader46</Name><Value>Mercenaries</Value></NameValuePair>
+  <NameValuePair><Name>miheader45</Name><Value>Kelpie</Value></NameValuePair>
+  <NameValuePair><Name>miheader46</Name><Value>Mercenary</Value></NameValuePair>
   <NameValuePair><Name>miheader47</Name><Value>Merfolk</Value></NameValuePair>
-  <NameValuePair><Name>miheader48</Name><Value>Nerthus-Shamans</Value></NameValuePair>
-  <NameValuePair><Name>miheader49</Name><Value>Trolls</Value></NameValuePair>
-  <NameValuePair><Name>miheader50</Name><Value>Valkyries</Value></NameValuePair>
+  <NameValuePair><Name>miheader48</Name><Value>Nerthus-Shaman</Value></NameValuePair>
+  <NameValuePair><Name>miheader49</Name><Value>Troll</Value></NameValuePair>
+  <NameValuePair><Name>miheader50</Name><Value>Valkyrie</Value></NameValuePair>
   <NameValuePair><Name>miheader51</Name><Value>North-Yerren</Value></NameValuePair>
-  <NameValuePair><Name>miheader52</Name><Value>Coral Guardians</Value></NameValuePair>
+  <NameValuePair><Name>miheader52</Name><Value>Coral Guardian</Value></NameValuePair>
 <!--  <NameValuePair><Name>miheader53</Name><Value>Crabmen</Value></NameValuePair>-->
-  <NameValuePair><Name>miheader54</Name><Value>Embalmed Priests</Value></NameValuePair>
-  <NameValuePair><Name>miheader55</Name><Value>Hesperides</Value></NameValuePair>
+  <NameValuePair><Name>miheader54</Name><Value>Embalmed Priest</Value></NameValuePair>
+  <NameValuePair><Name>miheader55</Name><Value>Hesperide</Value></NameValuePair>
   <NameValuePair><Name>miheader56</Name><Value>Aegipan</Value></NameValuePair>
   <NameValuePair><Name>miheader57</Name><Value>Potamoi</Value></NameValuePair>
-  <NameValuePair><Name>miheader58</Name><Value>Serpentoids</Value></NameValuePair>
-  <NameValuePair><Name>miheader59</Name><Value>Tritons</Value></NameValuePair>
-
+  <NameValuePair><Name>miheader58</Name><Value>Serpentoid</Value></NameValuePair>
+  <NameValuePair><Name>miheader59</Name><Value>Triton</Value></NameValuePair>
+  <NameValuePair><Name>miheader60</Name><Value>Tigerman (East)</Value></NameValuePair>
+  <NameValuePair><Name>miheader61</Name><Value>Ichthian (East)</Value></NameValuePair>
+  <NameValuePair><Name>miheader62</Name><Value>Fire Elemental</Value></NameValuePair>
+  <NameValuePair><Name>miheader63</Name><Value>Terracotta Guard (East)</Value></NameValuePair>
+  <NameValuePair><Name>miheader64</Name><Value>Skeleton (East)</Value></NameValuePair>
+  <NameValuePair><Name>miheader65</Name><Value>Mogwai</Value></NameValuePair>
+  <NameValuePair><Name>miheader66</Name><Value>Bandit (East)</Value></NameValuePair>
+  <NameValuePair><Name>miheader67</Name><Value>Cultist</Value></NameValuePair>
+  
   <NameValuePair><Name>uheader01</Name><Value>Amulets</Value></NameValuePair>
   <NameValuePair><Name>uheader02</Name><Value>Armor</Value></NameValuePair>
   <NameValuePair><Name>uheader03</Name><Value>Axes</Value></NameValuePair>
@@ -109,6 +117,7 @@
   <NameValuePair><Name>tooltip12</Name><Value>Toggle Use Of Anniversary Edition</Value></NameValuePair>
   <NameValuePair><Name>tooltip13</Name><Value>Toggle Use Of Ragnarök</Value></NameValuePair>
   <NameValuePair><Name>tooltip14</Name><Value>Toggle Use Of Atlantis</Value></NameValuePair>
+  <NameValuePair><Name>tooltip15</Name><Value>Toggle Use Of Eternal Embers</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Titan Quest Collector v{0} credits:</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying for use of the Titan Quest Icon he created.</Value></NameValuePair>
@@ -119,7 +128,7 @@
   <NameValuePair><Name>credits07</Name><Value>TQC is created by BeaverusIV, for titanquest.net forums.</Value></NameValuePair>
   <NameValuePair><Name>credits08</Name><Value>Malgardian for helping with item locations and adding Ragnarok/Atlantis items.</Value></NameValuePair>
   <NameValuePair><Name>credits09</Name><Value>TQC 1.1+ (Ragnarök + Atlantis) is created by Malgardian</Value></NameValuePair>
-  <NameValuePair><Name>credits10</Name><Value>French translation updates by AlcyonV and W.N.G.</Value></NameValuePair>
+  <NameValuePair><Name>credits10</Name><Value>French translation updates by AlcyonV, Wagi and W.N.G.</Value></NameValuePair>
 
   <NameValuePair><Name>amount01</Name><Value>Collect None</Value></NameValuePair>
   <NameValuePair><Name>amount02</Name><Value>Collect All</Value></NameValuePair>
@@ -190,6 +199,7 @@
   <NameValuePair><Name>act05</Name><Value>Secret Passage</Value></NameValuePair>
   <NameValuePair><Name>act06</Name><Value>The Northlands</Value></NameValuePair>
   <NameValuePair><Name>act07</Name><Value>Atlantis</Value></NameValuePair>
+  <NameValuePair><Name>act08</Name><Value>The East</Value></NameValuePair>
 
   <NameValuePair><Name>misc01</Name><Value>Count Socketed Relics/Charms</Value></NameValuePair>
   <NameValuePair><Name>misc02</Name><Value>Use Checkbox Instead Of Bold</Value></NameValuePair>

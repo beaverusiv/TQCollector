@@ -79,6 +79,14 @@
   <NameValuePair><Name>miheader57</Name><Value>Potamoi</Value></NameValuePair>
   <NameValuePair><Name>miheader58</Name><Value>Serpentoide</Value></NameValuePair>
   <NameValuePair><Name>miheader59</Name><Value>Tritonen</Value></NameValuePair>
+  <NameValuePair><Name>miheader60</Name><Value>Tigermenschen (Osten)</Value></NameValuePair>
+  <NameValuePair><Name>miheader61</Name><Value>Ichthier (Osten)</Value></NameValuePair>
+  <NameValuePair><Name>miheader62</Name><Value>Feuer Elementar</Value></NameValuePair>
+  <NameValuePair><Name>miheader63</Name><Value>Terracotta Wächter (Osten)</Value></NameValuePair>
+  <NameValuePair><Name>miheader64</Name><Value>Skelette (Osten)</Value></NameValuePair>
+  <NameValuePair><Name>miheader65</Name><Value>Mogwai</Value></NameValuePair>
+  <NameValuePair><Name>miheader66</Name><Value>Bandit (Osten)</Value></NameValuePair>
+  <NameValuePair><Name>miheader67</Name><Value>Kultisten</Value></NameValuePair>
 
   <NameValuePair><Name>uheader01</Name><Value>Amulette</Value></NameValuePair>
   <NameValuePair><Name>uheader02</Name><Value>Rüstungen</Value></NameValuePair>
@@ -109,6 +117,7 @@
   <NameValuePair><Name>tooltip12</Name><Value>Nutzung der Anniversary Edition aktivieren</Value></NameValuePair>
   <NameValuePair><Name>tooltip13</Name><Value>Nutzung des Ragnarök Addons aktivieren</Value></NameValuePair>
   <NameValuePair><Name>tooltip14</Name><Value>Nutzung des Atlantis Addons aktivieren</Value></NameValuePair>
+  <NameValuePair><Name>tooltip14</Name><Value>Nutzung des Eternal Embers Addons aktivieren</Value></NameValuePair>
 
   <NameValuePair><Name>credits01</Name><Value>Titan Quest Collector v{0} Credits:</Value></NameValuePair>
   <NameValuePair><Name>credits02</Name><Value>JJ Ying für die Titan Quest Icons, die er erstellt hat.</Value></NameValuePair>
@@ -119,7 +128,7 @@
   <NameValuePair><Name>credits07</Name><Value>TQC wurde von BeaverusIV für das titanquest.net Forum geschrieben.</Value></NameValuePair>
   <NameValuePair><Name>credits08</Name><Value>Übersetzung und kleinere Anpassungen + Hinzufügen der Ragnarök- und Atlantis-Items durch Malgardian</Value></NameValuePair>
   <NameValuePair><Name>credits09</Name><Value>TQC 1.1+ (Ragnarök + Atlantis) von Malgardian</Value></NameValuePair>
-  <NameValuePair><Name>credits10</Name><Value>Aktualisierte französische Übersetzung von AlcyonV and W.N.G.</Value></NameValuePair>
+  <NameValuePair><Name>credits10</Name><Value>Aktualisierte französische Übersetzung von AlcyonV, Wagi and W.N.G.</Value></NameValuePair>
 
   <NameValuePair><Name>amount01</Name><Value>Keine Sammeln</Value></NameValuePair>
   <NameValuePair><Name>amount02</Name><Value>Alle Sammeln</Value></NameValuePair>
@@ -190,6 +199,7 @@
   <NameValuePair><Name>act05</Name><Value>Geheime Passage</Value></NameValuePair>
   <NameValuePair><Name>act06</Name><Value>Der Norden</Value></NameValuePair>
   <NameValuePair><Name>act07</Name><Value>Atlantis</Value></NameValuePair>
+  <NameValuePair><Name>act07</Name><Value>Der Osten</Value></NameValuePair>
 
   <NameValuePair><Name>misc01</Name><Value>Anzahl gesockelter Relikte/Talismane</Value></NameValuePair>
   <NameValuePair><Name>misc02</Name><Value>Checkbox statt Fettschrift</Value></NameValuePair>
