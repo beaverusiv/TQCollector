@@ -856,6 +856,12 @@ namespace TQCollector
                                 if (!ParseTextDB(dbFile, "text\\x3items_nonvoiced.txt")) return false;
                                 if (!ParseTextDB(dbFile, "text\\x3misctags_nonvoiced.txt")) return false;
                             }
+                            if (File.Exists(Files.Configuration.Directories.AE + "\\Resources\\XPack4\\Scenery.arc")) //condition to determine whether Eternal Embers is installed
+                            {
+                                if (!ParseTextDB(dbFile, "text\\x4basegame_nonvoiced.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x4items_nonvoiced.txt")) return false;
+                                if (!ParseTextDB(dbFile, "text\\x4misctags_nonvoiced.txt")) return false;
+                            }
                             return true;
                         }
                         MessageBox.Show(Files.Language["error23"]);
@@ -1271,6 +1277,42 @@ namespace TQCollector
                 }
                 s.Item = noatl_item;
                 if (s.Item != null) //only add set if it has non Atl items
+                {
+                    ls.Add(s);
+                }
+            }
+
+            Set[] ret = new Set[ls.Count];
+
+            for (int i = 0; i < ls.Count; i++)
+            {
+                ret[i] = ls[i];
+            }
+
+            return ret;
+        }
+
+        public static Set[] removeEE(Set[] sets) //removes Eternal Embers items from display
+        {
+            List<Set> ls = new List<Set>();
+
+            foreach (Set s in sets) //create a new set of items not from Eternal Embers
+            {
+                List<Item> noee = new List<Item>();
+                for (int i = 0; i < s.Item.Length; i++)
+                {
+                    if (!s.Item[i].isEE)
+                    {
+                        noee.Add(s.Item[i]); //create new item list w/o Eternal Embers items
+                    }
+                }
+                Item[] noee_item = new Item[noee.Count];
+                for (int i = 0; i < noee.Count; i++) //recreate new Item array from list w/o EE items
+                {
+                    noee_item[i] = noee[i];
+                }
+                s.Item = noee_item;
+                if (s.Item != null) //only add set if it has non EE items
                 {
                     ls.Add(s);
                 }
