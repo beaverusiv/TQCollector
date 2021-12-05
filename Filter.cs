@@ -400,11 +400,11 @@ namespace TQCollector
             if (Files.Configuration.Filters.MonsterInfrequent.Amount == Amount.Some)
             {
                 TabControl MonsterInfrequentTabControl = new TabControl();
-                if (!Files.Configuration.UseR && !Files.Configuration.UseAtl)
+                if (!Files.Configuration.UseR && !Files.Configuration.UseAtl && !Files.Configuration.UseEE) // No expansions
                 {
-                    Set[] minormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal));
-                    Set[] miepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic));
-                    Set[] milegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    Set[] minormal = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal)));
+                    Set[] miepic = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic)));
+                    Set[] milegendary = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary)));
 
                     if (Files.Configuration.Filters.MonsterInfrequent.Normal)
                     {
@@ -425,22 +425,46 @@ namespace TQCollector
                         MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], milegendary));
                     }
                 }
-                else if (!Files.Configuration.UseR || !Files.Configuration.UseAtl)
+                else if (!Files.Configuration.UseR || !Files.Configuration.UseAtl || !Files.Configuration.UseEE) //At least one expansion
                 {
                     Set[] minormal;
                     Set[] miepic;
                     Set[] milegendary;
-                    if (Files.Configuration.UseAtl)
+                    if (!Files.Configuration.UseR && Files.Configuration.UseAtl && Files.Configuration.UseEE) //Atl + EE, no R
                     {
                         minormal = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal);
                         miepic = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic);
                         milegendary = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary);
                     }
-                    else
+                    else if (!Files.Configuration.UseAtl && Files.Configuration.UseR && Files.Configuration.UseEE) //R + EE, no Atl
                     {
                         minormal = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Normal);
                         miepic = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Epic);
                         milegendary = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    }
+                    else if (!Files.Configuration.UseEE && Files.Configuration.UseR && Files.Configuration.UseAtl) //R + Atl, no EE
+                    {
+                        minormal = Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Normal);
+                        miepic = Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Epic);
+                        milegendary = Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    }
+                    else if (!Files.Configuration.UseR && !Files.Configuration.UseEE && Files.Configuration.UseAtl) //Atl, no R + EE
+                    {
+                        minormal = Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal));
+                        miepic = Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic));
+                        milegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    }
+                    else if (!Files.Configuration.UseR && !Files.Configuration.UseAtl && Files.Configuration.UseEE) //EE, no R + Atl
+                    {
+                        minormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal));
+                        miepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic));
+                        milegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    }
+                    else
+                    {
+                        minormal = Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Normal)); //R, no Atl + EE
+                        miepic = Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Epic));
+                        milegendary = Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Legendary));
                     }
                     if (Files.Configuration.Filters.MonsterInfrequent.Normal)
                     {
@@ -461,7 +485,7 @@ namespace TQCollector
                         MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], milegendary));
                     }
                 }
-                else
+                else //All expansions
                 {
                     if (Files.Configuration.Filters.MonsterInfrequent.Normal)
                     {
@@ -489,33 +513,57 @@ namespace TQCollector
             else if (Files.Configuration.Filters.MonsterInfrequent.Amount == Amount.All)
             {
                 TabControl MonsterInfrequentTabControl = new TabControl();
-                if (!Files.Configuration.UseR && !Files.Configuration.UseAtl)
+                if (!Files.Configuration.UseR && !Files.Configuration.UseAtl && !Files.Configuration.UseEE) // No expansions
                 {
-                    Set[] minormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal));
-                    Set[] miepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic));
-                    Set[] milegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    Set[] minormal = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal)));
+                    Set[] miepic = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic)));
+                    Set[] milegendary = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary)));
                     sub = Files.Count(minormal) + Files.Count(miepic) + Files.Count(milegendary);
                     tot = Files.Total(minormal) + Files.Total(miepic) + Files.Total(milegendary);
                     MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level04"], minormal));
                     MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level05"], miepic));
                     MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], milegendary));
                 }
-                else if (!Files.Configuration.UseR || !Files.Configuration.UseAtl)
+                else if (!Files.Configuration.UseR || !Files.Configuration.UseAtl || !Files.Configuration.UseEE) // At least one expansion
                 {
                     Set[] minormal;
                     Set[] miepic;
                     Set[] milegendary;
-                    if (!Files.Configuration.UseR)
+                    if (!Files.Configuration.UseR && Files.Configuration.UseAtl && Files.Configuration.UseEE) // Atl + EE, no R
                     {
                         minormal = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal);
                         miepic = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic);
                         milegendary = Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary);
                     }
-                    else
+                    else if (!Files.Configuration.UseAtl && Files.Configuration.UseR && Files.Configuration.UseEE) // R + EE, no Atl
                     {
                         minormal = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Normal);
                         miepic = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Epic);
                         milegendary = Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    }
+                    else if (!Files.Configuration.UseEE && Files.Configuration.UseR && Files.Configuration.UseAtl) // R + Atl, no EE
+                    {
+                        minormal = Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Normal);
+                        miepic = Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Epic);
+                        milegendary = Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Legendary);
+                    }
+                    else if (!Files.Configuration.UseAtl && !Files.Configuration.UseEE && Files.Configuration.UseR) // R, no Atl + EE
+                    {
+                        minormal = Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Normal));
+                        miepic = Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Epic));
+                        milegendary = Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    }
+                    else if (!Files.Configuration.UseR && !Files.Configuration.UseEE && Files.Configuration.UseAtl) // Atl, no R + EE
+                    {
+                        minormal = Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal));
+                        miepic = Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic));
+                        milegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary));
+                    }
+                    else
+                    {
+                        minormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal)); // EE, no R + Atl
+                        miepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic));
+                        milegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary));
                     }
                     sub = Files.Count(minormal) + Files.Count(miepic) + Files.Count(milegendary);
                     tot = Files.Total(minormal) + Files.Total(miepic) + Files.Total(milegendary);
@@ -523,7 +571,7 @@ namespace TQCollector
                     MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level05"], miepic));
                     MonsterInfrequentTabControl.Items.Add(CreateListTab(Files.Language["level06"], milegendary));
                 }
-                else
+                else // All expansions
                 {
                     sub = Files.Count(Files.ItemDatabase.MonsterInfrequent.Normal) + Files.Count(Files.ItemDatabase.MonsterInfrequent.Epic) + Files.Count(Files.ItemDatabase.MonsterInfrequent.Legendary);
                     tot = Files.Total(Files.ItemDatabase.MonsterInfrequent.Normal) + Files.Total(Files.ItemDatabase.MonsterInfrequent.Epic) + Files.Total(Files.ItemDatabase.MonsterInfrequent.Legendary);
@@ -537,32 +585,52 @@ namespace TQCollector
             else if (Files.Configuration.Filters.MonsterInfrequent.Amount == Amount.Any)
             {
                 //Don't care what difficulty, as long as they have it.
-                if (!Files.Configuration.UseR && !Files.Configuration.UseAtl)
+                if (!Files.Configuration.UseR && !Files.Configuration.UseAtl && !Files.Configuration.UseEE) // No expansions
                 {
-                    Set[] combined = Files.Combine(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal)), Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary)));
-                    combined = Files.Combine(combined, Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic)));
+                    Set[] combined = Files.Combine(Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal))), Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary))));
+                    combined = Files.Combine(combined, Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic))));
                     sub = Files.Count(combined);
                     tot = Files.Total(combined);
                     tb = CreateListTab(Files.Language["category01"], combined);
                 }
-                else if (!Files.Configuration.UseR || !Files.Configuration.UseAtl)
+                else if (!Files.Configuration.UseR || !Files.Configuration.UseAtl || !Files.Configuration.UseEE) // At least one expansion
                 {
                     Set[] combined;
-                    if (!Files.Configuration.UseR)
+                    if (!Files.Configuration.UseR && Files.Configuration.UseAtl && Files.Configuration.UseEE) // Atl + EE, no R
                     {
                         combined = Files.Combine(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal), Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary));
                         combined = Files.Combine(combined, Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic));
                     }
-                    else
+                    else if (!Files.Configuration.UseAtl && Files.Configuration.UseR && Files.Configuration.UseEE) // R + EE, no Atl
                     {
                         combined = Files.Combine(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Normal), Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Legendary));
                         combined = Files.Combine(combined, Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Epic));
+                    }
+                    else if (!Files.Configuration.UseEE && Files.Configuration.UseR && Files.Configuration.UseAtl) // R + Atl, no EE
+                    {
+                        combined = Files.Combine(Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Normal), Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Legendary));
+                        combined = Files.Combine(combined, Files.removeEE(Files.ItemDatabase.MonsterInfrequent.Epic));
+                    }
+                    else if (!Files.Configuration.UseAtl && !Files.Configuration.UseEE && Files.Configuration.UseR) // R, no Atl + EE
+                    {
+                        combined = Files.Combine(Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Normal)), Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Legendary)));
+                        combined = Files.Combine(combined, Files.removeEE(Files.removeAtl(Files.ItemDatabase.MonsterInfrequent.Epic)));
+                    }
+                    else if (!Files.Configuration.UseR && !Files.Configuration.UseEE && Files.Configuration.UseAtl) // Atl, no R + EE
+                    {
+                        combined = Files.Combine(Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal)), Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary)));
+                        combined = Files.Combine(combined, Files.removeEE(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic)));
+                    }
+                    else // EE, no R + Atl
+                    {
+                        combined = Files.Combine(Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Normal)), Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Legendary)));
+                        combined = Files.Combine(combined, Files.removeAtl(Files.removeR(Files.ItemDatabase.MonsterInfrequent.Epic)));
                     }
                     sub = Files.Count(combined);
                     tot = Files.Total(combined);
                     tb = CreateListTab(Files.Language["category01"], combined);
                 }
-                else
+                else // All expansions
                 {
                     Set[] combined = Files.Combine(Files.ItemDatabase.MonsterInfrequent.Normal, Files.ItemDatabase.MonsterInfrequent.Legendary);
                     combined = Files.Combine(combined, Files.ItemDatabase.MonsterInfrequent.Epic);
@@ -585,31 +653,55 @@ namespace TQCollector
             
             if (Files.Configuration.Filters.Sets.Count)
             {
-                //Make Set[] according to what we need (Secret Passage (&Ragnarök/Atlantis) or not)
-                if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
+                //Make Set[] according to what we need (Secret Passage (&Ragnarök/Atlantis/Eternal Embers) or not)
+                if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl && !Files.Configuration.UseEE) // none
                 {
-                    temp = Files.Add(Files.removeAtl(Files.removeR(Files.removeSP(sets))), Files.removeAtl(Files.removeR(Files.removeSP(uniques))));
+                    temp = Files.Add(Files.removeEE(Files.removeAtl(Files.removeR(Files.removeSP(sets)))), Files.removeEE(Files.removeAtl(Files.removeR(Files.removeSP(uniques)))));
                 }
                 else if (!Files.Configuration.UseSP)
                 {
-                    if (!Files.Configuration.UseR)
+                    if (!Files.Configuration.UseR && !Files.Configuration.UseAtl) // only EE, no R + Atl
+                    {
+                        temp = Files.Add(Files.removeAtl(Files.removeR(Files.removeSP(sets))), Files.removeAtl(Files.removeR(Files.removeSP(uniques))));
+                    }
+                    else if (!Files.Configuration.UseAtl && !Files.Configuration.UseEE) // only R, no Atl + EE
+                    {
+                        temp = Files.Add(Files.removeEE(Files.removeAtl(Files.removeSP(sets))), Files.removeEE(Files.removeAtl(Files.removeSP(uniques))));
+                    }
+                    else if (!Files.Configuration.UseEE && !Files.Configuration.UseR) // only Atl, no R + EE
+                    {
+                        temp = Files.Add(Files.removeEE(Files.removeR(Files.removeSP(sets))), Files.removeEE(Files.removeR(Files.removeSP(uniques))));
+                    }
+                    else if (!Files.Configuration.UseR && Files.Configuration.UseAtl && Files.Configuration.UseEE) // Atl + EE, no R
                     {
                         temp = Files.Add(Files.removeR(Files.removeSP(sets)), Files.removeR(Files.removeSP(uniques)));
                     }
-                    else if (!Files.Configuration.UseAtl)
+                    else if (!Files.Configuration.UseAtl && Files.Configuration.UseR && Files.Configuration.UseEE) // R + EE, no Atl
                     {
                         temp = Files.Add(Files.removeAtl(Files.removeSP(sets)), Files.removeAtl(Files.removeSP(uniques)));
                     }
-                    else
+                    else if (!Files.Configuration.UseEE && Files.Configuration.UseAtl && Files.Configuration.UseR) // R + Atl, no EE
+                    {
+                        temp = Files.Add(Files.removeEE(Files.removeSP(sets)), Files.removeEE(Files.removeSP(uniques)));
+                    }
+                    else // All
                     {
                         temp = Files.Add(Files.removeSP(sets), Files.removeSP(uniques));
                     }
                 }
                 else if (!Files.Configuration.UseR)
                 {
-                    if (!Files.Configuration.UseAtl)
+                    if (!Files.Configuration.UseAtl && !Files.Configuration.UseEE)
+                    {
+                        temp = Files.Add(Files.removeEE(Files.removeR(Files.removeAtl(sets))), Files.removeEE(Files.removeR(Files.removeAtl(uniques))));
+                    }
+                    else if (!Files.Configuration.UseAtl)
                     {
                         temp = Files.Add(Files.removeR(Files.removeAtl(sets)), Files.removeR(Files.removeAtl(uniques)));
+                    }
+                    else if (!Files.Configuration.UseEE)
+                    {
+                        temp = Files.Add(Files.removeR(Files.removeEE(sets)), Files.removeR(Files.removeEE(uniques)));
                     }
                     else
                     {
@@ -618,7 +710,14 @@ namespace TQCollector
                 }
                 else if (!Files.Configuration.UseAtl)
                 {
-                    temp = Files.Add(Files.removeAtl(sets), Files.removeAtl(uniques));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        temp = Files.Add(Files.removeEE(Files.removeAtl(sets)), Files.removeEE(Files.removeAtl(uniques)));
+                    }
+                    else
+                    {
+                        temp = Files.Add(Files.removeAtl(sets), Files.removeAtl(uniques));
+                    }
                 }
                 else
                 {
@@ -627,37 +726,65 @@ namespace TQCollector
             }
             else
             {
-                if (Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl)
+                if (Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl && Files.Configuration.UseEE)
                 {
                     temp = uniques;
                 }
-                else if (!Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl)
+                else if (!Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl && Files.Configuration.UseEE)
                 {
                     temp = Files.removeSP(uniques);
                 }
-                else if (!Files.Configuration.UseSP && !Files.Configuration.UseR && Files.Configuration.UseAtl)
+                else if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl && Files.Configuration.UseEE)
+                {
+                    temp = Files.removeAtl(Files.removeR(Files.removeSP(uniques)));
+                }
+                else if (!Files.Configuration.UseSP && Files.Configuration.UseR && !Files.Configuration.UseAtl && !Files.Configuration.UseEE)
+                {
+                    temp = Files.removeEE(Files.removeAtl(Files.removeSP(uniques)));
+                }
+                else if (!Files.Configuration.UseSP && !Files.Configuration.UseR && Files.Configuration.UseAtl && !Files.Configuration.UseEE)
+                {
+                    temp = Files.removeEE(Files.removeR(Files.removeSP(uniques)));
+                }
+                else if (!Files.Configuration.UseSP && !Files.Configuration.UseR && Files.Configuration.UseAtl && Files.Configuration.UseEE)
                 {
                     temp = Files.removeR(Files.removeSP(uniques));
                 }
-                else if (Files.Configuration.UseSP && !Files.Configuration.UseR && Files.Configuration.UseAtl)
-                {
-                    temp = Files.removeR(uniques);
-                }
-                else if (Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
-                {
-                    temp = Files.removeAtl(Files.removeR(uniques));
-                }
-                else if (!Files.Configuration.UseSP && Files.Configuration.UseR && !Files.Configuration.UseAtl)
+                else if (!Files.Configuration.UseSP && Files.Configuration.UseR && !Files.Configuration.UseAtl && Files.Configuration.UseEE)
                 {
                     temp = Files.removeAtl(Files.removeSP(uniques));
                 }
-                else if (Files.Configuration.UseSP && Files.Configuration.UseR && !Files.Configuration.UseAtl)
+                else if (!Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl && !Files.Configuration.UseEE)
+                {
+                    temp = Files.removeEE(Files.removeSP(uniques));
+                }
+                else if (Files.Configuration.UseSP && Files.Configuration.UseR && !Files.Configuration.UseAtl && !Files.Configuration.UseEE)
+                {
+                    temp = Files.removeEE(Files.removeAtl(uniques));
+                }
+                else if (Files.Configuration.UseSP && !Files.Configuration.UseR && Files.Configuration.UseAtl && !Files.Configuration.UseEE)
+                {
+                    temp = Files.removeEE(Files.removeR(uniques));
+                }
+                else if (Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl && Files.Configuration.UseEE)
+                {
+                    temp = Files.removeAtl(Files.removeR(uniques));
+                }
+                else if (Files.Configuration.UseSP && !Files.Configuration.UseR && Files.Configuration.UseAtl && Files.Configuration.UseEE)
+                {
+                    temp = Files.removeR(uniques);
+                }
+                else if (Files.Configuration.UseSP && Files.Configuration.UseR && !Files.Configuration.UseAtl && Files.Configuration.UseEE)
                 {
                     temp = Files.removeAtl(uniques);
                 }
+                else if (Files.Configuration.UseSP && Files.Configuration.UseR && Files.Configuration.UseAtl && !Files.Configuration.UseEE)
+                {
+                    temp = Files.removeEE(uniques);
+                }
                 else
                 {
-                    temp = Files.removeAtl(Files.removeR(Files.removeSP(uniques)));
+                    temp = Files.removeEE(Files.removeAtl(Files.removeR(Files.removeSP(uniques))));
                 }
             }
 
@@ -716,7 +843,15 @@ namespace TQCollector
                 {
                     Set[] artnormal = Files.removeR(Files.ItemDatabase.Artifacts.Normal);
                     Set[] artepic = Files.removeR(Files.ItemDatabase.Artifacts.Epic);
-                    Set[] artlegendary = Files.removeR(Files.ItemDatabase.Artifacts.Legendary);
+                    Set[] artlegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        artlegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.Artifacts.Legendary));
+                    }
+                    else
+                    {
+                        artlegendary = Files.removeR(Files.ItemDatabase.Artifacts.Legendary);
+                    }
                     if (Files.Configuration.Filters.Artifacts.Normal)
                     {
                         sub += Files.Count(artnormal);
@@ -738,6 +873,11 @@ namespace TQCollector
                 }
                 else
                 {
+                    Set[] artlegendary = Files.ItemDatabase.Artifacts.Legendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        artlegendary = Files.removeEE(Files.ItemDatabase.Artifacts.Legendary);
+                    }
                     if (Files.Configuration.Filters.Artifacts.Normal)
                     {
                         sub += Files.Count(Files.ItemDatabase.Artifacts.Normal);
@@ -752,9 +892,9 @@ namespace TQCollector
                     }
                     if (Files.Configuration.Filters.Artifacts.Legendary)
                     {
-                        sub += Files.Count(Files.ItemDatabase.Artifacts.Legendary);
-                        tot += Files.Total(Files.ItemDatabase.Artifacts.Legendary);
-                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Artifacts.Legendary));
+                        sub += Files.Count(artlegendary);
+                        tot += Files.Total(artlegendary);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], artlegendary));
                     }
                 }
                 tb.Header = generateText(Files.Language["category04"], sub, tot);
@@ -765,22 +905,47 @@ namespace TQCollector
                 TabControl ArtifactTabControl = new TabControl();
                 if (!Files.Configuration.UseR)
                 {
-                    Set[] artnormal = Files.removeR(Files.ItemDatabase.Artifacts.Normal);
-                    Set[] artepic = Files.removeR(Files.ItemDatabase.Artifacts.Epic);
-                    Set[] artlegendary = Files.removeR(Files.ItemDatabase.Artifacts.Legendary);
-                    sub = Files.Count(artnormal) + Files.Count(artepic) + Files.Count(artlegendary);
-                    tot = Files.Total(artnormal) + Files.Total(artepic) + Files.Total(artlegendary);
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], artnormal));
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], artepic));
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], artlegendary));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        Set[] artnormal = Files.removeR(Files.ItemDatabase.Artifacts.Normal);
+                        Set[] artepic = Files.removeR(Files.ItemDatabase.Artifacts.Epic);
+                        Set[] artlegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.Artifacts.Legendary));
+                        sub = Files.Count(artnormal) + Files.Count(artepic) + Files.Count(artlegendary);
+                        tot = Files.Total(artnormal) + Files.Total(artepic) + Files.Total(artlegendary);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], artnormal));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], artepic));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], artlegendary));
+                    }
+                    else
+                    {
+                        Set[] artnormal = Files.removeR(Files.ItemDatabase.Artifacts.Normal);
+                        Set[] artepic = Files.removeR(Files.ItemDatabase.Artifacts.Epic);
+                        Set[] artlegendary = Files.removeR(Files.ItemDatabase.Artifacts.Legendary);
+                        sub = Files.Count(artnormal) + Files.Count(artepic) + Files.Count(artlegendary);
+                        tot = Files.Total(artnormal) + Files.Total(artepic) + Files.Total(artlegendary);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], artnormal));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], artepic));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], artlegendary));
+                    }
                 }
                 else
                 {
-                    sub = Files.Count(Files.ItemDatabase.Artifacts.Normal) + Files.Count(Files.ItemDatabase.Artifacts.Epic) + Files.Count(Files.ItemDatabase.Artifacts.Legendary);
-                    tot = Files.Total(Files.ItemDatabase.Artifacts.Normal) + Files.Total(Files.ItemDatabase.Artifacts.Epic) + Files.Total(Files.ItemDatabase.Artifacts.Legendary);
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Artifacts.Normal));
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Artifacts.Epic));
-                    ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Artifacts.Legendary));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        sub = Files.Count(Files.ItemDatabase.Artifacts.Normal) + Files.Count(Files.ItemDatabase.Artifacts.Epic) + Files.Count(Files.removeEE(Files.ItemDatabase.Artifacts.Legendary));
+                        tot = Files.Total(Files.ItemDatabase.Artifacts.Normal) + Files.Total(Files.ItemDatabase.Artifacts.Epic) + Files.Total(Files.removeEE(Files.ItemDatabase.Artifacts.Legendary));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Artifacts.Normal));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Artifacts.Epic));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.removeEE(Files.ItemDatabase.Artifacts.Legendary)));
+                    }
+                    else
+                    {
+                        sub = Files.Count(Files.ItemDatabase.Artifacts.Normal) + Files.Count(Files.ItemDatabase.Artifacts.Epic) + Files.Count(Files.ItemDatabase.Artifacts.Legendary);
+                        tot = Files.Total(Files.ItemDatabase.Artifacts.Normal) + Files.Total(Files.ItemDatabase.Artifacts.Epic) + Files.Total(Files.ItemDatabase.Artifacts.Legendary);
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Artifacts.Normal));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Artifacts.Epic));
+                        ArtifactTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Artifacts.Legendary));
+                    }
                 }
                 tb.Header = generateText(Files.Language["category04"], sub, tot);
                 tb.Content = ArtifactTabControl;
@@ -803,44 +968,100 @@ namespace TQCollector
                 TabControl CharmsTabControl = new TabControl();
                 if (!Files.Configuration.UseR && !Files.Configuration.UseAtl)
                 {
-                    Set[] chnormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Normal));
-                    Set[] chepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Epic));
-                    Set[] chlegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Legendary));
-                    sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
-                    tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        Set[] chnormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Normal));
+                        Set[] chepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Epic));
+                        Set[] chlegendary = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Legendary)));
+                        sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
+                        tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    }
+                    else
+                    {
+                        Set[] chnormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Normal));
+                        Set[] chepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Epic));
+                        Set[] chlegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Legendary));
+                        sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
+                        tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    }
                 }
                 else if (!Files.Configuration.UseAtl && Files.Configuration.UseR)
                 {
-                    Set[] chnormal = Files.removeAtl(Files.ItemDatabase.Charms.Normal);
-                    Set[] chepic = Files.removeAtl(Files.ItemDatabase.Charms.Epic);
-                    Set[] chlegendary = Files.removeAtl(Files.ItemDatabase.Charms.Legendary);
-                    sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
-                    tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        Set[] chnormal = Files.removeAtl(Files.ItemDatabase.Charms.Normal);
+                        Set[] chepic = Files.removeAtl(Files.ItemDatabase.Charms.Epic);
+                        Set[] chlegendary = Files.removeEE(Files.removeAtl(Files.ItemDatabase.Charms.Legendary));
+                        sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
+                        tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    }
+                    else
+                    {
+                        Set[] chnormal = Files.removeAtl(Files.ItemDatabase.Charms.Normal);
+                        Set[] chepic = Files.removeAtl(Files.ItemDatabase.Charms.Epic);
+                        Set[] chlegendary = Files.removeAtl(Files.ItemDatabase.Charms.Legendary);
+                        sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
+                        tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    }
                 }
                 else if (Files.Configuration.UseAtl && !Files.Configuration.UseR)
                 {
-                    Set[] chnormal = Files.removeR(Files.ItemDatabase.Charms.Normal);
-                    Set[] chepic = Files.removeR(Files.ItemDatabase.Charms.Epic);
-                    Set[] chlegendary = Files.removeR(Files.ItemDatabase.Charms.Legendary);
-                    sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
-                    tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        Set[] chnormal = Files.removeR(Files.ItemDatabase.Charms.Normal);
+                        Set[] chepic = Files.removeR(Files.ItemDatabase.Charms.Epic);
+                        Set[] chlegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.Charms.Legendary));
+                        sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
+                        tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    }
+                    else
+                    {
+                        Set[] chnormal = Files.removeR(Files.ItemDatabase.Charms.Normal);
+                        Set[] chepic = Files.removeR(Files.ItemDatabase.Charms.Epic);
+                        Set[] chlegendary = Files.removeR(Files.ItemDatabase.Charms.Legendary);
+                        sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
+                        tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    }
                 }
                 else
                 {
-                    sub = Files.Count(Files.ItemDatabase.Charms.Normal) + Files.Count(Files.ItemDatabase.Charms.Epic) + Files.Count(Files.ItemDatabase.Charms.Legendary);
-                    tot = Files.Total(Files.ItemDatabase.Charms.Normal) + Files.Total(Files.ItemDatabase.Charms.Epic) + Files.Total(Files.ItemDatabase.Charms.Legendary);
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], Files.ItemDatabase.Charms.Normal));
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], Files.ItemDatabase.Charms.Epic));
-                    CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], Files.ItemDatabase.Charms.Legendary));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        Set[] chnormal = Files.ItemDatabase.Charms.Normal;
+                        Set[] chepic = Files.ItemDatabase.Charms.Epic;
+                        Set[] chlegendary = Files.removeEE(Files.ItemDatabase.Charms.Legendary);
+                        sub = Files.Count(chnormal) + Files.Count(chepic) + Files.Count(chlegendary);
+                        tot = Files.Total(chnormal) + Files.Total(chepic) + Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], chnormal));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], chepic));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
+                    }
+                    else
+                    {
+                        sub = Files.Count(Files.ItemDatabase.Charms.Normal) + Files.Count(Files.ItemDatabase.Charms.Epic) + Files.Count(Files.ItemDatabase.Charms.Legendary);
+                        tot = Files.Total(Files.ItemDatabase.Charms.Normal) + Files.Total(Files.ItemDatabase.Charms.Epic) + Files.Total(Files.ItemDatabase.Charms.Legendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level04"], Files.ItemDatabase.Charms.Normal));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level05"], Files.ItemDatabase.Charms.Epic));
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], Files.ItemDatabase.Charms.Legendary));
+                    }
                 }
                 tb.Header = generateText(Files.Language["category03"], sub, tot);
                 tb.Content = CharmsTabControl;
@@ -852,7 +1073,15 @@ namespace TQCollector
                 {
                     Set[] chnormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Normal));
                     Set[] chepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Epic));
-                    Set[] chlegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Legendary));
+                    Set[] chlegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        chlegendary = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Legendary)));
+                    }
+                    else
+                    {
+                        chlegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.Charms.Legendary));
+                    }
                     if (Files.Configuration.Filters.Charms.Normal)
                     {
                         sub += Files.Count(chnormal);
@@ -876,7 +1105,15 @@ namespace TQCollector
                 {
                     Set[] chnormal = Files.removeAtl(Files.ItemDatabase.Charms.Normal);
                     Set[] chepic = Files.removeAtl(Files.ItemDatabase.Charms.Epic);
-                    Set[] chlegendary = Files.removeAtl(Files.ItemDatabase.Charms.Legendary);
+                    Set[] chlegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        chlegendary = Files.removeEE(Files.removeAtl(Files.ItemDatabase.Charms.Legendary));
+                    }
+                    else
+                    {
+                        chlegendary = Files.removeAtl(Files.ItemDatabase.Charms.Legendary);
+                    }
                     if (Files.Configuration.Filters.Charms.Normal)
                     {
                         sub += Files.Count(chnormal);
@@ -900,7 +1137,15 @@ namespace TQCollector
                 {
                     Set[] chnormal = Files.removeR(Files.ItemDatabase.Charms.Normal);
                     Set[] chepic = Files.removeR(Files.ItemDatabase.Charms.Epic);
-                    Set[] chlegendary = Files.removeR(Files.ItemDatabase.Charms.Legendary);
+                    Set[] chlegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        chlegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.Charms.Legendary));
+                    }
+                    else
+                    {
+                        chlegendary = Files.removeR(Files.ItemDatabase.Charms.Legendary);
+                    }
                     if (Files.Configuration.Filters.Charms.Normal)
                     {
                         sub += Files.Count(chnormal);
@@ -922,6 +1167,15 @@ namespace TQCollector
                 }
                 else
                 {
+                    Set[] chlegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        chlegendary = Files.removeEE(Files.ItemDatabase.Charms.Legendary);
+                    }
+                    else
+                    {
+                        chlegendary = Files.ItemDatabase.Charms.Legendary;
+                    }
                     if (Files.Configuration.Filters.Charms.Normal)
                     {
                         sub += Files.Count(Files.ItemDatabase.Charms.Normal);
@@ -936,9 +1190,9 @@ namespace TQCollector
                     }
                     if (Files.Configuration.Filters.Charms.Legendary)
                     {
-                        sub += Files.Count(Files.ItemDatabase.Charms.Legendary);
-                        tot += Files.Total(Files.ItemDatabase.Charms.Legendary);
-                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], Files.ItemDatabase.Charms.Legendary));
+                        sub += Files.Count(chlegendary);
+                        tot += Files.Total(chlegendary);
+                        CharmsTabControl.Items.Add(CreateTab(Files.Language["level06"], chlegendary));
                     }
                 }
                 tb.Header = generateText(Files.Language["category03"], sub, tot);
@@ -974,22 +1228,45 @@ namespace TQCollector
                 TabControl FormulaeTabControl = new TabControl();
                 if (!Files.Configuration.UseR)
                 {
-                    Set[] fornormal = Files.removeR(Files.ItemDatabase.Formulae.Normal);
-                    Set[] forepic = Files.removeR(Files.ItemDatabase.Formulae.Epic);
-                    Set[] forlegendary = Files.removeR(Files.ItemDatabase.Formulae.Legendary);
-                    sub = Files.Count(fornormal) + Files.Count(forepic) + Files.Count(forlegendary);
-                    tot = Files.Total(fornormal) + Files.Total(forepic) + Files.Total(forlegendary);
-                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], fornormal));
-                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], forepic));
-                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], forlegendary));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        Set[] fornormal = Files.removeR(Files.ItemDatabase.Formulae.Normal);
+                        Set[] forepic = Files.removeR(Files.ItemDatabase.Formulae.Epic);
+                        Set[] forlegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.Formulae.Legendary));
+                        sub = Files.Count(fornormal) + Files.Count(forepic) + Files.Count(forlegendary);
+                        tot = Files.Total(fornormal) + Files.Total(forepic) + Files.Total(forlegendary);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], fornormal));
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], forepic));
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], forlegendary));
+                    }
+                    else
+                    {
+                        Set[] fornormal = Files.removeR(Files.ItemDatabase.Formulae.Normal);
+                        Set[] forepic = Files.removeR(Files.ItemDatabase.Formulae.Epic);
+                        Set[] forlegendary = Files.removeR(Files.ItemDatabase.Formulae.Legendary);
+                        sub = Files.Count(fornormal) + Files.Count(forepic) + Files.Count(forlegendary);
+                        tot = Files.Total(fornormal) + Files.Total(forepic) + Files.Total(forlegendary);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], fornormal));
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], forepic));
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], forlegendary));
+                    }
                 }
                 else
                 {
-                    sub = Files.Count(Files.ItemDatabase.Formulae.Normal) + Files.Count(Files.ItemDatabase.Formulae.Epic) + Files.Count(Files.ItemDatabase.Formulae.Legendary);
-                    tot = Files.Total(Files.ItemDatabase.Formulae.Normal) + Files.Total(Files.ItemDatabase.Formulae.Epic) + Files.Total(Files.ItemDatabase.Formulae.Legendary);
+                    Set[] forlegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        forlegendary = Files.removeEE(Files.ItemDatabase.Formulae.Legendary);
+                    }
+                    else
+                    {
+                        forlegendary = Files.ItemDatabase.Formulae.Legendary;
+                    }
+                    sub = Files.Count(Files.ItemDatabase.Formulae.Normal) + Files.Count(Files.ItemDatabase.Formulae.Epic) + Files.Count(forlegendary);
+                    tot = Files.Total(Files.ItemDatabase.Formulae.Normal) + Files.Total(Files.ItemDatabase.Formulae.Epic) + Files.Total(forlegendary);
                     FormulaeTabControl.Items.Add(CreateTab(Files.Language["level01"], Files.ItemDatabase.Formulae.Normal));
                     FormulaeTabControl.Items.Add(CreateTab(Files.Language["level02"], Files.ItemDatabase.Formulae.Epic));
-                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Formulae.Legendary));
+                    FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], forlegendary));
                 }
                 tb.Header = generateText(Files.Language["category08"], sub, tot);
                 tb.Content = FormulaeTabControl;
@@ -999,9 +1276,21 @@ namespace TQCollector
                 TabControl FormulaeTabControl = new TabControl();
                 if (!Files.Configuration.UseR)
                 {
-                    Set[] fornormal = Files.removeR(Files.ItemDatabase.Formulae.Normal);
-                    Set[] forepic = Files.removeR(Files.ItemDatabase.Formulae.Epic);
-                    Set[] forlegendary = Files.removeR(Files.ItemDatabase.Formulae.Legendary);
+                    Set[] fornormal;
+                    Set[] forepic;
+                    Set[] forlegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        fornormal = Files.removeR(Files.ItemDatabase.Formulae.Normal);
+                        forepic = Files.removeR(Files.ItemDatabase.Formulae.Epic);
+                        forlegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.Formulae.Legendary));
+                    }
+                    else
+                    {
+                        fornormal = Files.removeR(Files.ItemDatabase.Formulae.Normal);
+                        forepic = Files.removeR(Files.ItemDatabase.Formulae.Epic);
+                        forlegendary = Files.removeR(Files.ItemDatabase.Formulae.Legendary);
+                    }
                     if (Files.Configuration.Filters.Formulae.Normal)
                     {
                         sub += Files.Count(fornormal);
@@ -1023,6 +1312,15 @@ namespace TQCollector
                 }
                 else
                 {
+                    Set[] forlegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        forlegendary = Files.removeEE(Files.ItemDatabase.Formulae.Legendary);
+                    }
+                    else
+                    {
+                        forlegendary = Files.ItemDatabase.Formulae.Legendary;
+                    }
                     if (Files.Configuration.Filters.Formulae.Normal)
                     {
                         sub += Files.Count(Files.ItemDatabase.Formulae.Normal);
@@ -1037,9 +1335,9 @@ namespace TQCollector
                     }
                     if (Files.Configuration.Filters.Formulae.Legendary)
                     {
-                        sub += Files.Count(Files.ItemDatabase.Formulae.Legendary);
-                        tot += Files.Total(Files.ItemDatabase.Formulae.Legendary);
-                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], Files.ItemDatabase.Formulae.Legendary));
+                        sub += Files.Count(forlegendary);
+                        tot += Files.Total(forlegendary);
+                        FormulaeTabControl.Items.Add(CreateTab(Files.Language["level03"], forlegendary));
                     }
                 }
                 tb.Header = generateText(Files.Language["category08"], sub, tot);
@@ -1065,7 +1363,15 @@ namespace TQCollector
                 {
                     Set[] relnormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.Relics.Normal));
                     Set[] relepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.Relics.Epic));
-                    Set[] rellegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.Relics.Legendary));
+                    Set[] rellegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        rellegendary = Files.removeEE(Files.removeAtl(Files.removeR(Files.ItemDatabase.Relics.Legendary)));
+                    }
+                    else
+                    {
+                        rellegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.Relics.Legendary));
+                    }
                     sub = Files.Count(relnormal) + Files.Count(relepic) + Files.Count(rellegendary);
                     tot = Files.Total(relnormal) + Files.Total(relepic) + Files.Total(rellegendary);
                     if (Files.Configuration.UseIT || Files.Configuration.UseAE)
@@ -1085,7 +1391,15 @@ namespace TQCollector
                 {
                     Set[] relnormal = Files.removeR(Files.ItemDatabase.Relics.Normal);
                     Set[] relepic = Files.removeR(Files.ItemDatabase.Relics.Epic);
-                    Set[] rellegendary = Files.removeR(Files.ItemDatabase.Relics.Legendary);
+                    Set[] rellegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        rellegendary = Files.removeEE(Files.removeR(Files.ItemDatabase.Relics.Legendary));
+                    }
+                    else
+                    {
+                        rellegendary = Files.removeR(Files.ItemDatabase.Relics.Legendary);
+                    }
                     sub = Files.Count(relnormal) + Files.Count(relepic) + Files.Count(rellegendary);
                     tot = Files.Total(relnormal) + Files.Total(relepic) + Files.Total(rellegendary);
                     if (Files.Configuration.UseIT || Files.Configuration.UseAE)
@@ -1105,7 +1419,15 @@ namespace TQCollector
                 {
                     Set[] relnormal = Files.removeAtl(Files.ItemDatabase.Relics.Normal);
                     Set[] relepic = Files.removeAtl(Files.ItemDatabase.Relics.Epic);
-                    Set[] rellegendary = Files.removeAtl(Files.ItemDatabase.Relics.Legendary);
+                    Set[] rellegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        rellegendary = Files.removeEE(Files.removeAtl(Files.ItemDatabase.Relics.Legendary));
+                    }
+                    else
+                    {
+                        rellegendary = Files.removeAtl(Files.ItemDatabase.Relics.Legendary);
+                    }
                     sub = Files.Count(relnormal) + Files.Count(relepic) + Files.Count(rellegendary);
                     tot = Files.Total(relnormal) + Files.Total(relepic) + Files.Total(rellegendary);
                     if (Files.Configuration.UseIT || Files.Configuration.UseAE)
@@ -1123,19 +1445,28 @@ namespace TQCollector
                 }
                 else
                 {
-                    sub = Files.Count(Files.ItemDatabase.Relics.Normal) + Files.Count(Files.ItemDatabase.Relics.Epic) + Files.Count(Files.ItemDatabase.Relics.Legendary);
-                    tot = Files.Total(Files.ItemDatabase.Relics.Normal) + Files.Total(Files.ItemDatabase.Relics.Epic) + Files.Total(Files.ItemDatabase.Relics.Legendary);
+                    Set[] rellegendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        rellegendary = Files.removeEE(Files.ItemDatabase.Relics.Legendary);
+                    }
+                    else
+                    {
+                        rellegendary = Files.ItemDatabase.Relics.Legendary;
+                    }
+                    sub = Files.Count(Files.ItemDatabase.Relics.Normal) + Files.Count(Files.ItemDatabase.Relics.Epic) + Files.Count(rellegendary);
+                    tot = Files.Total(Files.ItemDatabase.Relics.Normal) + Files.Total(Files.ItemDatabase.Relics.Epic) + Files.Total(rellegendary);
                     if (Files.Configuration.UseIT || Files.Configuration.UseAE)
                     {
                         RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.ItemDatabase.Relics.Normal));
                         RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.ItemDatabase.Relics.Epic));
-                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.ItemDatabase.Relics.Legendary));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], rellegendary));
                     }
                     else
                     {
                         RelicsTabControl.Items.Add(CreateTab(Files.Language["level07"], Files.removeHades(Files.ItemDatabase.Relics.Normal)));
                         RelicsTabControl.Items.Add(CreateTab(Files.Language["level08"], Files.removeHades(Files.ItemDatabase.Relics.Epic)));
-                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.removeHades(Files.ItemDatabase.Relics.Legendary)));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.removeHades(rellegendary)));
                     }
                 }
                 tb.Header = generateText(Files.Language["category02"], sub, tot);
@@ -1149,6 +1480,10 @@ namespace TQCollector
                     Set[] relnormal = Files.removeAtl(Files.removeR(Files.ItemDatabase.Relics.Normal));
                     Set[] relepic = Files.removeAtl(Files.removeR(Files.ItemDatabase.Relics.Epic));
                     Set[] rellegendary = Files.removeAtl(Files.removeR(Files.ItemDatabase.Relics.Legendary));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        rellegendary = Files.removeEE(rellegendary);
+                    }
                     if (Files.Configuration.Filters.Relics.Normal)
                     {
                         sub += Files.Count(relnormal);
@@ -1173,6 +1508,10 @@ namespace TQCollector
                     Set[] relnormal = Files.removeR(Files.ItemDatabase.Relics.Normal);
                     Set[] relepic = Files.removeR(Files.ItemDatabase.Relics.Epic);
                     Set[] rellegendary = Files.removeR(Files.ItemDatabase.Relics.Legendary);
+                    if (!Files.Configuration.UseEE)
+                    {
+                        rellegendary = Files.removeEE(rellegendary);
+                    }
                     if (Files.Configuration.Filters.Relics.Normal)
                     {
                         sub += Files.Count(relnormal);
@@ -1197,6 +1536,10 @@ namespace TQCollector
                     Set[] relnormal = Files.removeAtl(Files.ItemDatabase.Relics.Normal);
                     Set[] relepic = Files.removeAtl(Files.ItemDatabase.Relics.Epic);
                     Set[] rellegendary = Files.removeAtl(Files.ItemDatabase.Relics.Legendary);
+                    if (!Files.Configuration.UseEE)
+                    {
+                        rellegendary = Files.removeEE(rellegendary);
+                    }
                     if (Files.Configuration.Filters.Relics.Normal)
                     {
                         sub += Files.Count(relnormal);
@@ -1218,6 +1561,11 @@ namespace TQCollector
                 }
                 else
                 {
+                    Set[] rellegendary = Files.ItemDatabase.Relics.Legendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        rellegendary = Files.removeEE(rellegendary);
+                    }
                     if (Files.Configuration.Filters.Relics.Normal)
                     {
                         sub += Files.Count(Files.ItemDatabase.Relics.Normal);
@@ -1234,7 +1582,7 @@ namespace TQCollector
                     {
                         sub += Files.Count(Files.ItemDatabase.Relics.Legendary);
                         tot += Files.Total(Files.ItemDatabase.Relics.Legendary);
-                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], Files.ItemDatabase.Relics.Legendary));
+                        RelicsTabControl.Items.Add(CreateTab(Files.Language["level09"], rellegendary));
                     }
                 }
                 tb.Header = generateText(Files.Language["category02"], sub, tot);
@@ -1262,6 +1610,11 @@ namespace TQCollector
                     Set[] ls = Files.removeSP(Files.ItemDatabase.Sets.Legendary);
                     Set[] er = Files.removeAtl(Files.removeR(es));
                     Set[] lr = Files.removeAtl(Files.removeR(ls));
+                    if (!Files.Configuration.UseEE)
+                    {
+                        er = Files.removeEE(er);
+                        lr = Files.removeEE(lr);
+                    }
                     sub = Files.Count(er) + Files.Count(lr);
                     tot = Files.Total(er) + Files.Total(lr);
                     SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
@@ -1273,6 +1626,11 @@ namespace TQCollector
                     {
                         Set[] es = Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Epic));
                         Set[] ls = Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Legendary));
+                        if (!Files.Configuration.UseEE)
+                        {
+                            es = Files.removeEE(es);
+                            ls = Files.removeEE(ls);
+                        }
                         sub = Files.Count(es) + Files.Count(ls);
                         tot = Files.Total(es) + Files.Total(ls);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], es));
@@ -1282,6 +1640,11 @@ namespace TQCollector
                     {
                         Set[] es = Files.removeAtl(Files.removeSP(Files.ItemDatabase.Sets.Epic));
                         Set[] ls = Files.removeAtl(Files.removeSP(Files.ItemDatabase.Sets.Legendary));
+                        if (!Files.Configuration.UseEE)
+                        {
+                            es = Files.removeEE(es);
+                            ls = Files.removeEE(ls);
+                        }
                         sub = Files.Count(es) + Files.Count(ls);
                         tot = Files.Total(es) + Files.Total(ls);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], es));
@@ -1291,6 +1654,11 @@ namespace TQCollector
                     {
                         Set[] es = Files.removeSP(Files.ItemDatabase.Sets.Epic);
                         Set[] ls = Files.removeSP(Files.ItemDatabase.Sets.Legendary);
+                        if (!Files.Configuration.UseEE)
+                        {
+                            es = Files.removeEE(es);
+                            ls = Files.removeEE(ls);
+                        }
                         sub = Files.Count(es) + Files.Count(ls);
                         tot = Files.Total(es) + Files.Total(ls);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], es));
@@ -1303,6 +1671,11 @@ namespace TQCollector
                     {
                         Set[] er = Files.removeAtl(Files.removeR(Files.ItemDatabase.Sets.Epic));
                         Set[] lr = Files.removeAtl(Files.removeR(Files.ItemDatabase.Sets.Legendary));
+                        if (!Files.Configuration.UseEE)
+                        {
+                            er = Files.removeEE(er);
+                            lr = Files.removeEE(lr);
+                        }
                         sub = Files.Count(er) + Files.Count(lr);
                         tot = Files.Total(er) + Files.Total(lr);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
@@ -1312,6 +1685,11 @@ namespace TQCollector
                     {
                         Set[] er = Files.removeR(Files.ItemDatabase.Sets.Epic);
                         Set[] lr = Files.removeR(Files.ItemDatabase.Sets.Legendary);
+                        if (!Files.Configuration.UseEE)
+                        {
+                            er = Files.removeEE(er);
+                            lr = Files.removeEE(lr);
+                        }
                         sub = Files.Count(er) + Files.Count(lr);
                         tot = Files.Total(er) + Files.Total(lr);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
@@ -1322,6 +1700,11 @@ namespace TQCollector
                 {
                     Set[] er = Files.removeAtl(Files.ItemDatabase.Sets.Epic);
                     Set[] lr = Files.removeAtl(Files.ItemDatabase.Sets.Legendary);
+                    if (!Files.Configuration.UseEE)
+                    {
+                        er = Files.removeEE(er);
+                        lr = Files.removeEE(lr);
+                    }
                     sub = Files.Count(er) + Files.Count(lr);
                     tot = Files.Total(er) + Files.Total(lr);
                     SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
@@ -1329,10 +1712,17 @@ namespace TQCollector
                 }
                 else
                 {
-                    sub = Files.Count(Files.ItemDatabase.Sets.Epic) + Files.Count(Files.ItemDatabase.Sets.Legendary);
-                    tot = Files.Total(Files.ItemDatabase.Sets.Epic) + Files.Total(Files.ItemDatabase.Sets.Legendary);
-                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.Sets.Epic));
-                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.Sets.Legendary));
+                    Set[] er = Files.ItemDatabase.Sets.Epic;
+                    Set[] lr = Files.ItemDatabase.Sets.Legendary;
+                    if (!Files.Configuration.UseEE)
+                    {
+                        er = Files.removeEE(er);
+                        lr = Files.removeEE(lr);
+                    }
+                    sub = Files.Count(er) + Files.Count(lr);
+                    tot = Files.Total(er) + Files.Total(lr);
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
+                    SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], lr));
                 }
                 
                 tb.Header = generateText(Files.Language["category05"], sub, tot);
@@ -1346,6 +1736,10 @@ namespace TQCollector
                     if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
                     {
                         Set[] ers = Files.removeAtl(Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Epic)));
+                        if (!Files.Configuration.UseEE)
+                        {
+                            ers = Files.removeEE(ers);
+                        }
                         sub += Files.Count(ers);
                         tot += Files.Total(ers);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], ers));
@@ -1355,6 +1749,10 @@ namespace TQCollector
                         if (!Files.Configuration.UseR)
                         {
                             Set[] es = Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Epic));
+                            if (!Files.Configuration.UseEE)
+                            {
+                                es = Files.removeEE(es);
+                            }
                             sub += Files.Count(es);
                             tot += Files.Total(es);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], es));
@@ -1362,6 +1760,10 @@ namespace TQCollector
                         else if (!Files.Configuration.UseAtl)
                         {
                             Set[] es = Files.removeAtl(Files.removeSP(Files.ItemDatabase.Sets.Epic));
+                            if (!Files.Configuration.UseEE)
+                            {
+                                es = Files.removeEE(es);
+                            }
                             sub += Files.Count(es);
                             tot += Files.Total(es);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], es));
@@ -1369,6 +1771,10 @@ namespace TQCollector
                         else
                         {
                             Set[] es = Files.removeSP(Files.ItemDatabase.Sets.Epic);
+                            if (!Files.Configuration.UseEE)
+                            {
+                                es = Files.removeEE(es);
+                            }
                             sub += Files.Count(es);
                             tot += Files.Total(es);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], es));
@@ -1379,6 +1785,10 @@ namespace TQCollector
                         if (!Files.Configuration.UseAtl)
                         {
                             Set[] er = Files.removeAtl(Files.removeR(Files.ItemDatabase.Sets.Epic));
+                            if (!Files.Configuration.UseEE)
+                            {
+                                er = Files.removeEE(er);
+                            }
                             sub += Files.Count(er);
                             tot += Files.Total(er);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
@@ -1386,6 +1796,10 @@ namespace TQCollector
                         else
                         {
                             Set[] er = Files.removeR(Files.ItemDatabase.Sets.Epic);
+                            if (!Files.Configuration.UseEE)
+                            {
+                                er = Files.removeEE(er);
+                            }
                             sub += Files.Count(er);
                             tot += Files.Total(er);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
@@ -1394,15 +1808,24 @@ namespace TQCollector
                     else if (!Files.Configuration.UseAtl)
                     {
                         Set[] er = Files.removeAtl(Files.ItemDatabase.Sets.Epic);
+                        if (!Files.Configuration.UseEE)
+                        {
+                            er = Files.removeEE(er);
+                        }
                         sub += Files.Count(er);
                         tot += Files.Total(er);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
                     }
                     else
                     {
-                        sub += Files.Count(Files.ItemDatabase.Sets.Epic);
-                        tot += Files.Total(Files.ItemDatabase.Sets.Epic);
-                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], Files.ItemDatabase.Sets.Epic));
+                        Set[] er = Files.ItemDatabase.Sets.Epic;
+                        if (!Files.Configuration.UseEE)
+                        {
+                            er = Files.removeEE(er);
+                        }
+                        sub += Files.Count(er);
+                        tot += Files.Total(er);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], er));
                     }
                 }
                 if (Files.Configuration.Filters.Sets.Legendary)
@@ -1410,6 +1833,10 @@ namespace TQCollector
                     if (!Files.Configuration.UseSP && !Files.Configuration.UseR && !Files.Configuration.UseAtl)
                     {
                         Set[] lrs = Files.removeAtl(Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Legendary)));
+                        if (!Files.Configuration.UseEE)
+                        {
+                            lrs = Files.removeEE(lrs);
+                        }
                         sub += Files.Count(lrs);
                         tot += Files.Total(lrs);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], lrs));
@@ -1419,6 +1846,10 @@ namespace TQCollector
                         if (!Files.Configuration.UseR)
                         {
                             Set[] ls = Files.removeR(Files.removeSP(Files.ItemDatabase.Sets.Legendary));
+                            if (!Files.Configuration.UseEE)
+                            {
+                                ls = Files.removeEE(ls);
+                            }
                             sub += Files.Count(ls);
                             tot += Files.Total(ls);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], ls));
@@ -1426,6 +1857,10 @@ namespace TQCollector
                         else if (!Files.Configuration.UseAtl)
                         {
                             Set[] ls = Files.removeAtl(Files.removeSP(Files.ItemDatabase.Sets.Legendary));
+                            if (!Files.Configuration.UseEE)
+                            {
+                                ls = Files.removeEE(ls);
+                            }
                             sub += Files.Count(ls);
                             tot += Files.Total(ls);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], ls));
@@ -1433,6 +1868,10 @@ namespace TQCollector
                         else
                         {
                             Set[] ls = Files.removeSP(Files.ItemDatabase.Sets.Legendary);
+                            if (!Files.Configuration.UseEE)
+                            {
+                                ls = Files.removeEE(ls);
+                            }
                             sub += Files.Count(ls);
                             tot += Files.Total(ls);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], ls));
@@ -1443,6 +1882,10 @@ namespace TQCollector
                         if (!Files.Configuration.UseAtl)
                         {
                             Set[] lr = Files.removeAtl(Files.removeR(Files.ItemDatabase.Sets.Legendary));
+                            if (!Files.Configuration.UseEE)
+                            {
+                                lr = Files.removeEE(lr);
+                            }
                             sub += Files.Count(lr);
                             tot += Files.Total(lr);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], lr));
@@ -1450,6 +1893,10 @@ namespace TQCollector
                         else
                         {
                             Set[] lr = Files.removeR(Files.ItemDatabase.Sets.Legendary);
+                            if (!Files.Configuration.UseEE)
+                            {
+                                lr = Files.removeEE(lr);
+                            }
                             sub += Files.Count(lr);
                             tot += Files.Total(lr);
                             SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], lr));
@@ -1458,15 +1905,24 @@ namespace TQCollector
                     else if (!Files.Configuration.UseAtl)
                     {
                         Set[] lr = Files.removeAtl(Files.ItemDatabase.Sets.Legendary);
+                        if (!Files.Configuration.UseEE)
+                        {
+                            lr = Files.removeEE(lr);
+                        }
                         sub += Files.Count(lr);
                         tot += Files.Total(lr);
                         SetsTabControl.Items.Add(CreateListTab(Files.Language["level05"], lr));
                     }
                     else
                     {
-                        sub += Files.Count(Files.ItemDatabase.Sets.Legendary);
-                        tot += Files.Total(Files.ItemDatabase.Sets.Legendary);
-                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], Files.ItemDatabase.Sets.Legendary));
+                        Set[] lr = Files.ItemDatabase.Sets.Legendary;
+                        if (!Files.Configuration.UseEE)
+                        {
+                            lr = Files.removeEE(lr);
+                        }
+                        sub += Files.Count(lr);
+                        tot += Files.Total(lr);
+                        SetsTabControl.Items.Add(CreateListTab(Files.Language["level06"], lr));
                     }
                 }
                 tb.Header = generateText(Files.Language["category05"], sub, tot);
