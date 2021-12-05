@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("TQ Collector")]
 [assembly: AssemblyDescription("Item Collection tool for Titan Quest")]
 [assembly: AssemblyConfiguration("freeware build")]
-[assembly: AssemblyCompany("BeaverusIV")]
+[assembly: AssemblyCompany("BeaverusIV / Malgardian")]
 [assembly: AssemblyProduct("TQCollector")]
-[assembly: AssemblyCopyright("Copyright ©  2009-2016")]
+[assembly: AssemblyCopyright("Copyright ©  2009-2021")]
 [assembly: AssemblyTrademark("N/A")]
 [assembly: AssemblyCulture("")]
 
@@ -51,6 +51,6 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.2.2.2")]
-[assembly: AssemblyFileVersion("1.2.2.2")]
+[assembly: AssemblyVersion("1.3.0.0")]
+[assembly: AssemblyFileVersion("1.3.0.0")]
 [assembly: NeutralResourcesLanguageAttribute("en-GB")]
