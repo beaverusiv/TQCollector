@@ -35,6 +35,9 @@
                 <ToggleButton Name="Button_ToggleAtl" Checked="Button_ToggleAtl_Checked" Unchecked="Button_ToggleAtl_Unchecked">
                     <Image Source="atlantis.png" Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </ToggleButton>
+                <ToggleButton Name="Button_ToggleEE" Checked="Button_ToggleEE_Checked" Unchecked="Button_ToggleEE_Unchecked">
+                    <Image Source="eternalembers.png" Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </ToggleButton>
                 <Separator/>
                 <ToggleButton Name="Button_ToggleItemCount" Checked="Button_ToggleItemCount_Checked" Unchecked="Button_ToggleItemCount_Unchecked">
                     <Image Source="toggle_count.png" Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" />

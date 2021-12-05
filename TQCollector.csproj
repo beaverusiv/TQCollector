@@ -247,6 +247,9 @@
     <Resource Include="atlantis.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="eternalembers.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="text_en.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

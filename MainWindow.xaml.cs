@@ -75,6 +75,9 @@ namespace TQCollector
             Button_ToggleAtl.IsChecked = Files.Configuration.UseAtl;
             Button_ToggleAtl.IsEnabled = Files.Configuration.UseAE;
             Button_ToggleAtl.ToolTip = Files.Language["tooltip14"];
+            Button_ToggleEE.IsChecked = Files.Configuration.UseEE;
+            Button_ToggleEE.IsEnabled = Files.Configuration.UseAE;
+            Button_ToggleEE.ToolTip = Files.Language["tooltip15"];
             Button_ToggleCaravan.IsChecked = Files.Configuration.UseCaravan;
             Button_ToggleCaravan.ToolTip = Files.Language["tooltip01"];
             Button_ToggleCaravan.IsEnabled = Files.Configuration.UseIT || Files.Configuration.UseAE;
@@ -298,6 +301,26 @@ namespace TQCollector
             if (loaded)
             {
                 Files.Configuration.UseAtl = false;
+                Files.reloadFiles();
+                refreshDisplay();
+            }
+        }
+
+        private void Button_ToggleEE_Checked(object sender, RoutedEventArgs e)
+        {
+            if (loaded)
+            {
+                Files.Configuration.UseEE = true;
+                Files.reloadFiles();
+                refreshDisplay();
+            }
+        }
+
+        private void Button_ToggleEE_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (loaded)
+            {
+                Files.Configuration.UseEE = false;
                 Files.reloadFiles();
                 refreshDisplay();
             }
